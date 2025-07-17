@@ -18,19 +18,19 @@ const Navbar = () => {
 
   const navItems: NavItem[] = [
     { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
+    { name: "Services", path: "/service" },
     { name: "Portfolio", path: "/portfolio" },
-    { name: "About Us", path: "/aboutus" },
+    { name: "About Us", path: "/about" },
     { name: "Careers", path: "/career" },
   ];
 
   useEffect(() => {
     if (pathname === "/") setActiveItem("Home");
-    else if (pathname.includes("services")) setActiveItem("Services");
+    else if (pathname.includes("service")) setActiveItem("Services");
     else if (pathname.includes("portfolio")) setActiveItem("Portfolio");
     else if (pathname.includes("aboutus")) setActiveItem("About Us");
     else if (pathname.includes("career")) setActiveItem("Careers");
-    else if (pathname.includes("contactus")) setActiveItem("Contact Us");
+    else if (pathname.includes("contact")) setActiveItem("Contact Us");
   }, [pathname]);
 
   return (
@@ -95,7 +95,7 @@ const Navbar = () => {
 
       {/* Contact Us Button */}
       <Link
-        href="/contactus"
+        href="/contact"
         className={`group relative cursor-pointer rounded-full p-[2px] bg-gradient-to-r from-blue-900 to-gray-900`}
       >
         <div
