@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
 @keyframes marquee {
   from {
     transform: translateX(0%);
@@ -26,3 +25,9 @@
 .animate-marquee-vertical {
   animation: marquee-vertical 20s linear infinite;
 }
+
+
+
+
+
+

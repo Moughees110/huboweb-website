@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import MarqueeCard from "../components/marqueecard";
 
 const Hero = () => {
   return (
@@ -29,6 +30,7 @@ const Hero = () => {
           />
         </div>
       </div>
+      <MarqueeCard/>
     </section>
   );
 };
