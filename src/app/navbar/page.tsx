@@ -21,14 +21,14 @@ const Navbar = () => {
     { name: "Services", path: "/service" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "About Us", path: "/about" },
-    { name: "Careers", path: "/career" },
+    { name: "Careers", path: "/career" }
   ];
 
   useEffect(() => {
     if (pathname === "/") setActiveItem("Home");
     else if (pathname.includes("service")) setActiveItem("Services");
     else if (pathname.includes("portfolio")) setActiveItem("Portfolio");
-    else if (pathname.includes("aboutus")) setActiveItem("About Us");
+    else if (pathname.includes("about")) setActiveItem("About Us");
     else if (pathname.includes("career")) setActiveItem("Careers");
     else if (pathname.includes("contact")) setActiveItem("Contact Us");
   }, [pathname]);
@@ -38,7 +38,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center">
         <Image
-          src="/img/huboweb.png"
+          src="/img/huboweb2.png"
           alt="Logo"
           className="h-10 w-auto"
           width={100}
@@ -48,7 +48,10 @@ const Navbar = () => {
 
       {/* Mobile Toggle */}
       <div className="md:hidden">
-        <button onClick={() => setMenuOpen(!menuOpen)} className="focus:outline-none">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="focus:outline-none"
+        >
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -65,10 +68,18 @@ const Navbar = () => {
             key={name}
             href={path}
             className={`relative group cursor-pointer px-4 py-2 rounded-full overflow-hidden transition duration-300 ${
-              activeItem === name ? "bg-[#001b21] text-white" : "text-[#071c55]"
+              activeItem === name
+                ? "bg-gradient-to-r from-blue-900 to-gray-900 text-white"
+                : "text-[#071c55]"
             }`}
           >
-            <div className="absolute inset-0 bg-gray-200 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <div
+              className={`absolute inset-0 rounded-full transition-transform duration-300 ${
+                activeItem === name
+                  ? "scale-0"
+                  : "bg-gray-200 scale-0 group-hover:scale-100"
+              }`}
+            />
             <div className="relative z-10 flex flex-col items-center justify-center h-full font-medium">
               <span
                 className={`transition-all duration-200 ${
