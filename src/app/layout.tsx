@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./navbar/page";
+import Footer from "./footer/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className="bg-gradient-to-r from-blue-900 to-gray-900">
         <Navbar/>
         {children}</body>
+        <Footer/>
     </html>
   );
 }

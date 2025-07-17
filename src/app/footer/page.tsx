@@ -1,0 +1,144 @@
+"use client";
+
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+
+const Footer = () => {
+  const socialIcons = [
+    { icon: <Facebook size={18} />, link: "https://facebook.com" },
+    { icon: <Instagram size={18} />, link: "https://instagram.com" },
+    { icon: <Linkedin size={18} />, link: "https://linkedin.com" },
+    { icon: <Twitter size={18} />, link: "https://twitter.com" }
+  ];
+
+  const quickLinks = [
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/service" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "About Us", path: "/about" },
+    { name: "Contact", path: "/contact" }
+  ];
+
+  return (
+    <footer className="bg-[#141414] text-white px-6 py-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
+        {/* Left Side */}
+        <div className="flex-1">
+          <Image
+            src="/img/huboweb2.png"
+            alt="Logo"
+            className="h-14 mb-4"
+            width={160}
+            height={46}
+          />
+
+          <p className="mt-4 text-sm text-gray-300 max-w-md">
+            Welcome to HuboWeb – Let’s build your digital future together. ✨
+            <br />
+            Technology dances In Harmony And Innovation Meet Grace. ✨Your
+            Digital Ambitions Become A Magnificent Reality Thanks To Our
+            Harmonious Combination Of Design, Technology, And Strategy. ✨ Come
+            Along with Us As We Redefine Greatness For The Digital Age Improve
+            Your Presence With Unparalleled Finesse ✨
+          </p>
+
+          {/* Social Icons */}
+          <div className="flex items-center gap-4 mt-4">
+            {socialIcons.map(({ icon, link }, idx) => (
+              <a
+                href={link}
+                key={idx}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative p-[2px] rounded-full animate-spin-slow"
+              >
+                <div className="bg-gradient-to-r from-blue-900 to-gray-900 p-[2px] rounded-full">
+                  <div className="bg-[#141414] p-3 rounded-full text-white hover:scale-110 transition-transform duration-300">
+                    {icon}
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Right Side */}
+        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
+            <ul>
+              {quickLinks.map(({ name, path }) => (
+                <li key={name} className="mb-2">
+                  <Link
+                    href={path}
+                    className="flex items-center gap-1.5 group transition-transform duration-300"
+                  >
+                    <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                      /
+                    </span>
+                    <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
+                      {name}
+                    </span>
+                    <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                      /
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-3">Links</h3>
+            <ul>
+              <li className="mb-2">
+                <Link
+                  href="/career"
+                  className="flex items-center gap-1.5 group transition-transform duration-300"
+                >
+                  <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                    /
+                  </span>
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
+                    Careers
+                  </span>
+                  <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                    /
+                  </span>
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link
+                  href="/blog"
+                  className="flex items-center gap-1.5 group transition-transform duration-300"
+                >
+                  <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                    /
+                  </span>
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
+                    Blog
+                  </span>
+                  <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                    /
+                  </span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
+            <p className="text-gray-400 mb-2">Email: info@huboweb.com</p>
+            <p className="text-gray-400">Phone: +1 234 567 890</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
