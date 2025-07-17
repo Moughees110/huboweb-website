@@ -3,7 +3,7 @@ import Hero from "./hero/page";
 
 export default function Home() {
   return (
-   <div>saadat khan buk 
+   <div>
     <Hero/>
    </div>
   );
