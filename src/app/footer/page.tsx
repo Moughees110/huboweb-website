@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter, MapPin, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ const Footer = () => {
     { icon: <Facebook size={18} />, link: "https://facebook.com" },
     { icon: <Instagram size={18} />, link: "https://instagram.com" },
     { icon: <Linkedin size={18} />, link: "https://linkedin.com" },
-    { icon: <Twitter size={18} />, link: "https://twitter.com" }
+    { icon: <Twitter size={18} />, link: "https://twitter.com" },
   ];
 
   const quickLinks = [
@@ -17,16 +17,19 @@ const Footer = () => {
     { name: "Services", path: "/service" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "About Us", path: "/about" },
-    { name: "Contact", path: "/contact" }
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
-    <footer className="bg-[#141414] text-white px-6 py-10">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
+    <footer className="bg-gradient-to-r from-[#070121] to-gray-900 text-white pt-2">
+      {/* Top Gradient Border */}
+      <div className="w-full h-[2px] bg-gradient-to-r from-white via-gray-300 to-white mb-8"></div>
+
+      <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-start gap-10">
         {/* Left Side */}
         <div className="flex-1">
           <Image
-            src="/img/huboweb2.png"
+            src="/img/huboweb.png"
             alt="Logo"
             className="h-14 mb-4"
             width={160}
@@ -51,10 +54,10 @@ const Footer = () => {
                 key={idx}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative p-[2px] rounded-full animate-spin-slow"
+                className="relative p-[2px] rounded-full"
               >
                 <div className="bg-gradient-to-r from-blue-900 to-gray-900 p-[2px] rounded-full">
-                  <div className="bg-[#141414] p-3 rounded-full text-white hover:scale-110 transition-transform duration-300">
+                  <div className="bg-[#070121] p-3 rounded-full text-white hover:scale-110 transition-transform duration-300">
                     {icon}
                   </div>
                 </div>
@@ -132,8 +135,28 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
-            <p className="text-gray-400 mb-2">Email: info@huboweb.com</p>
-            <p className="text-gray-400">Phone: +1 234 567 890</p>
+            <div className="space-y-3">
+              <div className="flex items-start gap-2 text-gray-300">
+                <MapPin size={16} className="mt-0.5" />
+                <span>123 Tech Street, Innovation City, USA</span>
+              </div>
+              <div className="flex items-start gap-2 text-gray-300">
+                <Mail size={16} className="mt-0.5" />
+                <span>info@huboweb.com</span>
+              </div>
+              <div className="flex items-start gap-2 text-gray-300">
+                <Phone size={16} className="mt-0.5" />
+                <span>+1 234 567 890</span>
+              </div>
+            </div>
+
+            {/* Underline */}
+            <div className="w-full h-px bg-gray-600 my-4"></div>
+
+            {/* Copyright */}
+            <p className="text-xs text-gray-400">
+              © 2021–2024 <span className="text-white">HuboWeb.com</span>. All rights reserved | <Link href="/privacy" className="underline hover:text-white">Privacy Policy</Link>
+            </p>
           </div>
         </div>
       </div>

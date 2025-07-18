@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import MarqueeCard from "../components/marqueecard";
+import Card from "../card/page";
 
 const Hero = () => {
   return (
@@ -31,6 +32,7 @@ const Hero = () => {
         </div>
       </div>
       <MarqueeCard/>
+      <Card/>
     </section>
   );
 };
