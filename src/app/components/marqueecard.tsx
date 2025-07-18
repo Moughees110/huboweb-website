@@ -11,12 +11,12 @@ const cards = [
 
 function MarqueeCard() {
   return (
-    <div className="w-full py-6">
+    <div className="w-full  py-6">
       <Marquee className="gap-4">
         {cards.map((text, index) => (
           <div
             key={index}
-            className="w-64 px-6 py-4 bg-white text-black rounded-xl shadow-md font-medium"
+            className="w-64 px-6 py-4 bg-[#1F1F4B] text-white rounded-xl shadow-md font-medium"
           >
             {text}
           </div>

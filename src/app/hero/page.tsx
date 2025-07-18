@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import MarqueeCard from "../components/marqueecard";
+import  Testimonials  from "../components/testimonials";
+import FAQSection from "../components/faqs";
 
 const Hero = () => {
   return (
@@ -21,7 +23,7 @@ const Hero = () => {
         {/* Right Side - Image */}
         <div className="flex-1">
           <Image
-            src="/img/download (1).png" // ✅ Replace with your image path
+            src="/img/download (1).png"
             alt="Hero Image"
             width={600}
             height={400}
@@ -30,7 +32,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <MarqueeCard/>
+      
     </section>
   );
 };
