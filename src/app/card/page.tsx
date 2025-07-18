@@ -54,7 +54,7 @@ const services = [
   },
 ];
 
-export default function Services() {
+export default function Card () {
   return (
     <section className="py-16 px-4 sm:px-6 bg-transparent text-white">
       <div className="max-w-7xl mx-auto text-center mb-12">

@@ -3,7 +3,8 @@
 import Image from "next/image";
 import MarqueeCard from "../components/marqueecard";
 import  Testimonials  from "../components/testimonials";
-import FAQSection from "../components/faqs";
+// import FAQSection from "../components/faqs";
+import Card from "../card/page";
 
 const Hero = () => {
   return (
@@ -32,7 +33,10 @@ const Hero = () => {
           />
         </div>
       </div>
-      
+      <MarqueeCard/>
+      <Card/>
+      <Testimonials/>
+      {/* <FAQSection/> */}
     </section>
   );
 };
