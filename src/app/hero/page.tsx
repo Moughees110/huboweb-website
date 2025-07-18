@@ -2,12 +2,8 @@
 
 import Image from "next/image";
 import MarqueeCard from "../components/marqueecard";
-<<<<<<< HEAD
-import Card from "../card/page";
-=======
 import  Testimonials  from "../components/testimonials";
 import FAQSection from "../components/faqs";
->>>>>>> d327e746ecfb1397029c29bc72c2d7122fc29983
 
 const Hero = () => {
   return (
@@ -36,12 +32,7 @@ const Hero = () => {
           />
         </div>
       </div>
-<<<<<<< HEAD
-      <MarqueeCard/>
-      <Card/>
-=======
       
->>>>>>> d327e746ecfb1397029c29bc72c2d7122fc29983
     </section>
   );
 };
