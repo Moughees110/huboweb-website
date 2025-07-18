@@ -3,6 +3,7 @@
 import { Facebook, Instagram, Linkedin, Twitter, MapPin, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { CoolModeDemo } from "../clickme/page";
 
 const Footer = () => {
   const socialIcons = [
@@ -154,12 +155,22 @@ const Footer = () => {
             <div className="w-full h-px bg-gray-600 my-4"></div>
 
             {/* Copyright */}
-            <p className="text-xs text-gray-400">
-              © 2021–2024 <span className="text-white">HuboWeb.com</span>. All rights reserved | <Link href="/privacy" className="underline hover:text-white">Privacy Policy</Link>
-            </p>
+           {/* Copyright */}
+<p className="text-xs text-gray-400">
+  © 2021–2024 <span className="text-white">HuboWeb.com</span>. All rights reserved | <Link href="/privacy" className="underline hover:text-white">Privacy Policy</Link>
+</p>
+
           </div>
+         <div className="w-full flex justify-center mt-6 pb-4">
+  <div className="bg-gradient-to-r from-blue-900 to-gray-900 p-[1px] rounded-full">
+    <div className="bg-[#070121] px-4 py-2 rounded-full text-white text-sm text-center">
+      <CoolModeDemo />
+    </div>
+  </div>
+</div>
         </div>
       </div>
+    
     </footer>
   );
 };

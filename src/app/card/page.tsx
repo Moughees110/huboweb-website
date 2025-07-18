@@ -7,7 +7,7 @@ const services = [
   {
     title: "CRM Automation",
     description: "Boost the success of your company by using Google Ads to increase online visibility and promote growth.",
-    image: "/img/card.jpg",
+    image: "/img/card10.jpg",
     logo: "/img/crmautomation.png",
   },
   {
@@ -19,54 +19,58 @@ const services = [
   {
     title: "UI/UX Design",
     description: "Elevate engagement, inspire loyalty-our UI/UX design redefines the digital frontier, one click at a time.",
-    image: "/img/card.jpg",
+    image: "/img/card9.jpg",
     logo: "/img/uidesigne.png",
   },
   {
     title: "Mobile App Development",
     description: "From concept to code, we craft, redefine mobile solutions that inspire engagement and empowering your brand.",
-    image: "/img/card.jpg",
+    image: "/img/card8.jpg",
     logo: "/img/mobiledeveloper.png",
   },
   {
     title: "Graphics Design",
     description: "Transforming pixels into profit our cutting-edge graphics design sets your brand apart in the digital landscape.",
-    image: "/img/card.jpg",
+    image: "/img/card7.webp",
     logo: "/img/graphicdesigne.png",
   },
   {
     title: "Robotic Process Automation",
     description: "Robotic Process Automation uses bots to automate repetitive tasks, boosting efficiency and accuracy.",
-    image: "/img/card.jpg",
+    image: "/img/card6.png",
     logo: "/img/roboticautomation.png",
   },
   {
     title: "Digital Marketing",
     description: "Captivate, Convert, Conquer-the digital realm is yours to conquer with our dynamic digital marketing strategies.",
-    image: "/img/card.jpg",
+    image: "/img/card3.jpg",
     logo: "/img/digitalmarketing.png",
   },
   {
     title: "SEO Optimization",
     description: "Dominate rankings and seize digital supremacy with strategic optimization where visibility meets profitability.",
-    image: "/img/card.jpg",
+    image: "/img/card4.jpeg",
     logo: "/img/seooptimization.png",
   },
 ];
 
-export default function Card () {
+export default function Card() {
   return (
     <section className="py-16 px-4 sm:px-6 bg-transparent text-white">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-3xl font-bold mb-2">Experience our pinnacle of digital excellence</h2>
-        <p className="text-gray-400">Unlock your digital potential and elevate your success with our premier services.</p>
+        <h2 className="text-3xl font-bold mb-2">
+          Experience our pinnacle of digital excellence
+        </h2>
+        <p className="text-gray-400">
+          Unlock your digital potential and elevate your success with our premier services.
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="flex flex-wrap justify-center gap-6">
         {services.map((service, index) => (
           <div
             key={index}
-            className="group relative overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 h-[440px]"
+            className="group relative overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 h-[360px] w-full max-w-[300px] flex-grow"
           >
             {/* Background Image */}
             <div
@@ -87,12 +91,12 @@ export default function Card () {
               </div>
 
               {/* Title */}
-              <h3 className=" text-2xl font-semibold transition-colors duration-300 group-hover:text-black">
+              <h3 className="text-2xl font-semibold transition-colors duration-300 group-hover:text-white">
                 {service.title}
               </h3>
 
               {/* Description */}
-              <p className="text-sm text-gray-300 transition-colors duration-300 group-hover:text-black">
+              <p className="text-lg text-gray-300 transition-colors duration-300 group-hover:text-white">
                 {service.description}
               </p>
 

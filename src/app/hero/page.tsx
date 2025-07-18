@@ -5,6 +5,7 @@ import MarqueeCard from "../components/marqueecard";
 import  Testimonials  from "../components/testimonials";
 // import FAQSection from "../components/faqs";
 import Card from "../card/page";
+import { MarqueeDemo } from "../components/page";
 
 const Hero = () => {
   return (
@@ -37,6 +38,7 @@ const Hero = () => {
       <Card/>
       <Testimonials/>
       {/* <FAQSection/> */}
+      <MarqueeDemo/>
     </section>
   );
 };
