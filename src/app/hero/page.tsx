@@ -2,7 +2,12 @@
 
 import Image from "next/image";
 import MarqueeCard from "../components/marqueecard";
+<<<<<<< HEAD
 import Card from "../card/page";
+=======
+import  Testimonials  from "../components/testimonials";
+import FAQSection from "../components/faqs";
+>>>>>>> d327e746ecfb1397029c29bc72c2d7122fc29983
 
 const Hero = () => {
   return (
@@ -22,7 +27,7 @@ const Hero = () => {
         {/* Right Side - Image */}
         <div className="flex-1">
           <Image
-            src="/img/download (1).png" // ✅ Replace with your image path
+            src="/img/download (1).png"
             alt="Hero Image"
             width={600}
             height={400}
@@ -31,8 +36,12 @@ const Hero = () => {
           />
         </div>
       </div>
+<<<<<<< HEAD
       <MarqueeCard/>
       <Card/>
+=======
+      
+>>>>>>> d327e746ecfb1397029c29bc72c2d7122fc29983
     </section>
   );
 };
