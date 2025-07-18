@@ -163,7 +163,7 @@ const Footer = () => {
           </div>
          <div className="w-full flex justify-center mt-6 pb-4">
   <div className="bg-gradient-to-r from-blue-900 to-gray-900 p-[1px] rounded-full">
-    <div className="bg-[#070121] px-4 py-2 rounded-full text-white text-sm text-center">
+    <div className="bg-[#070121] px-3 py-1 rounded-full text-white text-sm text-center">
       <CoolModeDemo />
     </div>
   </div>
