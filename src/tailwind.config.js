@@ -1,33 +1,46 @@
 // tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        geist: ["var(--font-geist-sans)", "sans-serif"],
-        geistMono: ["var(--font-geist-mono)", "monospace"],
-      },
-      skew: {
-        15: "15deg",
-      },
       keyframes: {
-        marquee: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
+        'slide-in-left': {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
         },
-        "marquee-vertical": {
-          "0%": { transform: "translateY(0%)" },
-          "100%": { transform: "translateY(-100%)" },
+        'slide-in-top': {
+          '0%': { transform: 'translateY(-100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        'slide-in-right': {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        'shade-left': {
+          '0%': { opacity: '0', transform: 'translateX(-100%)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        'shade-top': {
+          '0%': { opacity: '0', transform: 'translateY(-100%)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'shade-right': {
+          '0%': { opacity: '0', transform: 'translateX(100%)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
         },
       },
       animation: {
-        marquee: "marquee var(--duration, 40s) linear infinite",
-        "marquee-vertical": "marquee-vertical var(--duration, 40s) linear infinite",
+        'slide-in-left': 'slide-in-left 0.8s ease-out forwards',
+        'slide-in-top': 'slide-in-top 0.8s ease-out forwards',
+        'slide-in-right': 'slide-in-right 0.8s ease-out forwards',
+        'shade-left': 'shade-left 1s ease-out forwards',
+        'shade-top': 'shade-top 1s ease-out forwards',
+        'shade-right': 'shade-right 1s ease-out forwards',
       },
     },
   },

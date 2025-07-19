@@ -7,25 +7,25 @@ const teamMembers = [
   {
     name: "Anosh Haider",
     position: "Chief Technical Officer",
-    image: "/img/card.jpg",
+    image: "/img/anosh.png",
     email: "ranahaider998@gmail.com"
   },
   {
     name: "Akhter Abbas",
     position: "Chief Technical Officer",
-    image: "/img/card4.jpeg",
+    image: "/img/akhter.jpg",
     email: "akhtarabbas909@gmail.com"
   },
   {
     name: "Moughees Hassan",
     position: "Chief Technical Officer",
-    image: "/img/card.jpg",
+    image: "/img/moughees.jpeg",
     email: "mougheeshassan@gmail.com"
   },
   {
-    name: "Nuauman Naeem",
+    name: "Nauman Naeem",
     position: "Chief Finance Officer",
-    image: "/img/card4.jpeg",
+    image: "/img/nuauman.jpeg",
     email: "naumannaeem81@gmail.com"
   }
   // Add more members here
@@ -33,7 +33,7 @@ const teamMembers = [
 
 export default function Team() {
   return (
-    <section className="py-16 px-6 bg-gradient-to-r from-[#070121] to-gray-900 text-white">
+    <section className="py-36 px-16 bg-gradient-to-r from-[#070121] to-gray-900 text-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-center">WHO WE ARE</h2>
         <p className="text-sm text-center items-center mb-10">
@@ -44,7 +44,7 @@ export default function Team() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="relative w-[200px] sm:w-[220px] md:w-[340px] overflow-hidden rounded-xl group shadow-2xl"
+              className="relative w-[300px] sm:w-[280px] md:w-[300px] overflow-hidden rounded-xl group shadow-2xl"
             >
               {/* Image */}
               <div className="overflow-hidden">

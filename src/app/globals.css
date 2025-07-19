@@ -28,6 +28,101 @@
 
 
 
+@layer utilities {
+  .animate-slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+  .animate-slide-in-top {
+    animation: slideInTop 1s ease-out forwards;
+  }
+  .animate-slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+  }
+  .animate-shade-left {
+    animation: shadeLeft 1s ease-out forwards;
+  }
+  .animate-shade-top {
+    animation: shadeTop 1s ease-out forwards;
+  }
+  .animate-shade-right {
+    animation: shadeRight 1s ease-out forwards;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes shadeLeft {
+    from {
+      background: linear-gradient(to right, #000 80%, transparent);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes shadeTop {
+    from {
+      background: linear-gradient(to bottom, #000 80%, transparent);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes shadeRight {
+    from {
+      background: linear-gradient(to left, #000 80%, transparent);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
 
 
 
