@@ -8,6 +8,8 @@ import { MarqueeDemo } from "../components/page";
 import Faqs from "../components/faqs";
 import FaqTutorialSection from "../components/faqtutorialsection";
 import OrbitSection from "../components/orbitsection";
+import HeroCard from "../components/herocard";
+import ImageMasonry from "../components/imagemasonary";
 
 export default function Home() {
   return (
@@ -22,8 +24,10 @@ export default function Home() {
       <Card/>
       <OrbitSection/>
       <Testimonials/>
+      <ImageMasonry/>
       {/* <FAQSection/> */}
       <MarqueeDemo/>
+      <HeroCard/>
       <Faqs imageSrc="/img/faq-removebg-preview.png"/>
     </div>
   );

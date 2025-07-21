@@ -26,11 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="bg-gradient-to-r from-[#070121] to-gray-900">
-        <Navbar/>
-        {children}</body>
-        <Footer/>
+        <Navbar />
+        {children}
+        <Footer /> {/* ✅ Now it's inside <body> */}
+      </body>
     </html>
   );
 }
