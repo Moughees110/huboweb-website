@@ -6,6 +6,7 @@ import Card from "../card/page";
 import Testimonials from "../components/testimonials";
 import { MarqueeDemo } from "../components/page";
 import Faqs from "../components/faqs";
+import FaqTutorialSection from "../components/faqtutorialsection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         imageSrc="/img/download (1).png"
       />
       <MarqueeCard/>
+      <FaqTutorialSection/>
       <Card/>
       <Testimonials/>
       {/* <FAQSection/> */}
