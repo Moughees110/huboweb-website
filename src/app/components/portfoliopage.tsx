@@ -8,7 +8,7 @@ const categories = [
   "Product Branding",
   "Garafic Design (UI/UX)",
   "Game Design (UI/UX)",
-  "Mobile App (UI/UX)",
+  "Mobile App (UI/UX)"
 ];
 
 const allCards = [
@@ -17,86 +17,86 @@ const allCards = [
     title: "Modern Website 1",
     desc: "Responsive and clean UI",
     category: "Website Design",
-    img: "/img/website.jpg",
+    img: "/img/website.jpg"
   },
   {
     title: "Modern Website 2",
     desc: "Interactive and elegant",
     category: "Website Design",
-    img: "/img/website2.jpg",
+    img: "/img/website2.jpg"
   },
   {
     title: "Dashboard V1",
     desc: "Dark-themed analytics UI",
     category: "Dashboard Design",
-    img: "/img/dashboard.jpg",
+    img: "/img/dashboard.jpg"
   },
   {
     title: "Dashboard V2",
     desc: "Clean admin panel",
     category: "Dashboard Design",
-    img: "/img/dashboard2.jpg",
+    img: "/img/dashboard2.jpg"
   },
   {
     title: "Logo A",
     desc: "Minimalist company logo",
     category: "Logo Design",
-    img: "/img/logo.jpg",
+    img: "/img/logo.jpg"
   },
   {
     title: "Logo B",
     desc: "Bold and colorful",
     category: "Logo Design",
-    img: "/img/logo2.jpg",
+    img: "/img/logo2.jpg"
   },
   {
     title: "Brand Identity A",
     desc: "Complete product branding",
     category: "Product Branding",
-    img: "/img/product.jpg",
+    img: "/img/product.jpg"
   },
   {
     title: "Brand Identity B",
     desc: "Sleek and modern style",
     category: "Product Branding",
-    img: "/img/product2.jpg",
+    img: "/img/product2.jpg"
   },
   {
     title: "UI Concept A",
     desc: "Creative visual layout",
     category: "Garafic Design (UI/UX)",
-    img: "/img/graphic1.jpg",
+    img: "/img/graphic1.jpg"
   },
   {
     title: "UI Concept B",
     desc: "Professional visual direction",
     category: "Garafic Design (UI/UX)",
-    img: "/img/graphic2.jpg",
+    img: "/img/graphic2.jpg"
   },
   {
     title: "Game UI 1",
     desc: "Fantasy RPG UI/UX",
     category: "Game Design (UI/UX)",
-    img: "/img/game.jpg",
+    img: "/img/game.jpg"
   },
   {
     title: "Game UI 2",
     desc: "Arcade style interface",
     category: "Game Design (UI/UX)",
-    img: "/img/game2.jpg",
+    img: "/img/game2.jpg"
   },
   {
     title: "Mobile App 1",
     desc: "iOS styled banking app",
     category: "Mobile App (UI/UX)",
-    img: "/img/mobile.jpg",
+    img: "/img/mobile.jpg"
   },
   {
     title: "Mobile App 2",
     desc: "Android booking system",
     category: "Mobile App (UI/UX)",
-    img: "/img/mobile2.jpg",
-  },
+    img: "/img/mobile2.jpg"
+  }
 ];
 
 export default function PortfolioPage() {
@@ -110,7 +110,7 @@ export default function PortfolioPage() {
   return (
     <section className="w-full bg-transparent py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl text-white font-bold mb-4">
+        <h2 className="text-4xl text-yellow-400 font-bold mb-4">
           My Creative Work & Portfolio
         </h2>
         <p className="text-gray-400 mb-10">
@@ -163,7 +163,7 @@ export default function PortfolioPage() {
 function HoverButton({
   label,
   isActive,
-  onClick,
+  onClick
 }: {
   label: string;
   isActive: boolean;
@@ -174,8 +174,8 @@ function HoverButton({
       onClick={onClick}
       className={`relative group px-4 py-2 rounded-full border text-sm font-medium transition duration-300 ${
         isActive
-          ? "bg-gradient-to-r from-blue-900 to-gray-900 text-white"
-          : "text-white hover:text-[#071c55] hover:bg-white"
+          ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-400"
+          : "text-white hover:text-[#071c55] hover:bg-yellow-400"
       }`}
     >
       <span

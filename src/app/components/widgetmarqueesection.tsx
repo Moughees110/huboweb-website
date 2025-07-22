@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   ActivityIcon,
@@ -15,32 +15,34 @@ import {
   TagIcon,
   TextCursorIcon,
   VideoIcon,
-  Wand2Icon,
-} from 'lucide-react';
+  Wand2Icon
+} from "lucide-react";
 
 const iconItems = [
-  { icon: <ImageIcon />, label: 'Image Comparison' },
-  { icon: <MessageSquareIcon />, label: 'FAQ' },
-  { icon: <Wand2Icon />, label: 'Funfact' },
-  { icon: <VideoIcon />, label: 'Lottie' },
-  { icon: <TableIcon />, label: 'Testimonial' },
-  { icon: <LayoutDashboardIcon />, label: 'Pricing Table' },
-  { icon: <TextCursorIcon />, label: 'Heading' },
-  { icon: <CloudIcon />, label: 'Dual Button' },
-  { icon: <CameraIcon />, label: 'Popup Modal' },
-  { icon: <Share2Icon />, label: 'Social Share' },
-  { icon: <ActivityIcon />, label: 'Audio Player' },
-  { icon: <TagIcon />, label: 'Coupon Code' },
-  { icon: <ShieldIcon />, label: 'Protected' },
-  { icon: <CodeIcon />, label: 'Content Ticker' },
-  { icon: <HeadphonesIcon />, label: 'Video Gallery' },
+  { icon: <ImageIcon />, label: "Image Comparison" },
+  { icon: <MessageSquareIcon />, label: "FAQ" },
+  { icon: <Wand2Icon />, label: "Funfact" },
+  { icon: <VideoIcon />, label: "Lottie" },
+  { icon: <TableIcon />, label: "Testimonial" },
+  { icon: <LayoutDashboardIcon />, label: "Pricing Table" },
+  { icon: <TextCursorIcon />, label: "Heading" },
+  { icon: <CloudIcon />, label: "Dual Button" },
+  { icon: <CameraIcon />, label: "Popup Modal" },
+  { icon: <Share2Icon />, label: "Social Share" },
+  { icon: <ActivityIcon />, label: "Audio Player" },
+  { icon: <TagIcon />, label: "Coupon Code" },
+  { icon: <ShieldIcon />, label: "Protected" },
+  { icon: <CodeIcon />, label: "Content Ticker" },
+  { icon: <HeadphonesIcon />, label: "Video Gallery" }
 ];
 
 export default function WidgetMarqueeSection() {
   return (
-    <section className="bg-transparent py-24 px-4 md:px-12 text-white overflow-hidden">
+    <section className="bg-transparent py-24 px-4 md:px-12 text-yellow-400 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-6xl font-bold text-white/10 mb-[-28px]">250+</h2>
+        <h2 className="text-6xl font-bold text-yellow-400/10 mb-[-28px]">
+          250+
+        </h2>
         <h3 className="text-3xl md:text-4xl font-bold mb-4">
           Powerful Widgets and Extensions for Elementor
         </h3>
@@ -52,8 +54,8 @@ export default function WidgetMarqueeSection() {
           {[0, 1, 2, 3].map((rowIndex) => {
             const directionClass =
               rowIndex % 2 === 0
-                ? 'animate-marquee'
-                : 'animate-marquee-reverse';
+                ? "animate-marquee"
+                : "animate-marquee-reverse";
 
             return (
               <div

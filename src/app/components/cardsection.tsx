@@ -15,7 +15,7 @@ import {
   Puzzle,
   LifeBuoy,
   Wrench,
-  PenTool,
+  PenTool
 } from "lucide-react";
 
 const cards = [
@@ -24,106 +24,106 @@ const cards = [
     icon: Paintbrush,
     description:
       "Elevate engagement, inspire loyalty—our UI/UX design redefines the digital frontier, one click at a time.",
-    color: "#89ec5b",
+    color: "#89ec5b"
   },
   {
     title: "Web Design & Development",
     icon: Code2,
     description:
       "Revolutionize your digital footprint with our bespoke web design solutions—where innovation meets pixel perfection.",
-    color: "#eb5ae5",
+    color: "#eb5ae5"
   },
   {
     title: "SEO Optimization",
     icon: Search,
     description:
       "Dominate rankings and seize digital supremacy with strategic optimization where visibility meets profitability.",
-    color: "#5b98eb",
+    color: "#5b98eb"
   },
   {
     title: "Digital Marketing",
     icon: Megaphone,
     description:
       "Captivate, Convert, Conquer—the digital realm is yours to conquer with our dynamic digital marketing strategies.",
-    color: "#f59e0b",
+    color: "#f59e0b"
   },
   {
     title: "Graphics Design",
     icon: PenTool,
     description:
       "Transforming pixels into profit—our cutting-edge graphics design sets your brand apart in the digital landscape.",
-    color: "#8b5cf6",
+    color: "#8b5cf6"
   },
   {
     title: "Content Writing",
     icon: FileText,
     description:
       "Crafting compelling narratives that captivate and convert—let our content fuel your digital success.",
-    color: "#34d399",
+    color: "#34d399"
   },
   {
     title: "CRM Automation",
     icon: Headphones,
     description:
       "Boost the success of your company by using Google Ads to increase online visibility and promote growth.",
-    color: "#f43f5e",
+    color: "#f43f5e"
   },
   {
     title: "Mobile App Development",
     icon: Smartphone,
     description:
       "From concept to code—we craft, redefine mobile solutions that inspire engagement and empower your brand.",
-    color: "#38bdf8",
+    color: "#38bdf8"
   },
   {
     title: "Robotic Process Automation",
     icon: Bot,
     description:
       "Robotic Process Automation uses bots to automate repetitive tasks, boosting efficiency and accuracy.",
-    color: "#89ec5b",
+    color: "#89ec5b"
   },
   {
     title: "Lead Generation",
     icon: UserPlus,
     description:
       "Lead generation identifies and attracts potential customers, converting interest into actionable sales and leads.",
-    color: "#eb5ae5",
+    color: "#eb5ae5"
   },
   {
     title: "SQA & Testing",
     icon: Bug,
     description:
       "Software Quality Assurance and Testing ensure applications function correctly, meet requirements, enhance reliability.",
-    color: "#5b98eb",
+    color: "#5b98eb"
   },
   {
     title: "Web Browser Extensions",
     icon: Puzzle,
     description:
       "Web browser extensions enhance functionality, customize user experience, and streamline online tasks efficiently.",
-    color: "#f59e0b",
+    color: "#f59e0b"
   },
   {
     title: "Support & Operational Services",
     icon: LifeBuoy,
     description:
       "Support and operational services ensure smooth business operations and enhance customer satisfaction consistently.",
-    color: "#f59e0b",
+    color: "#f59e0b"
   },
   {
     title: "WordPress",
     icon: Wrench,
     description:
       "WordPress is a versatile CMS for creating and managing websites easily and effectively.",
-    color: "#8b5cf6",
+    color: "#8b5cf6"
   },
   {
     title: "Virtual Assistant (VA)",
     icon: Gem,
     description:
       "A Virtual Assistant (VA) provides remote administrative, creative, and technical support for businesses.",
-    color: "#34d399",
-  },
+    color: "#34d399"
+  }
 ];
 
 export default function CardSection() {
@@ -151,15 +151,15 @@ export default function CardSection() {
                 <div className="w-20 h-20 flex items-center justify-center rounded-full border-4 border-[var(--clr)] text-[var(--clr)] transition-transform duration-500 group-hover:scale-110">
                   <card.icon size={36} />
                 </div>
-                <h3 className="text-white text-xl font-semibold group-hover:text-[var(--clr)] transition-colors duration-300">
+                <h3 className="text-yellow-400 text-xl font-semibold group-hover:text-[var(--clr)] transition-colors duration-300">
                   {card.title}
                 </h3>
-                <p className="text-sm text-gray-300 group-hover:text-white transition duration-300">
+                <p className="text-sm text-gray-300 group-hover:text-yellow-400 transition duration-300">
                   {card.description}
                 </p>
                 <a
                   href="#"
-                  className="inline-block mt-2 px-5 py-2 border-2 border-[var(--clr)] text-white rounded-full transition-all duration-300 group-hover:bg-[var(--clr)] group-hover:text-black"
+                  className="inline-block mt-2 px-5 py-2 border-2 border-[var(--clr)] text-yellow-400 rounded-full transition-all duration-300 group-hover:bg-[var(--clr)] group-hover:text-black"
                 >
                   Read More
                 </a>
@@ -188,7 +188,9 @@ export default function CardSection() {
               } transition`}
               style={
                 currentPage === i + 1
-                  ? ({ "--clr": cards[i * itemsPerPage]?.color } as React.CSSProperties)
+                  ? ({
+                      "--clr": cards[i * itemsPerPage]?.color
+                    } as React.CSSProperties)
                   : undefined
               }
             >
@@ -196,7 +198,7 @@ export default function CardSection() {
             </button>
           ))}
           <button
-            className="px-4 py-2 rounded bg-white/10 text-white hover:bg-white/20 transition"
+            className="px-4 py-2 rounded bg-white/10 text-yellow-400 hover:bg-white/20 transition"
             disabled={currentPage === totalPages}
             onClick={() => setCurrentPage((p) => p + 1)}
           >

@@ -8,14 +8,14 @@ import {
   BadgeCheck,
   Users,
   Shirt,
-  ArrowRight,
+  ArrowRight
 } from "lucide-react";
 
 export default function CareerSection() {
   return (
     <section className="w-full">
       {/* White Content Section */}
-      <div className="bg-white relative z-10 pb-10">
+      <div className="bg-transparent relative z-10 pb-10">
         <div className="max-w-6xl mx-auto px-6 pt-12 md:flex items-start justify-between">
           {/* Images with Overlap Effect */}
           <div className="flex gap-4 relative z-20 md:-mb-24">
@@ -37,7 +37,7 @@ export default function CareerSection() {
 
           {/* Right Side Text */}
           <div className="mt-10 md:mt-0 md:w-1/2 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight text-black">
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight text-yellow-400">
               Making Dreams And <br /> Aspirations Come True
             </h2>
             <p className="text-gray-400 text-sm">
@@ -49,31 +49,35 @@ export default function CareerSection() {
 
             {/* Progress Bars */}
             <div className="space-y-4 pt-4">
-              {[{ label: "Trusted", color: "bg-yellow-400" }, { label: "Many Partners", color: "bg-black" }, { label: "Professional", color: "bg-yellow-400" }].map(
-                ({ label, color }, index) => (
-                  <div key={index}>
-                    <div className="flex justify-between text-sm font-bold text-black mb-1">
-                      <span>{label}</span>
-                      <span>90%</span>
-                    </div>
-                    <div className="w-full h-1 bg-gray-200">
-                      <div className={`h-1 w-[90%] ${color}`}></div>
-                    </div>
+              {[
+                { label: "Trusted", color: "bg-yellow-400" },
+                { label: "Many Partners", color: "bg-orange-400" },
+                { label: "Professional", color: "bg-yellow-400" }
+              ].map(({ label, color }, index) => (
+                <div key={index}>
+                  <div className="flex justify-between text-sm font-bold text-yellow-400 mb-1">
+                    <span>{label}</span>
+                    <span>90%</span>
                   </div>
-                )
-              )}
+                  <div className="w-full h-1 bg-gray-200">
+                    <div className={`h-1 w-[90%] ${color}`}></div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
 
       {/* Black Background Section */}
-      <div className="bg-transparent text-white pt-32 pb-10 px-6 relative z-0">
+      <div className="bg-transparent text-yellow-400 pt-32 pb-10 px-6 relative z-0">
         <div className="max-w-6xl mx-auto">
           {/* Social Media Row */}
           <div className="mb-8">
             <div className="flex items-center justify-between border-b border-gray-600 pb-3">
-              <p className="font-semibold text-white text-lg">Social Media :</p>
+              <p className="font-semibold text-yellow-400 text-lg">
+                Social Media :
+              </p>
               <div className="flex gap-2">
                 <a href="#" className="bg-yellow-400 p-2 rounded-sm text-black">
                   <Facebook className="w-4 h-4" />

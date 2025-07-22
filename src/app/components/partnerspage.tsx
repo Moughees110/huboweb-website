@@ -8,7 +8,7 @@ export default function PartnersPage() {
     <section
       className="w-full py-20 px-6"
       style={{
-        backgroundImage: 'url("/img/partner3.jpg")',
+        backgroundImage: 'url("/img/partner4.jpg")',
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -17,14 +17,14 @@ export default function PartnersPage() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
         {/* Left Side Text */}
         <div className="md:w-1/2 text-center md:text-left">
-          <h2 className="text-2xl font-bold text-black mb-4">Our Partners</h2>
-          <p className="text-gray-700 mb-6 max-w-md">
+          <h2 className="text-2xl font-bold text-yellow-400 mb-4">Our Partners</h2>
+          <p className="text-gray-400 mb-6 max-w-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus luctus.
           </p>
           <a
             href="#"
-            className="inline-flex items-center text-black hover:underline font-medium"
+            className="inline-flex items-center text-yellow-400 hover:underline font-medium"
           >
             <ArrowRight className="w-4 h-4 mr-2" />
             Learn More

@@ -5,8 +5,7 @@ const cards = [
   "Our team utilizes cutting-edge technology, ensuring fast load times, security, and scalable solutions for your growing business. ",
   "Our web development services create responsive, user-friendly websites, delivering seamless experiences across all devices and platforms.",
   "We build custom websites tailored to your brand, focusing on design, functionality, and optimized user engagement.",
-  "From front-end design to back-end functionality, we ensure your site operates smoothly and efficiently for users.",
- 
+  "From front-end design to back-end functionality, we ensure your site operates smoothly and efficiently for users."
 ];
 
 function MarqueeCard() {

@@ -9,7 +9,7 @@ export default function ContactPage() {
   const { theme } = useTheme();
 
   return (
-    <section className="w-full py-16 px-4 md:px-12 lg:px-24 text-white bg-transparent">
+    <section className="w-full py-16 px-4 md:px-12 lg:px-24 text-yellow-400 bg-transparent">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
@@ -70,31 +70,37 @@ export default function ContactPage() {
                   <input
                     type="text"
                     placeholder="Enter your name"
-                    className="w-full p-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder:text-gray-300"
+                    className="w-full p-3 text-white rounded-lg bg-white/10  transition duration-300 ease-in-out focus-within:border-orange-400 focus-within:scale-95"
                   />
                 </div>
                 <div>
-                  <label className="block mb-2 text-sm font-medium">Phone</label>
+                  <label className="block mb-2 text-sm font-medium">
+                    Phone
+                  </label>
                   <input
                     type="tel"
                     placeholder="Enter your phone number"
-                    className="w-full p-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder:text-gray-300"
+                    className="w-full p-3 rounded-lg text-white bg-white/10 transition duration-300 ease-in-out focus-within:border-orange-400 focus-within:scale-95"
                   />
                 </div>
                 <div className="md:col-span-2">
-                  <label className="block mb-2 text-sm font-medium">Email</label>
+                  <label className="block mb-2 text-sm font-medium">
+                    Email
+                  </label>
                   <input
                     type="email"
                     placeholder="Enter your email address"
-                    className="w-full p-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder:text-gray-300"
+                    className="w-full p-3 rounded-lg text-white bg-white/10  transition duration-300 ease-in-out focus-within:border-orange-400 focus-within:scale-95"
                   />
                 </div>
                 <div className="md:col-span-2">
-                  <label className="block mb-2 text-sm font-medium">Message</label>
+                  <label className="block mb-2 text-sm font-medium">
+                    Message
+                  </label>
                   <textarea
                     rows={5}
                     placeholder="Write your message..."
-                    className="w-full p-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder:text-gray-300 resize-none"
+                    className="w-full p-3 rounded-lg text-white bg-white/10 transition duration-300 ease-in-out focus-within:border-orange-400 focus-within:scale-95"
                   ></textarea>
                 </div>
               </div>

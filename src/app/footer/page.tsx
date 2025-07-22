@@ -29,9 +29,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-r from-[#070121] to-gray-900 text-white pt-2">
+    <footer className="bg-gradient-to-r from-[#070121] to-gray-900 text-yellow-400 pt-2">
       {/* Top Gradient Border */}
-      <div className="w-full h-[2px] bg-gradient-to-r from-white via-gray-300 to-white mb-8"></div>
+      <div className="w-full h-[2px] bg-gradient-to-r from-w via-gray-300 to-white mb-8"></div>
 
       <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-start gap-10">
         {/* Left Side */}
@@ -65,7 +65,7 @@ const Footer = () => {
                 className="relative p-[2px] rounded-full"
               >
                 <div className="bg-gradient-to-r from-blue-900 to-gray-900 p-[2px] rounded-full">
-                  <div className="bg-[#070121] p-3 rounded-full text-white hover:scale-110 transition-transform duration-300">
+                  <div className="bg-[#070121] p-3 rounded-full text-yellow-400 hover:scale-110 transition-transform duration-300">
                     {icon}
                   </div>
                 </div>
@@ -86,13 +86,13 @@ const Footer = () => {
                     href={path}
                     className="flex items-center gap-1.5 group transition-transform duration-300"
                   >
-                    <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                    <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
                       /
                     </span>
-                    <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
+                    <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-400 transition-all duration-500">
                       {name}
                     </span>
-                    <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                    <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
                       /
                     </span>
                   </Link>
@@ -110,13 +110,13 @@ const Footer = () => {
                   href="/career"
                   className="flex items-center gap-1.5 group transition-transform duration-300"
                 >
-                  <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                  <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
                     /
                   </span>
-                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-400 transition-all duration-500">
                     Careers
                   </span>
-                  <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                  <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
                     /
                   </span>
                 </Link>
@@ -126,13 +126,13 @@ const Footer = () => {
                   href="/blog"
                   className="flex items-center gap-1.5 group transition-transform duration-300"
                 >
-                  <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                  <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
                     /
                   </span>
-                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-400 transition-all duration-500">
                     Blog
                   </span>
-                  <span className="text-transparent group-hover:text-gray-400 transition duration-200">
+                  <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
                     /
                   </span>
                 </Link>
@@ -164,9 +164,9 @@ const Footer = () => {
             {/* Copyright */}
             {/* Copyright */}
             <p className="text-xs text-gray-400">
-              © 2021–2024 <span className="text-white">HuboWeb.com</span>. All
-              rights reserved |{" "}
-              <Link href="/privacy" className="underline hover:text-white">
+              © 2021–2024 <span className="text-yellow-400">HuboWeb.com</span>.
+              All rights reserved |{" "}
+              <Link href="/privacy" className="underline hover:text-yellow-400">
                 Privacy Policy
               </Link>
             </p>

@@ -7,66 +7,75 @@ import { TextAnimate } from "@/components/magicui/text-animate";
 const services = [
   {
     title: "CRM Automation",
-    description: "Boost the success of your company by using Google Ads to increase online visibility and promote growth.",
+    description:
+      "Boost the success of your company by using Google Ads to increase online visibility and promote growth.",
     image: "/img/card10.jpg",
-    logo: "/img/crmautomation.png",
+    logo: "/img/crmautomation.png"
   },
   {
     title: "Web Design & Development",
-    description: "Revolutionize your digital footprint with our bespoke web design solutions-where innovation meets pixel perfection.",
+    description:
+      "Revolutionize your digital footprint with our bespoke web design solutions-where innovation meets pixel perfection.",
     image: "/img/card4.jpeg",
-    logo: "/img/webdesigne.png",
+    logo: "/img/webdesigne.png"
   },
   {
     title: "UI/UX Design",
-    description: "Elevate engagement, inspire loyalty-our UI/UX design redefines the digital frontier, one click at a time.",
+    description:
+      "Elevate engagement, inspire loyalty-our UI/UX design redefines the digital frontier, one click at a time.",
     image: "/img/card9.jpg",
-    logo: "/img/uidesigne.png",
+    logo: "/img/uidesigne.png"
   },
   {
     title: "Mobile App Development",
-    description: "From concept to code, we craft, redefine mobile solutions that inspire engagement and empowering your brand.",
+    description:
+      "From concept to code, we craft, redefine mobile solutions that inspire engagement and empowering your brand.",
     image: "/img/card8.jpg",
-    logo: "/img/mobiledeveloper.png",
+    logo: "/img/mobiledeveloper.png"
   },
   {
     title: "Graphics Design",
-    description: "Transforming pixels into profit our cutting-edge graphics design sets your brand apart in the digital landscape.",
+    description:
+      "Transforming pixels into profit our cutting-edge graphics design sets your brand apart in the digital landscape.",
     image: "/img/card7.webp",
-    logo: "/img/graphicdesigne.png",
+    logo: "/img/graphicdesigne.png"
   },
   {
     title: "Robotic Process Automation",
-    description: "Robotic Process Automation uses bots to automate repetitive tasks, boosting efficiency and accuracy.",
+    description:
+      "Robotic Process Automation uses bots to automate repetitive tasks, boosting efficiency and accuracy.",
     image: "/img/card6.png",
-    logo: "/img/roboticautomation.png",
+    logo: "/img/roboticautomation.png"
   },
   {
     title: "Digital Marketing",
-    description: "Captivate, Convert, Conquer-the digital realm is yours to conquer with our dynamic digital marketing strategies.",
+    description:
+      "Captivate, Convert, Conquer-the digital realm is yours to conquer with our dynamic digital marketing strategies.",
     image: "/img/card3.jpg",
-    logo: "/img/digitalmarketing.png",
+    logo: "/img/digitalmarketing.png"
   },
   {
     title: "SEO Optimization",
-    description: "Dominate rankings and seize digital supremacy with strategic optimization where visibility meets profitability.",
+    description:
+      "Dominate rankings and seize digital supremacy with strategic optimization where visibility meets profitability.",
     image: "/img/seo.webp",
-    logo: "/img/seooptimization.png",
-  },
+    logo: "/img/seooptimization.png"
+  }
 ];
 
 export default function Card() {
   return (
-    <section className="py-16 px-4 sm:px-6 bg-transparent text-white">
+    <section className="py-16 px-4 sm:px-6 bg-transparent text-yellow-400">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl font-bold mb-2">
           <TextAnimate animation="blurInUp" by="character" once>
-          Experience our pinnacle of digital excellence
+            Experience our pinnacle of digital excellence
           </TextAnimate>
         </h2>
         <p className="text-gray-400">
           <TextAnimate animation="blurInUp" by="character" once>
-          Unlock your digital potential and elevate your success with our premier services.
+            Unlock your digital potential and elevate your success with our
+            premier services.
           </TextAnimate>
         </p>
       </div>
@@ -96,18 +105,18 @@ export default function Card() {
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-semibold transition-colors duration-300 group-hover:text-white">
+              <h3 className="text-2xl font-semibold transition-colors duration-300 group-hover:text-yellow-400">
                 {service.title}
               </h3>
 
               {/* Description */}
-              <p className="text-lg text-gray-300 transition-colors duration-300 group-hover:text-white">
+              <p className="text-lg text-gray-300 transition-colors duration-300 ">
                 {service.description}
               </p>
 
               {/* Read More Button (hover only) */}
               <div className="mt-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-white text-white bg-transparent hover:bg-white hover:text-[#070121] transition-all duration-300">
+                <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-white text-yellow-400 bg-transparent hover:bg-white hover:text-[#070121] transition-all duration-300">
                   Read More <Send size={16} />
                 </button>
               </div>
