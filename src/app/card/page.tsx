@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Send } from "lucide-react";
+import { TextAnimate } from "@/components/magicui/text-animate";
 
 const services = [
   {
@@ -59,10 +60,14 @@ export default function Card() {
     <section className="py-16 px-4 sm:px-6 bg-transparent text-white">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl font-bold mb-2">
+          <TextAnimate animation="blurInUp" by="character" once>
           Experience our pinnacle of digital excellence
+          </TextAnimate>
         </h2>
         <p className="text-gray-400">
+          <TextAnimate animation="blurInUp" by="character" once>
           Unlock your digital potential and elevate your success with our premier services.
+          </TextAnimate>
         </p>
       </div>
 

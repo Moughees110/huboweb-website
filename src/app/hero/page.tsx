@@ -8,6 +8,7 @@ import { MarqueeDemo } from "../components/page";
 import Faqs from "../components/faqs";
 import FaqTutorialSection from "../components/faqtutorialsection";
 import OrbitSection from "../components/orbitsection";
+import HuboHeading from "../components/huboheading";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <MarqueeCard/>
       <FaqTutorialSection/>
       <Card/>
+      <HuboHeading/>
       <OrbitSection/>
       <Testimonials/>
       {/* <FAQSection/> */}
