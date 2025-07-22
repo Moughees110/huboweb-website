@@ -13,7 +13,7 @@ const services = [
   {
     title: "Web Design & Development",
     description: "Revolutionize your digital footprint with our bespoke web design solutions-where innovation meets pixel perfection.",
-    image: "/img/card.jpg",
+    image: "/img/card4.jpeg",
     logo: "/img/webdesigne.png",
   },
   {
@@ -49,7 +49,7 @@ const services = [
   {
     title: "SEO Optimization",
     description: "Dominate rankings and seize digital supremacy with strategic optimization where visibility meets profitability.",
-    image: "/img/card4.jpeg",
+    image: "/img/seo.webp",
     logo: "/img/seooptimization.png",
   },
 ];

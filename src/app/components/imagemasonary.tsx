@@ -17,8 +17,8 @@ const images = [
   { src: '/img/image4.jpg', w: 'w-44', h: 'h-52', offset: 'mt-4' },
   { src: '/img/image5.jpg', w: 'w-48', h: 'h-80', offset: 'mt-0' },
   { src: '/img/image6.jpg', w: 'w-40', h: 'h-44', offset: 'mt-8' },
-  { src: '/img/image7.jpg', w: 'w-56', h: 'h-48', offset: 'mt-5' },
-  { src: '/img/image8.jpg', w: 'w-36', h: 'h-36', offset: 'mt-12' },
+  { src: '/img/image7.jpg', w: 'w-56', h: 'h-58', offset: 'mt-5' },
+  { src: '/img/image8.jpg', w: 'w-66', h: 'h-40', offset: 'mt-12' },
 ];
 
 export default function ImageMasonry() {

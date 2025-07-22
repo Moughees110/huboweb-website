@@ -12,7 +12,7 @@ const teamMembers = [
   },
   {
     name: "Saadat Ali",
-    position: "UI/UX Designer & Developer",
+    position: "UI Design Maker React & Next-js Developer",
     desc: "Skilled in React, Next.js, Redux, and Context API integration.",
     image: "/img/me3.jpg",
   },
@@ -56,7 +56,7 @@ const teamMembers = [
 
 export default function OurTeam() {
   return (
-    <section className="py-20 bg-gradient-to-br from-[#0a0a23] to-gray-900 text-white">
+    <section className="py-20 bg-transparent text-white">
       <div className="container px-4 mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4">Our Team</h2>
         <p className="text-sm max-w-2xl mx-auto mb-12">

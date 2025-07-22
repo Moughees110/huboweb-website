@@ -1,0 +1,215 @@
+"use client";
+import { useState } from "react";
+
+const categories = [
+  "Website Design",
+  "Dashboard Design",
+  "Logo Design",
+  "Product Branding",
+  "Garafic Design (UI/UX)",
+  "Game Design (UI/UX)",
+  "Mobile App (UI/UX)",
+];
+
+const allCards = [
+  // Same as before: 2 cards per category...
+  {
+    title: "Modern Website 1",
+    desc: "Responsive and clean UI",
+    category: "Website Design",
+    img: "/img/website.jpg",
+  },
+  {
+    title: "Modern Website 2",
+    desc: "Interactive and elegant",
+    category: "Website Design",
+    img: "/img/website2.jpg",
+  },
+  {
+    title: "Dashboard V1",
+    desc: "Dark-themed analytics UI",
+    category: "Dashboard Design",
+    img: "/img/dashboard.jpg",
+  },
+  {
+    title: "Dashboard V2",
+    desc: "Clean admin panel",
+    category: "Dashboard Design",
+    img: "/img/dashboard2.jpg",
+  },
+  {
+    title: "Logo A",
+    desc: "Minimalist company logo",
+    category: "Logo Design",
+    img: "/img/logo.jpg",
+  },
+  {
+    title: "Logo B",
+    desc: "Bold and colorful",
+    category: "Logo Design",
+    img: "/img/logo2.jpg",
+  },
+  {
+    title: "Brand Identity A",
+    desc: "Complete product branding",
+    category: "Product Branding",
+    img: "/img/product.jpg",
+  },
+  {
+    title: "Brand Identity B",
+    desc: "Sleek and modern style",
+    category: "Product Branding",
+    img: "/img/product2.jpg",
+  },
+  {
+    title: "UI Concept A",
+    desc: "Creative visual layout",
+    category: "Garafic Design (UI/UX)",
+    img: "/img/graphic1.jpg",
+  },
+  {
+    title: "UI Concept B",
+    desc: "Professional visual direction",
+    category: "Garafic Design (UI/UX)",
+    img: "/img/graphic2.jpg",
+  },
+  {
+    title: "Game UI 1",
+    desc: "Fantasy RPG UI/UX",
+    category: "Game Design (UI/UX)",
+    img: "/img/game.jpg",
+  },
+  {
+    title: "Game UI 2",
+    desc: "Arcade style interface",
+    category: "Game Design (UI/UX)",
+    img: "/img/game2.jpg",
+  },
+  {
+    title: "Mobile App 1",
+    desc: "iOS styled banking app",
+    category: "Mobile App (UI/UX)",
+    img: "/img/mobile.jpg",
+  },
+  {
+    title: "Mobile App 2",
+    desc: "Android booking system",
+    category: "Mobile App (UI/UX)",
+    img: "/img/mobile2.jpg",
+  },
+];
+
+export default function PortfolioPage() {
+  const [active, setActive] = useState("All");
+
+  const filteredCards =
+    active === "All"
+      ? allCards
+      : allCards.filter((card) => card.category === active);
+
+  return (
+    <section className="w-full bg-transparent py-20 px-6">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-4xl text-white font-bold mb-4">
+          My Creative Work & Portfolio
+        </h2>
+        <p className="text-gray-400 mb-10">
+          Explore a variety of designs crafted with passion and precision.
+        </p>
+
+        {/* Category Buttons */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <HoverButton
+            label="All"
+            isActive={active === "All"}
+            onClick={() => setActive("All")}
+          />
+          {categories.map((cat) => (
+            <HoverButton
+              key={cat}
+              label={cat}
+              isActive={active === cat}
+              onClick={() => setActive(cat)}
+            />
+          ))}
+        </div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredCards.map((card, idx) => (
+            <div
+              key={idx}
+              className="relative group overflow-hidden rounded-2xl shadow-lg"
+            >
+              <img
+                src={card.img}
+                alt={card.title}
+                className="w-full h-72 object-cover"
+              />
+              <div className="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 text-left">
+                <h3 className="text-xl font-semibold">{card.title}</h3>
+                <p className="text-gray-700 text-sm mb-3">{card.desc}</p>
+                <AnimatedHoverButton label=" Detail" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Custom hover button for category
+function HoverButton({
+  label,
+  isActive,
+  onClick,
+}: {
+  label: string;
+  isActive: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`relative group px-4 py-2 rounded-full border text-sm font-medium transition duration-300 ${
+        isActive
+          ? "bg-gradient-to-r from-blue-900 to-gray-900 text-white"
+          : "text-white hover:text-[#071c55] hover:bg-white"
+      }`}
+    >
+      <span
+        className={`transition-all duration-300 ${
+          isActive
+            ? "opacity-0 -translate-y-full"
+            : "group-hover:-translate-y-full group-hover:opacity-0"
+        }`}
+      >
+        {label}
+      </span>
+      <span
+        className={`absolute left-0 right-0 transition-all duration-300 ${
+          isActive
+            ? "translate-y-0 opacity-100"
+            : "translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
+        }`}
+      >
+        {label}
+      </span>
+    </button>
+  );
+}
+
+// Custom animated button used inside card
+function AnimatedHoverButton({ label }: { label: string }) {
+  return (
+    <button className="relative group px-4 py-1 text-[#070121] border border-b-gray-900 bg-white rounded-md text-sm overflow-hidden">
+      <span className="transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0 block">
+        {label}
+      </span>
+      <span className="absolute top-0 left-0 w-full text-sm text-center transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+        {label}
+      </span>
+    </button>
+  );
+}
