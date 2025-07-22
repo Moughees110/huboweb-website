@@ -14,7 +14,7 @@ const teamMembers = [
     name: "Saadat Ali",
     position: "UI/UX Designer & Developer",
     desc: "Skilled in React, Next.js, Redux, and Context API integration.",
-    image: "/img/me7.jpg",
+    image: "/img/me3.jpg",
   },
   {
     name: "Ahsan Shahzad Khan",

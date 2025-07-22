@@ -1,16 +1,23 @@
 "use client";
 
-import { Facebook, Instagram, Linkedin, Twitter, MapPin, Mail, Phone } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Twitter,
+  MapPin,
+  Mail,
+  Phone
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-
 
 const Footer = () => {
   const socialIcons = [
     { icon: <Facebook size={18} />, link: "https://facebook.com" },
     { icon: <Instagram size={18} />, link: "https://instagram.com" },
     { icon: <Linkedin size={18} />, link: "https://linkedin.com" },
-    { icon: <Twitter size={18} />, link: "https://twitter.com" },
+    { icon: <Twitter size={18} />, link: "https://twitter.com" }
   ];
 
   const quickLinks = [
@@ -18,7 +25,7 @@ const Footer = () => {
     { name: "Services", path: "/service" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "About Us", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact", path: "/contact" }
   ];
 
   return (
@@ -30,11 +37,11 @@ const Footer = () => {
         {/* Left Side */}
         <div className="flex-1">
           <Image
-            src="/img/huboweb.png"
+            src="/img/huboweb2.png"
             alt="Logo"
-            className="h-14 mb-4"
-            width={160}
-            height={46}
+            className="h-10 w-auto"
+            width={100}
+            height={40}
           />
 
           <p className="mt-4 text-sm text-gray-300 max-w-md">
@@ -155,16 +162,17 @@ const Footer = () => {
             <div className="w-full h-px bg-gray-600 my-4"></div>
 
             {/* Copyright */}
-           {/* Copyright */}
-<p className="text-xs text-gray-400">
-  © 2021–2024 <span className="text-white">HuboWeb.com</span>. All rights reserved | <Link href="/privacy" className="underline hover:text-white">Privacy Policy</Link>
-</p>
-
+            {/* Copyright */}
+            <p className="text-xs text-gray-400">
+              © 2021–2024 <span className="text-white">HuboWeb.com</span>. All
+              rights reserved |{" "}
+              <Link href="/privacy" className="underline hover:text-white">
+                Privacy Policy
+              </Link>
+            </p>
           </div>
-        
         </div>
       </div>
-    
     </footer>
   );
 };

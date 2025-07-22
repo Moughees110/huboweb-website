@@ -24,8 +24,10 @@ export default function Home() {
       <HuboHeading/>
       <OrbitSection/>
       <Testimonials/>
+      {/* <ImageMasonry/> */}
       {/* <FAQSection/> */}
       <MarqueeDemo/>
+      {/* <HeroCard/> */}
       <Faqs imageSrc="/img/faq-removebg-preview.png"/>
     </div>
   );
