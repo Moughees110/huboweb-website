@@ -4,6 +4,8 @@ import CardSection from '../components/cardsection'
 import Testimonials from '../components/testimonials'
 import Faqs from '../components/faqs'
 import WidgetMarqueeSection from '../components/widgetmarqueesection'
+import ServicesSection from '../components/servicessection'
+import AiServices from '../components/aiservices'
 
 export default function Services() {
   return (
@@ -15,7 +17,9 @@ export default function Services() {
       />
       <WidgetMarqueeSection/>
       <CardSection/>
+      <ServicesSection/>
       <Testimonials/>
+      <AiServices/>
       <Faqs imageSrc="/img/faq-removebg-preview.png"/>
     </div>
   )

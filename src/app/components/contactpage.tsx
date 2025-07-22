@@ -101,7 +101,7 @@ export default function ContactPage() {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="px-6 py-3 bg-gradient-to-r from-[#070121] to-gray-900 cursor-pointer transition-colors text-white rounded-lg font-semibold"
+                  className="px-6 py-3 bg-gradient-to-r from-blue-900 to-gray-900 cursor-pointer transition-colors text-white rounded-lg font-semibold"
                 >
                   Send Message
                 </button>
