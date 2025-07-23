@@ -16,8 +16,8 @@ const Hero = ({
   imageAlt = "Hero Image"
 }: HeroProps) => {
   return (
-    <section className="w-full py-16 px-6 md:px-12 bg-transparent">
-      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+    <section className="w-full h-[90vh] py-16 px-6 md:px-12 bg-transparent">
+      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-14">
         {/* Left Side - Text */}
 
         <div className="flex-1 text-center md:text-left">
