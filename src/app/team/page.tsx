@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { Instagram, Linkedin, Facebook, Twitter } from "lucide-react";
+import { useRouter } from "next/navigation"; // ✅ IMPORT
+import { Instagram, Linkedin, Facebook, Twitter,Send } from "lucide-react";
 
 const teamMembers = [
   {
@@ -25,12 +25,28 @@ const teamMembers = [
   {
     name: "Nauman Naeem",
     position: "Chief Finance Officer",
-    image: "/img/nuauman.jpeg",
+    image: "/img/nauman.jpeg",
     email: "naumannaeem81@gmail.com"
   }
 ];
+const getMemberRoute = (name) => {
+  switch (name) {
+    case "Anosh Haider":
+      return "/anosh";
+    case "Akhter Abbas":
+      return "/akhter";
+    case "Moughees Hassan":
+      return "/moughees";
+    case "Nauman Naeem":
+      return "/nauman";
+    default:
+      return "/";
+  }
+};
 
 export default function Team() {
+  const router = useRouter(); // ✅ INIT ROUTER
+
   return (
     <section className="py-36 px-6 bg-gradient-to-r from-[#070121] to-gray-900 text-yellow-400">
       <div className="max-w-7xl mx-auto">
@@ -45,28 +61,24 @@ export default function Team() {
               key={index}
               className="relative w-[300px] h-[420px] overflow-hidden rounded-xl group shadow-2xl"
             >
-              {/* Background Image as fixed full cover */}
               <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-105"
-                style={{
-                  backgroundImage: `url(${member.image})`
-                }}
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                style={{ backgroundImage: `url(${member.image})` }}
               ></div>
 
-              {/* Overlay content */}
               <div className="absolute inset-0 bg-black/40 z-10 flex flex-col justify-end">
                 <div className="px-5 py-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="flex justify-center gap-4 mb-3">
-                    <a href="#" className="hover:text-yellow-400 text-white">
+                    <a href="#">
                       <Instagram size={20} />
                     </a>
-                    <a href="#" className="hover:text-yellow-400 text-white">
+                    <a href="#">
                       <Linkedin size={20} />
                     </a>
-                    <a href="#" className="hover:text-yellow-400 text-white">
+                    <a href="#">
                       <Facebook size={20} />
                     </a>
-                    <a href="#" className="hover:text-yellow-400 text-white">
+                    <a href="#">
                       <Twitter size={20} />
                     </a>
                   </div>
@@ -76,29 +88,15 @@ export default function Team() {
                       <p className="text-sm text-gray-300">{member.position}</p>
                       <p className="text-sm text-gray-400">{member.email}</p>
                     </div>
-                    <Link
-                      href={`/team/${member.name
-                        .toLowerCase()
-                        .replace(/\s+/g, "-")}`}
+
+                    {/* ✅ OnClick navigation */}
+                    <button
+                      onClick={() => router.push(getMemberRoute(member.name))}
+                      className="mt-2 bg-white text-black text-sm px-3 py-1 rounded-full flex items-center gap-1 hover:bg-[#070121] hover:text-yellow-400 transition"
                     >
-                      <button className="mt-2 bg-white text-black text-sm px-3 py-1 rounded-full flex items-center gap-1 hover:bg-[#070121] hover:text-yellow-400 transition">
-                        Details
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-4 w-4"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </button>
-                    </Link>
+                      Details
+                      <Send size={16} />
+                    </button>
                   </div>
                 </div>
               </div>

@@ -3,6 +3,7 @@ import Hero from '../components/hero'
 import PortfolioPage from '../components/portfoliopage'
 import Testimonials from '../components/testimonials'
 import Faqs from "../components/faqs";
+import WebsitePage from '../websitepage/page';
 
 export default function Portfolio() {
   return (
@@ -13,6 +14,7 @@ export default function Portfolio() {
         imageSrc="/img/download (1).png"
       />
       <PortfolioPage/>
+      <WebsitePage/>
       <Testimonials/>
      <Faqs imageSrc="/img/faq-removebg-preview.png"/>
     </div>
