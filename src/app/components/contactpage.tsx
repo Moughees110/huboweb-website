@@ -105,12 +105,9 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="text-center">
-                <button
-                  type="submit"
-                  className="px-6 py-3 bg-gradient-to-r from-blue-900 to-gray-900 cursor-pointer transition-colors text-white rounded-lg font-semibold"
-                >
-                  Send Message
-                </button>
+                <button className="bg-yellow-400 cursor-pointer text-[#071c55] border border-amber-400 hover:bg-white  font-semibold py-2 px-6 rounded-full transition">
+            Send Message
+          </button>
               </div>
             </form>
           </MagicCard>
