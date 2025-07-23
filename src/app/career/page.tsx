@@ -1,7 +1,9 @@
 import React from "react";
 import Hero from "../components/hero";
-import PartnersPage from "../components/partnerspage";
 import CareerSection from "../components/careersection";
+import WidgetMarqueeSection from "../components/widgetmarqueesection";
+import Testimonials from "../components/testimonials";
+import Faqs from "../components/faqs";
 
 export default function Careers() {
   return (
@@ -11,9 +13,10 @@ export default function Careers() {
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
         imageSrc="/img/web-designing.png"
       />
-
       <CareerSection />
-      <PartnersPage/>
+      <WidgetMarqueeSection />
+      <Testimonials />
+      <Faqs imageSrc="/img/faq-removebg-preview.png" />
     </div>
   );
 }

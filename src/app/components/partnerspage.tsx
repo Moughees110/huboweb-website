@@ -8,7 +8,7 @@ export default function PartnersPage() {
     <section
       className="w-full py-20 px-6"
       style={{
-        backgroundImage: 'url("/img/partner4.jpg")',
+        backgroundImage: 'url("/img/partner10.jpg")',
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
