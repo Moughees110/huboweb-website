@@ -13,7 +13,7 @@ export default function Services() {
       <Hero
         title="Empower Your Business with Innovative Web Solutions"
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
-        imageSrc="/img/bg2.jpg"
+        imageSrc="/img/custom-dev.png"
       />
       <WidgetMarqueeSection/>
       <CardSection/>
