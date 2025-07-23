@@ -10,68 +10,65 @@ import {
   Search
 } from "lucide-react";
 
-const WebsitePage = () => {
+const ProductPage = () => {
   return (
-    <div className="container mt-20 mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
-      {/* Left Side */}
+    <div className="container mx-auto mt-20 p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
+      {/* Left Side - Main Content */}
       <div className="md:col-span-2 space-y-6">
-        {/* Blog Main Content */}
+        {/* Featured Product Section */}
         <div>
           <Image
-            src="/img/developer.jpg"
-            alt="Blog"
+            src="/img/product.jpg"
+            alt="Featured Product"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
           />
           <h1 className="text-3xl font-bold mt-4 hover:text-yellow-400">
-            How to Build Modern Website UI as a Developer
+            Introducing Our Next-Gen SmartWatch Pro X
           </h1>
           <p className="text-white mt-2">
-            Learn how front-end developers craft beautiful, responsive websites
-            using HTML, CSS, Tailwind, and modern JavaScript frameworks.
+            Discover unmatched performance, sleek design, and health-focused innovation with the SmartWatch Pro X. Designed for modern professionals and athletes alike.
           </p>
         </div>
 
-        {/* Inside Post */}
+        {/* Product Features Section */}
         <div className="space-y-6">
           <h2 className="text-2xl font-semibold hover:text-yellow-400">
-            Developer Workflow
+            Key Features & Benefits
           </h2>
           <Image
-            src="/img/developer2.jpg"
-            alt="Inside Post"
+            src="/img/product3.webp"
+            alt="Product Features"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
           />
           <h2 className="text-3xl font-bold hover:text-yellow-400">
-            Optimize Your Web Design Process for Better UI
+            Experience Innovation in Every Detail
           </h2>
           <p>
-            Every successful developer uses tools like Figma, Tailwind, and VS
-            Code extensions to speed up their workflow and deliver polished
-            designs.
+            With AI-powered health tracking, 7-day battery life, and water resistance up to 50 meters, SmartWatch Pro X empowers your lifestyle without compromise.
           </p>
           <hr className="border-gray-700" />
         </div>
 
-        {/* Comments */}
+        {/* Customer Reviews */}
         <div className="mt-6">
           {[
             {
-              avatar: "/img/comment.jpg",
-              username: "Ali Raza",
-              date: "Jul 10, 2024",
+              avatar: "/img/comment7.jpg",
+              username: "Usman Tariq",
+              date: "Jun 22, 2024",
               comment:
-                "Great article on responsive layouts. Helped me fix my grid issues!"
+                "Absolutely love the SmartWatch Pro X. Battery lasts forever and fitness tracking is super accurate!"
             },
             {
-              avatar: "/img/comment2.jpg",
-              username: "Fatima Noor",
-              date: "Jul 12, 2024",
+              avatar: "/img/comment9.jpg",
+              username: "Zainab Khan",
+              date: "Jun 30, 2024",
               comment:
-                "Thanks for explaining dark mode design principles so well!"
+                "Stylish, lightweight, and powerful! Easily integrates with my smartphone and tracks sleep like a pro."
             }
           ].map((item, i) => (
             <div
@@ -100,18 +97,18 @@ const WebsitePage = () => {
         </div>
       </div>
 
-      {/* Sidebar */}
+      {/* Right Sidebar */}
       <aside className="space-y-6">
-        {/* Author */}
+        {/* Company Author/Team */}
         <div className="p-2 border rounded-xl text-center border-gray-700">
           <Image
-            src="/img/smith.jpg"
-            alt="Author"
+            src="/img/smith4.jpg"
+            alt="Brand"
             width={100}
             height={100}
             className="rounded-full mx-auto"
           />
-          <h3 className="text-white text-2xl font-semibold mt-2">Jane Smith</h3>
+          <h3 className="text-white text-2xl font-semibold mt-2">TechVerse Ltd.</h3>
           <div className="flex justify-center space-x-4 mt-2 text-2xl text-gray-400">
             <Twitter className="hover:text-yellow-400" />
             <Facebook className="hover:text-yellow-400" />
@@ -119,78 +116,82 @@ const WebsitePage = () => {
             <Instagram className="hover:text-yellow-400" />
           </div>
           <p className="text-white mt-2">
-            Full-stack web developer specializing in responsive and interactive
-            UI experiences.
+            Innovating wearable technology to help you stay ahead in fitness, productivity, and life.
           </p>
         </div>
 
-        {/* Search */}
+        {/* Search Products */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-400">|</span> Search
+            <span className="text-yellow-400">|</span> Search Products
           </h3>
           <div className="flex items-center border rounded-full px-3 py-2 border-gray-700">
             <Search className="text-gray-400 text-xl mr-2" />
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Search product..."
               className="w-full bg-transparent outline-none text-white"
             />
           </div>
         </div>
 
-        {/* Categories */}
+        {/* Product Categories */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-yellow-400">|</span> Categories
           </h3>
-          {["Design", "Frontend", "Tailwind CSS", "React", "Next.js"].map(
+          {["Wearables", "Smart Home", "Accessories", "Audio", "Fitness"].map(
             (cat, i) => (
               <p
                 key={i}
                 className="text-white hover:text-yellow-400 cursor-pointer"
               >
-                {cat} <span className="text-sm text-gray-500">(12)</span>
+                {cat} <span className="text-sm text-gray-500">(8)</span>
               </p>
             )
           )}
         </div>
 
-        {/* Recent Posts */}
+        {/* Recent Launches */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-400">|</span> Recent Posts
+            <span className="text-yellow-400">|</span> New Launches
           </h3>
           {[
-            "Top 5 Tailwind Plugins",
-            "Why Next.js is the Future",
-            "Handling API Errors Gracefully"
+            "SmartRing Aura Gen 2",
+            "HomeHub Mini",
+            "AirBeats Pro Wireless"
           ].map((title, i) => (
             <div key={i} className="mb-2">
               <h4 className="text-white hover:text-yellow-400 cursor-pointer font-medium">
                 {title}
               </h4>
-              <p className="text-sm text-gray-500">Jul {10 + i}, 2024</p>
+              <p className="text-sm text-gray-500">Jul {5 + i}, 2024</p>
             </div>
           ))}
         </div>
 
-        {/* Tags */}
+        {/* Product Tags */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-yellow-400">|</span> Tags
           </h3>
           <div className="flex flex-wrap gap-2">
-            {["UI", "Tailwind", "Next.js", "React", "Blog", "Design"].map(
-              (tag) => (
-                <span
-                  key={tag}
-                  className="bg-gray-800 px-3 py-1 rounded-full text-sm hover:bg-yellow-400 hover:text-black cursor-pointer"
-                >
-                  {tag}
-                </span>
-              )
-            )}
+            {[
+              "Smartwatch",
+              "Fitness",
+              "HealthTech",
+              "Wearable",
+              "Bluetooth",
+              "Innovation"
+            ].map((tag) => (
+              <span
+                key={tag}
+                className="bg-gray-800 px-3 py-1 rounded-full text-sm hover:bg-yellow-400 hover:text-black cursor-pointer"
+              >
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
       </aside>
@@ -198,4 +199,4 @@ const WebsitePage = () => {
   );
 };
 
-export default WebsitePage;
+export default ProductPage;

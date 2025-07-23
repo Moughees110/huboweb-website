@@ -10,48 +10,45 @@ import {
   Search
 } from "lucide-react";
 
-const WebsitePage = () => {
+const MobilePage = () => {
   return (
-    <div className="container mt-20 mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
+    <div className="container mx-auto mt-20 p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
       {/* Left Side */}
       <div className="md:col-span-2 space-y-6">
         {/* Blog Main Content */}
         <div>
           <Image
-            src="/img/developer.jpg"
-            alt="Blog"
+            src="/img/mobile.jpg"
+            alt="Mobile UI Design"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
           />
           <h1 className="text-3xl font-bold mt-4 hover:text-yellow-400">
-            How to Build Modern Website UI as a Developer
+            Crafting Intuitive Mobile App Interfaces: A UX Guide
           </h1>
           <p className="text-white mt-2">
-            Learn how front-end developers craft beautiful, responsive websites
-            using HTML, CSS, Tailwind, and modern JavaScript frameworks.
+            Discover how mobile app designers build engaging and intuitive user experiences through modern UI trends, design systems, and user behavior insights.
           </p>
         </div>
 
         {/* Inside Post */}
         <div className="space-y-6">
           <h2 className="text-2xl font-semibold hover:text-yellow-400">
-            Developer Workflow
+            UX Design Fundamentals for Mobile
           </h2>
           <Image
-            src="/img/developer2.jpg"
-            alt="Inside Post"
+            src="/img/mobile2.jpg"
+            alt="UX Process"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
           />
           <h2 className="text-3xl font-bold hover:text-yellow-400">
-            Optimize Your Web Design Process for Better UI
+            Simplify Navigation & Boost User Retention
           </h2>
           <p>
-            Every successful developer uses tools like Figma, Tailwind, and VS
-            Code extensions to speed up their workflow and deliver polished
-            designs.
+            Mobile-first design requires clarity and minimalism. Prioritize user goals, build intuitive flows, and test your navigation patterns using tools like Figma, Maze, or Adobe XD.
           </p>
           <hr className="border-gray-700" />
         </div>
@@ -60,18 +57,18 @@ const WebsitePage = () => {
         <div className="mt-6">
           {[
             {
-              avatar: "/img/comment.jpg",
-              username: "Ali Raza",
-              date: "Jul 10, 2024",
+              avatar: "/img/comment13.jpg",
+              username: "Zara Shah",
+              date: "Jul 14, 2024",
               comment:
-                "Great article on responsive layouts. Helped me fix my grid issues!"
+                "This breakdown of onboarding UX really helped improve my app's first-time user flow!"
             },
             {
-              avatar: "/img/comment2.jpg",
-              username: "Fatima Noor",
-              date: "Jul 12, 2024",
+              avatar: "/img/comment3.jpg",
+              username: "Imran Malik",
+              date: "Jul 15, 2024",
               comment:
-                "Thanks for explaining dark mode design principles so well!"
+                "Loved the tips on spacing and mobile typography. Super practical!"
             }
           ].map((item, i) => (
             <div
@@ -103,15 +100,15 @@ const WebsitePage = () => {
       {/* Sidebar */}
       <aside className="space-y-6">
         {/* Author */}
-        <div className="p-2 border rounded-xl text-center border-gray-700">
+        <div className="p-2 border mt-20 rounded-xl text-center border-gray-700">
           <Image
-            src="/img/smith.jpg"
+            src="/img/smith7.jpg"
             alt="Author"
             width={100}
             height={100}
             className="rounded-full mx-auto"
           />
-          <h3 className="text-white text-2xl font-semibold mt-2">Jane Smith</h3>
+          <h3 className="text-white text-2xl font-semibold mt-2">Smith Johnson</h3>
           <div className="flex justify-center space-x-4 mt-2 text-2xl text-gray-400">
             <Twitter className="hover:text-yellow-400" />
             <Facebook className="hover:text-yellow-400" />
@@ -119,8 +116,7 @@ const WebsitePage = () => {
             <Instagram className="hover:text-yellow-400" />
           </div>
           <p className="text-white mt-2">
-            Full-stack web developer specializing in responsive and interactive
-            UI experiences.
+            Mobile UX/UI specialist with a passion for clean interfaces and seamless user journeys across platforms.
           </p>
         </div>
 
@@ -133,7 +129,7 @@ const WebsitePage = () => {
             <Search className="text-gray-400 text-xl mr-2" />
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Search UI topics..."
               className="w-full bg-transparent outline-none text-white"
             />
           </div>
@@ -144,16 +140,20 @@ const WebsitePage = () => {
           <h3 className="text-xl font-bold mb-3">
             <span className="text-yellow-400">|</span> Categories
           </h3>
-          {["Design", "Frontend", "Tailwind CSS", "React", "Next.js"].map(
-            (cat, i) => (
-              <p
-                key={i}
-                className="text-white hover:text-yellow-400 cursor-pointer"
-              >
-                {cat} <span className="text-sm text-gray-500">(12)</span>
-              </p>
-            )
-          )}
+          {[
+            "Mobile UX",
+            "Wireframes",
+            "Design Systems",
+            "Figma Pro Tips",
+            "UI Animations"
+          ].map((cat, i) => (
+            <p
+              key={i}
+              className="text-white hover:text-yellow-400 cursor-pointer"
+            >
+              {cat} <span className="text-sm text-gray-500">(8)</span>
+            </p>
+          ))}
         </div>
 
         {/* Recent Posts */}
@@ -162,15 +162,15 @@ const WebsitePage = () => {
             <span className="text-yellow-400">|</span> Recent Posts
           </h3>
           {[
-            "Top 5 Tailwind Plugins",
-            "Why Next.js is the Future",
-            "Handling API Errors Gracefully"
+            "Best UX Patterns for Mobile Apps",
+            "Creating Intuitive Bottom Navigation",
+            "How to Design for Dark Mode"
           ].map((title, i) => (
             <div key={i} className="mb-2">
               <h4 className="text-white hover:text-yellow-400 cursor-pointer font-medium">
                 {title}
               </h4>
-              <p className="text-sm text-gray-500">Jul {10 + i}, 2024</p>
+              <p className="text-sm text-gray-500">Jul {15 + i}, 2024</p>
             </div>
           ))}
         </div>
@@ -181,16 +181,21 @@ const WebsitePage = () => {
             <span className="text-yellow-400">|</span> Tags
           </h3>
           <div className="flex flex-wrap gap-2">
-            {["UI", "Tailwind", "Next.js", "React", "Blog", "Design"].map(
-              (tag) => (
-                <span
-                  key={tag}
-                  className="bg-gray-800 px-3 py-1 rounded-full text-sm hover:bg-yellow-400 hover:text-black cursor-pointer"
-                >
-                  {tag}
-                </span>
-              )
-            )}
+            {[
+              "Mobile UI",
+              "Dark Mode",
+              "Prototyping",
+              "Figma",
+              "Usability",
+              "UX Research"
+            ].map((tag) => (
+              <span
+                key={tag}
+                className="bg-gray-800 px-3 py-1 rounded-full text-sm hover:bg-yellow-400 hover:text-black cursor-pointer"
+              >
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
       </aside>
@@ -198,4 +203,4 @@ const WebsitePage = () => {
   );
 };
 
-export default WebsitePage;
+export default MobilePage;

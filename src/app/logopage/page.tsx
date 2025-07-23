@@ -10,48 +10,49 @@ import {
   Search
 } from "lucide-react";
 
-const WebsitePage = () => {
+const LogoPage = () => {
   return (
-    <div className="container mt-20 mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
+    <div className="container mx-auto mt-20 p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
       {/* Left Side */}
       <div className="md:col-span-2 space-y-6">
         {/* Blog Main Content */}
         <div>
           <Image
-            src="/img/developer.jpg"
-            alt="Blog"
+            src="/img/logo.jpg"
+            alt="Logo Design Banner"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
           />
           <h1 className="text-3xl font-bold mt-4 hover:text-yellow-400">
-            How to Build Modern Website UI as a Developer
+            Designing Memorable Company Logos That Speak Brand
           </h1>
           <p className="text-white mt-2">
-            Learn how front-end developers craft beautiful, responsive websites
-            using HTML, CSS, Tailwind, and modern JavaScript frameworks.
+            A strong logo is more than just a symbol — it's the visual heartbeat
+            of your brand. Learn how modern businesses craft recognizable and
+            timeless logos that build instant trust.
           </p>
         </div>
 
         {/* Inside Post */}
         <div className="space-y-6">
           <h2 className="text-2xl font-semibold hover:text-yellow-400">
-            Developer Workflow
+            The Psychology Behind Effective Logos
           </h2>
           <Image
-            src="/img/developer2.jpg"
-            alt="Inside Post"
+            src="/img/logo2.jpg"
+            alt="Logo Process"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
           />
           <h2 className="text-3xl font-bold hover:text-yellow-400">
-            Optimize Your Web Design Process for Better UI
+            Why Simplicity, Shape, and Color Matter
           </h2>
           <p>
-            Every successful developer uses tools like Figma, Tailwind, and VS
-            Code extensions to speed up their workflow and deliver polished
-            designs.
+            Great logos balance simplicity with impact. Designers use subtle
+            geometry, color theory, and negative space to create symbols that
+            leave lasting impressions — think Nike, Apple, or FedEx.
           </p>
           <hr className="border-gray-700" />
         </div>
@@ -60,18 +61,18 @@ const WebsitePage = () => {
         <div className="mt-6">
           {[
             {
-              avatar: "/img/comment.jpg",
-              username: "Ali Raza",
+              avatar: "/img/comment 5.jpg",
+              username: "Zeesha Fariya",
               date: "Jul 10, 2024",
               comment:
-                "Great article on responsive layouts. Helped me fix my grid issues!"
+                "This breakdown really helped me understand how minimal logos make a huge impact. Thank you!"
             },
             {
-              avatar: "/img/comment2.jpg",
-              username: "Fatima Noor",
+              avatar: "/img/comment6.jpg",
+              username: "Amina Tariq",
               date: "Jul 12, 2024",
               comment:
-                "Thanks for explaining dark mode design principles so well!"
+                "Color psychology in branding is such a game changer. Excellent write-up!"
             }
           ].map((item, i) => (
             <div
@@ -105,13 +106,13 @@ const WebsitePage = () => {
         {/* Author */}
         <div className="p-2 border rounded-xl text-center border-gray-700">
           <Image
-            src="/img/smith.jpg"
+            src="/img/smith3.jpg"
             alt="Author"
             width={100}
             height={100}
             className="rounded-full mx-auto"
           />
-          <h3 className="text-white text-2xl font-semibold mt-2">Jane Smith</h3>
+          <h3 className="text-white text-2xl font-semibold mt-2">Jordy Mortan</h3>
           <div className="flex justify-center space-x-4 mt-2 text-2xl text-gray-400">
             <Twitter className="hover:text-yellow-400" />
             <Facebook className="hover:text-yellow-400" />
@@ -119,8 +120,8 @@ const WebsitePage = () => {
             <Instagram className="hover:text-yellow-400" />
           </div>
           <p className="text-white mt-2">
-            Full-stack web developer specializing in responsive and interactive
-            UI experiences.
+            Branding strategist & UI consultant helping companies translate
+            identity into memorable visuals.
           </p>
         </div>
 
@@ -133,7 +134,7 @@ const WebsitePage = () => {
             <Search className="text-gray-400 text-xl mr-2" />
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Search logo topics..."
               className="w-full bg-transparent outline-none text-white"
             />
           </div>
@@ -144,7 +145,7 @@ const WebsitePage = () => {
           <h3 className="text-xl font-bold mb-3">
             <span className="text-yellow-400">|</span> Categories
           </h3>
-          {["Design", "Frontend", "Tailwind CSS", "React", "Next.js"].map(
+          {["Logo Design", "Brand Identity", "Typography", "UI Symbols", "Corporate Kits"].map(
             (cat, i) => (
               <p
                 key={i}
@@ -162,9 +163,9 @@ const WebsitePage = () => {
             <span className="text-yellow-400">|</span> Recent Posts
           </h3>
           {[
-            "Top 5 Tailwind Plugins",
-            "Why Next.js is the Future",
-            "Handling API Errors Gracefully"
+            "Best Logo Fonts in 2025",
+            "Logo vs Icon: What's the Difference?",
+            "Corporate Logo Redesign Tips"
           ].map((title, i) => (
             <div key={i} className="mb-2">
               <h4 className="text-white hover:text-yellow-400 cursor-pointer font-medium">
@@ -181,7 +182,7 @@ const WebsitePage = () => {
             <span className="text-yellow-400">|</span> Tags
           </h3>
           <div className="flex flex-wrap gap-2">
-            {["UI", "Tailwind", "Next.js", "React", "Blog", "Design"].map(
+            {["Logo", "Branding", "Design", "Minimal", "Corporate", "Symbol"].map(
               (tag) => (
                 <span
                   key={tag}
@@ -198,4 +199,4 @@ const WebsitePage = () => {
   );
 };
 
-export default WebsitePage;
+export default LogoPage;

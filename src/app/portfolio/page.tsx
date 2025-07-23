@@ -3,18 +3,16 @@ import Hero from '../components/hero'
 import PortfolioPage from '../components/portfoliopage'
 import Testimonials from '../components/testimonials'
 import Faqs from "../components/faqs";
-import WebsitePage from '../websitepage/page';
 
 export default function Portfolio() {
   return (
     <div>
       <Hero
-        title="Transform Your Vision into Powerful Online Presence"
+        title="Empower Your Business with Innovative Web Solutions"
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
-        imageSrc="/img/why-software-development.png"
+        imageSrc="/img/download (1).png"
       />
       <PortfolioPage/>
-      <WebsitePage/>
       <Testimonials/>
      <Faqs imageSrc="/img/faq-removebg-preview.png"/>
     </div>

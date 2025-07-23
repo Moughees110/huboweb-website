@@ -16,7 +16,7 @@ import {
   Eye
 } from "lucide-react";
 
-export default function SeoOptimization() {
+export default function Seo() {
   const tools = [
     { icon: <BarChart2 size={48} />, name: "SEMRush" },
     { icon: <Search size={48} />, name: "Ahrefs" },

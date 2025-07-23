@@ -22,6 +22,7 @@ const cards = [
   {
     title: "UI/UX Design",
     icon: Paintbrush,
+    slug: "uiuxdesign",
     description:
       "Elevate engagement, inspire loyalty—our UI/UX design redefines the digital frontier, one click at a time.",
     color: "#89ec5b"
@@ -29,6 +30,7 @@ const cards = [
   {
     title: "Web Design & Development",
     icon: Code2,
+    slug: "webdesign",
     description:
       "Revolutionize your digital footprint with our bespoke web design solutions—where innovation meets pixel perfection.",
     color: "#eb5ae5"
@@ -36,6 +38,7 @@ const cards = [
   {
     title: "SEO Optimization",
     icon: Search,
+    slug: "seooptimization",
     description:
       "Dominate rankings and seize digital supremacy with strategic optimization where visibility meets profitability.",
     color: "#5b98eb"
@@ -43,6 +46,7 @@ const cards = [
   {
     title: "Digital Marketing",
     icon: Megaphone,
+    slug: "digitalmarketing",
     description:
       "Captivate, Convert, Conquer—the digital realm is yours to conquer with our dynamic digital marketing strategies.",
     color: "#f59e0b"
@@ -50,6 +54,7 @@ const cards = [
   {
     title: "Graphics Design",
     icon: PenTool,
+    slug: "graphicsdesign",
     description:
       "Transforming pixels into profit—our cutting-edge graphics design sets your brand apart in the digital landscape.",
     color: "#8b5cf6"
@@ -57,6 +62,7 @@ const cards = [
   {
     title: "Content Writing",
     icon: FileText,
+    slug: "contentwriting",
     description:
       "Crafting compelling narratives that captivate and convert—let our content fuel your digital success.",
     color: "#34d399"
@@ -64,6 +70,7 @@ const cards = [
   {
     title: "CRM Automation",
     icon: Headphones,
+    slug: "crmautomation",
     description:
       "Boost the success of your company by using Google Ads to increase online visibility and promote growth.",
     color: "#f43f5e"
@@ -71,6 +78,7 @@ const cards = [
   {
     title: "Mobile App Development",
     icon: Smartphone,
+    slug: "mobileapp",
     description:
       "From concept to code—we craft, redefine mobile solutions that inspire engagement and empower your brand.",
     color: "#38bdf8"
@@ -78,6 +86,7 @@ const cards = [
   {
     title: "Robotic Process Automation",
     icon: Bot,
+    slug: "roboticprocess",
     description:
       "Robotic Process Automation uses bots to automate repetitive tasks, boosting efficiency and accuracy.",
     color: "#89ec5b"
@@ -85,6 +94,7 @@ const cards = [
   {
     title: "Lead Generation",
     icon: UserPlus,
+    slug: "leadgeneration",
     description:
       "Lead generation identifies and attracts potential customers, converting interest into actionable sales and leads.",
     color: "#eb5ae5"
@@ -92,6 +102,7 @@ const cards = [
   {
     title: "SQA & Testing",
     icon: Bug,
+    slug: "sqatesting",
     description:
       "Software Quality Assurance and Testing ensure applications function correctly, meet requirements, enhance reliability.",
     color: "#5b98eb"
@@ -99,6 +110,7 @@ const cards = [
   {
     title: "Web Browser Extensions",
     icon: Puzzle,
+    slug: "webbrowser",
     description:
       "Web browser extensions enhance functionality, customize user experience, and streamline online tasks efficiently.",
     color: "#f59e0b"
@@ -106,6 +118,7 @@ const cards = [
   {
     title: "Support & Operational Services",
     icon: LifeBuoy,
+    slug: "supportoperational",
     description:
       "Support and operational services ensure smooth business operations and enhance customer satisfaction consistently.",
     color: "#f59e0b"
@@ -113,6 +126,7 @@ const cards = [
   {
     title: "WordPress",
     icon: Wrench,
+    slug: "wordpress",
     description:
       "WordPress is a versatile CMS for creating and managing websites easily and effectively.",
     color: "#8b5cf6"
@@ -120,12 +134,13 @@ const cards = [
   {
     title: "Virtual Assistant (VA)",
     icon: Gem,
+    slug: "virtualassistant",
     description:
       "A Virtual Assistant (VA) provides remote administrative, creative, and technical support for businesses.",
     color: "#34d399"
   }
 ];
-
+import Link from "next/link";
 export default function CardSection() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4;
@@ -157,12 +172,12 @@ export default function CardSection() {
                 <p className="text-sm text-gray-300 group-hover:text-yellow-400 transition duration-300">
                   {card.description}
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href={`/servicespage/${card.slug}`}
                   className="inline-block mt-2 px-5 py-2 border-2 border-[var(--clr)] text-yellow-400 rounded-full transition-all duration-300 group-hover:bg-[var(--clr)] group-hover:text-black"
                 >
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           ))}

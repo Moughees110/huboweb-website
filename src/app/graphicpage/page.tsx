@@ -10,48 +10,48 @@ import {
   Search
 } from "lucide-react";
 
-const WebsitePage = () => {
+const GraphicPage = () => {
   return (
-    <div className="container mt-20 mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
+    <div className="container mx-auto p-6 grid mt-20 grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
       {/* Left Side */}
       <div className="md:col-span-2 space-y-6">
         {/* Blog Main Content */}
         <div>
           <Image
-            src="/img/developer.jpg"
-            alt="Blog"
+            src="/img/graphic1.jpg"
+            alt="Graphic Design Banner"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
           />
           <h1 className="text-3xl font-bold mt-4 hover:text-yellow-400">
-            How to Build Modern Website UI as a Developer
+            Crafting Impactful UI/UX in Graphic Design
           </h1>
           <p className="text-white mt-2">
-            Learn how front-end developers craft beautiful, responsive websites
-            using HTML, CSS, Tailwind, and modern JavaScript frameworks.
+            Explore how modern UI/UX principles combined with creative graphic design
+            result in engaging digital experiences that connect brands with users.
           </p>
         </div>
 
         {/* Inside Post */}
         <div className="space-y-6">
           <h2 className="text-2xl font-semibold hover:text-yellow-400">
-            Developer Workflow
+            Visual Consistency & User Experience
           </h2>
           <Image
-            src="/img/developer2.jpg"
-            alt="Inside Post"
+            src="/img/graphic2.jpg"
+            alt="UI/UX Process"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
           />
           <h2 className="text-3xl font-bold hover:text-yellow-400">
-            Optimize Your Web Design Process for Better UI
+            Elevate Brand Identity Through Design
           </h2>
           <p>
-            Every successful developer uses tools like Figma, Tailwind, and VS
-            Code extensions to speed up their workflow and deliver polished
-            designs.
+            A well-crafted UI/UX not only enhances usability but also strengthens
+            brand trust. Designers use tools like Figma, Adobe XD, and Illustrator to
+            produce pixel-perfect layouts that communicate clearly and beautifully.
           </p>
           <hr className="border-gray-700" />
         </div>
@@ -60,18 +60,18 @@ const WebsitePage = () => {
         <div className="mt-6">
           {[
             {
-              avatar: "/img/comment.jpg",
-              username: "Ali Raza",
-              date: "Jul 10, 2024",
+              avatar: "/img/comment11.jpg",
+              username: "Hina Aslam",
+              date: "Jul 15, 2024",
               comment:
-                "Great article on responsive layouts. Helped me fix my grid issues!"
+                "Amazing insights into how good UI/UX design makes a difference!"
             },
             {
               avatar: "/img/comment2.jpg",
-              username: "Fatima Noor",
-              date: "Jul 12, 2024",
+              username: "Ahmed Khan",
+              date: "Jul 17, 2024",
               comment:
-                "Thanks for explaining dark mode design principles so well!"
+                "I’ve started applying your tips to my portfolio design. Thanks!"
             }
           ].map((item, i) => (
             <div
@@ -105,13 +105,13 @@ const WebsitePage = () => {
         {/* Author */}
         <div className="p-2 border rounded-xl text-center border-gray-700">
           <Image
-            src="/img/smith.jpg"
+            src="/img/comment13.jpg"
             alt="Author"
             width={100}
             height={100}
             className="rounded-full mx-auto"
           />
-          <h3 className="text-white text-2xl font-semibold mt-2">Jane Smith</h3>
+          <h3 className="text-white text-2xl font-semibold mt-2">Sarah Khan</h3>
           <div className="flex justify-center space-x-4 mt-2 text-2xl text-gray-400">
             <Twitter className="hover:text-yellow-400" />
             <Facebook className="hover:text-yellow-400" />
@@ -119,8 +119,8 @@ const WebsitePage = () => {
             <Instagram className="hover:text-yellow-400" />
           </div>
           <p className="text-white mt-2">
-            Full-stack web developer specializing in responsive and interactive
-            UI experiences.
+            UI/UX Designer focused on building aesthetic, functional, and
+            user-centric interfaces with visual storytelling.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ const WebsitePage = () => {
             <Search className="text-gray-400 text-xl mr-2" />
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Search topics..."
               className="w-full bg-transparent outline-none text-white"
             />
           </div>
@@ -144,13 +144,13 @@ const WebsitePage = () => {
           <h3 className="text-xl font-bold mb-3">
             <span className="text-yellow-400">|</span> Categories
           </h3>
-          {["Design", "Frontend", "Tailwind CSS", "React", "Next.js"].map(
+          {["UI/UX", "Branding", "Color Theory", "Typography", "Tools"].map(
             (cat, i) => (
               <p
                 key={i}
                 className="text-white hover:text-yellow-400 cursor-pointer"
               >
-                {cat} <span className="text-sm text-gray-500">(12)</span>
+                {cat} <span className="text-sm text-gray-500">(08)</span>
               </p>
             )
           )}
@@ -162,9 +162,9 @@ const WebsitePage = () => {
             <span className="text-yellow-400">|</span> Recent Posts
           </h3>
           {[
-            "Top 5 Tailwind Plugins",
-            "Why Next.js is the Future",
-            "Handling API Errors Gracefully"
+            "Choosing the Right Color Palette",
+            "UX Laws Every Designer Should Know",
+            "How to Design for Accessibility"
           ].map((title, i) => (
             <div key={i} className="mb-2">
               <h4 className="text-white hover:text-yellow-400 cursor-pointer font-medium">
@@ -181,7 +181,7 @@ const WebsitePage = () => {
             <span className="text-yellow-400">|</span> Tags
           </h3>
           <div className="flex flex-wrap gap-2">
-            {["UI", "Tailwind", "Next.js", "React", "Blog", "Design"].map(
+            {["UI", "UX", "Figma", "Illustrator", "Design", "Mockup"].map(
               (tag) => (
                 <span
                   key={tag}
@@ -198,4 +198,4 @@ const WebsitePage = () => {
   );
 };
 
-export default WebsitePage;
+export default GraphicPage;

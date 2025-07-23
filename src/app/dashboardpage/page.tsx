@@ -10,48 +10,49 @@ import {
   Search
 } from "lucide-react";
 
-const WebsitePage = () => {
+const DashboardPage = () => {
   return (
-    <div className="container mt-20 mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
+    <div className="container mx-auto mt-20 p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
       {/* Left Side */}
       <div className="md:col-span-2 space-y-6">
         {/* Blog Main Content */}
         <div>
           <Image
-            src="/img/developer.jpg"
-            alt="Blog"
+            src="/img/dashboard3.jpg"
+            alt="Dashboard Design"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
           />
           <h1 className="text-3xl font-bold mt-4 hover:text-yellow-400">
-            How to Build Modern Website UI as a Developer
+            How to Design a Clean & Functional Admin Dashboard
           </h1>
           <p className="text-white mt-2">
-            Learn how front-end developers craft beautiful, responsive websites
-            using HTML, CSS, Tailwind, and modern JavaScript frameworks.
+            Explore essential strategies for building intuitive and visually
+            compelling dashboard UIs using React, Tailwind CSS, and component
+            libraries.
           </p>
         </div>
 
         {/* Inside Post */}
         <div className="space-y-6">
           <h2 className="text-2xl font-semibold hover:text-yellow-400">
-            Developer Workflow
+            Key Principles of Dashboard UX
           </h2>
           <Image
-            src="/img/developer2.jpg"
+            src="/img/dashboard4.jpg"
             alt="Inside Post"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
           />
           <h2 className="text-3xl font-bold hover:text-yellow-400">
-            Optimize Your Web Design Process for Better UI
+            Prioritize Clarity, Structure & Visual Hierarchy
           </h2>
           <p>
-            Every successful developer uses tools like Figma, Tailwind, and VS
-            Code extensions to speed up their workflow and deliver polished
-            designs.
+            Successful dashboards guide the user through clear layout,
+            accessible controls, and real-time data. Use cards, grids, and charts
+            to enhance information architecture.
           </p>
           <hr className="border-gray-700" />
         </div>
@@ -60,18 +61,18 @@ const WebsitePage = () => {
         <div className="mt-6">
           {[
             {
-              avatar: "/img/comment.jpg",
-              username: "Ali Raza",
-              date: "Jul 10, 2024",
+              avatar: "/img/comment3.jpg",
+              username: "Bilal Khan",
+              date: "Jul 15, 2024",
               comment:
-                "Great article on responsive layouts. Helped me fix my grid issues!"
+                "Loved the point about keeping KPIs above the fold. Very helpful for product teams."
             },
             {
-              avatar: "/img/comment2.jpg",
-              username: "Fatima Noor",
-              date: "Jul 12, 2024",
+              avatar: "/img/comment4.jpg",
+              username: "Zara Aslam",
+              date: "Jul 18, 2024",
               comment:
-                "Thanks for explaining dark mode design principles so well!"
+                "Finally someone explained how to use dark mode in dashboards without ruining readability!"
             }
           ].map((item, i) => (
             <div
@@ -105,13 +106,13 @@ const WebsitePage = () => {
         {/* Author */}
         <div className="p-2 border rounded-xl text-center border-gray-700">
           <Image
-            src="/img/smith.jpg"
+            src="/img/smith2.jpg"
             alt="Author"
             width={100}
             height={100}
             className="rounded-full mx-auto"
           />
-          <h3 className="text-white text-2xl font-semibold mt-2">Jane Smith</h3>
+          <h3 className="text-white text-2xl font-semibold mt-2">Jamson</h3>
           <div className="flex justify-center space-x-4 mt-2 text-2xl text-gray-400">
             <Twitter className="hover:text-yellow-400" />
             <Facebook className="hover:text-yellow-400" />
@@ -119,8 +120,8 @@ const WebsitePage = () => {
             <Instagram className="hover:text-yellow-400" />
           </div>
           <p className="text-white mt-2">
-            Full-stack web developer specializing in responsive and interactive
-            UI experiences.
+            UX designer focused on admin panels, SaaS UI kits, and interactive
+            design systems for B2B products.
           </p>
         </div>
 
@@ -144,13 +145,13 @@ const WebsitePage = () => {
           <h3 className="text-xl font-bold mb-3">
             <span className="text-yellow-400">|</span> Categories
           </h3>
-          {["Design", "Frontend", "Tailwind CSS", "React", "Next.js"].map(
+          {["UI/UX", "Admin Panels", "Charts & Graphs", "Tailwind CSS", "Figma to Code"].map(
             (cat, i) => (
               <p
                 key={i}
                 className="text-white hover:text-yellow-400 cursor-pointer"
               >
-                {cat} <span className="text-sm text-gray-500">(12)</span>
+                {cat} <span className="text-sm text-gray-500">(8)</span>
               </p>
             )
           )}
@@ -162,15 +163,15 @@ const WebsitePage = () => {
             <span className="text-yellow-400">|</span> Recent Posts
           </h3>
           {[
-            "Top 5 Tailwind Plugins",
-            "Why Next.js is the Future",
-            "Handling API Errors Gracefully"
+            "Building KPI Dashboards with Recharts",
+            "Why Dark UI Works for Admin Panels",
+            "Designing CRUD Interfaces That Don’t Suck"
           ].map((title, i) => (
             <div key={i} className="mb-2">
               <h4 className="text-white hover:text-yellow-400 cursor-pointer font-medium">
                 {title}
               </h4>
-              <p className="text-sm text-gray-500">Jul {10 + i}, 2024</p>
+              <p className="text-sm text-gray-500">Jul {20 + i}, 2024</p>
             </div>
           ))}
         </div>
@@ -181,7 +182,7 @@ const WebsitePage = () => {
             <span className="text-yellow-400">|</span> Tags
           </h3>
           <div className="flex flex-wrap gap-2">
-            {["UI", "Tailwind", "Next.js", "React", "Blog", "Design"].map(
+            {["Dashboard", "KPI", "Tailwind", "Next.js", "React", "Dark UI"].map(
               (tag) => (
                 <span
                   key={tag}
@@ -198,4 +199,4 @@ const WebsitePage = () => {
   );
 };
 
-export default WebsitePage;
+export default DashboardPage;

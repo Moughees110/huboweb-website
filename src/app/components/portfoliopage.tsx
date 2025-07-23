@@ -1,5 +1,7 @@
 "use client";
+
 import { useState } from "react";
+import Link from "next/link";
 
 const categories = [
   "Website Design",
@@ -12,90 +14,103 @@ const categories = [
 ];
 
 const allCards = [
-  // Same as before: 2 cards per category...
   {
     title: "Modern Website 1",
     desc: "Responsive and clean UI",
     category: "Website Design",
-    img: "/img/website.jpg"
+    img: "/img/website.jpg",
+    slug: "websitepage"
   },
   {
     title: "Modern Website 2",
     desc: "Interactive and elegant",
     category: "Website Design",
-    img: "/img/website2.jpg"
+    img: "/img/website2.jpg",
+    slug: "websitepage"
   },
   {
     title: "Dashboard V1",
     desc: "Dark-themed analytics UI",
     category: "Dashboard Design",
-    img: "/img/dashboard.jpg"
+    img: "/img/dashboard.jpg",
+    slug: "dashboardpage"
   },
   {
     title: "Dashboard V2",
     desc: "Clean admin panel",
     category: "Dashboard Design",
-    img: "/img/dashboard2.jpg"
+    img: "/img/dashboard2.jpg",
+    slug: "dashboardpage"
   },
   {
     title: "Logo A",
     desc: "Minimalist company logo",
     category: "Logo Design",
-    img: "/img/logo.jpg"
+    img: "/img/logo.jpg",
+    slug: "logopage"
   },
   {
     title: "Logo B",
     desc: "Bold and colorful",
     category: "Logo Design",
-    img: "/img/logo2.jpg"
+    img: "/img/logo2.jpg",
+    slug: "logopage"
   },
   {
     title: "Brand Identity A",
     desc: "Complete product branding",
     category: "Product Branding",
-    img: "/img/product.jpg"
+    img: "/img/product.jpg",
+    slug: "productpage"
   },
   {
     title: "Brand Identity B",
     desc: "Sleek and modern style",
     category: "Product Branding",
-    img: "/img/product2.jpg"
+    img: "/img/product2.jpg",
+    slug: "productpage"
   },
   {
     title: "UI Concept A",
     desc: "Creative visual layout",
     category: "Garafic Design (UI/UX)",
-    img: "/img/graphic1.jpg"
+    img: "/img/graphic1.jpg",
+    slug: "graphicpage"
   },
   {
     title: "UI Concept B",
     desc: "Professional visual direction",
     category: "Garafic Design (UI/UX)",
-    img: "/img/graphic2.jpg"
+    img: "/img/graphic2.jpg",
+    slug: "graphicpage"
   },
   {
     title: "Game UI 1",
     desc: "Fantasy RPG UI/UX",
     category: "Game Design (UI/UX)",
-    img: "/img/game.jpg"
+    img: "/img/game.jpg",
+    slug: "gamepage"
   },
   {
     title: "Game UI 2",
     desc: "Arcade style interface",
     category: "Game Design (UI/UX)",
-    img: "/img/game2.jpg"
+    img: "/img/game2.jpg",
+    slug: "gamepage"
   },
   {
     title: "Mobile App 1",
     desc: "iOS styled banking app",
     category: "Mobile App (UI/UX)",
-    img: "/img/mobile.jpg"
+    img: "/img/mobile.jpg",
+    slug: "mobilepage"
   },
   {
     title: "Mobile App 2",
     desc: "Android booking system",
     category: "Mobile App (UI/UX)",
-    img: "/img/mobile2.jpg"
+    img: "/img/mobile2.jpg",
+    slug: "mobilepage"
   }
 ];
 
@@ -149,7 +164,7 @@ export default function PortfolioPage() {
               <div className="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 text-left">
                 <h3 className="text-xl font-semibold">{card.title}</h3>
                 <p className="text-gray-700 text-sm mb-3">{card.desc}</p>
-                <AnimatedHoverButton label=" Detail" />
+                <AnimatedHoverButton label="Detail" slug={card.slug} />
               </div>
             </div>
           ))}
@@ -159,7 +174,7 @@ export default function PortfolioPage() {
   );
 }
 
-// Custom hover button for category
+// Category Button Component
 function HoverButton({
   label,
   isActive,
@@ -200,16 +215,22 @@ function HoverButton({
   );
 }
 
-// Custom animated button used inside card
-function AnimatedHoverButton({ label }: { label: string }) {
+// Detail Button Component (Navigates to proper route)
+import { Send } from "lucide-react";
+
+function AnimatedHoverButton({ label, slug }: { label: string; slug: string }) {
   return (
-    <button className="relative group px-4 py-1 text-[#070121] border border-b-gray-900 bg-white rounded-md text-sm overflow-hidden">
-      <span className="transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0 block">
-        {label}
-      </span>
-      <span className="absolute top-0 left-0 w-full text-sm text-center transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
-        {label}
-      </span>
-    </button>
+    <Link href={`/${slug}`}>
+      <button className="relative group flex items-center gap-2 px-2 py-1 bg-gradient-to-r from-blue-900 to-gray-900   text-yellow-400  hover:bg-white rounded-full border hover:border-yellow-400 transition-all duration-300 overflow-hidden ">
+        <span className="transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0 flex items-center gap-1">
+          <Send size={16} className="stroke-current" />
+          {label}
+        </span>
+        <span className="absolute top-0 left-0 w-full h-full flex items-center justify-center gap-1 transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+          <Send size={16} className="stroke-yellow-500" />
+          {label}
+        </span>
+      </button>
+    </Link>
   );
 }
