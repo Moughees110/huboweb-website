@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Send } from "lucide-react";
 import { TextAnimate } from "@/components/magicui/text-animate";
+import Link from "next/link";
 
 const services = [
   {
@@ -116,9 +117,11 @@ export default function Card() {
 
               {/* Read More Button (hover only) */}
               <div className="mt-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-white text-yellow-400 bg-transparent hover:bg-white hover:text-[#070121] transition-all duration-300">
+                <Link href="/service"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full border border-white text-yellow-400 bg-transparent hover:bg-white hover:text-[#070121] transition-all duration-300"
+                >
                   Read More <Send size={16} />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
