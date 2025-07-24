@@ -108,11 +108,11 @@ export default function CareerSection() {
                 laboris nisi ut aliquip ex ea commodo consequat.
               </p>
               <a
-                href="#"
+                href="applyform"
                 className="text-yellow-400 font-semibold inline-flex items-center gap-2"
               >
                 <ArrowRight className="w-4 h-4" />
-                Learn More
+                Apply Form
               </a>
             </div>
 

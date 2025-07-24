@@ -25,7 +25,8 @@ const Footer = () => {
     { name: "Services", path: "/service" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "About Us", path: "/about" },
-    { name: "Contact", path: "/contact" }
+    { name: "Contact", path: "/contact" },
+    { name: "Careers", path: "/career" },
   ];
 
   return (
@@ -78,7 +79,7 @@ const Footer = () => {
         <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-3">Links</h3>
             <ul>
               {quickLinks.map(({ name, path }) => (
                 <li key={name} className="mb-2">
@@ -103,18 +104,67 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-3">Links</h3>
+            <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
             <ul>
               <li className="mb-2">
                 <Link
-                  href="/career"
+                  href="/servicespage/wordpress"
                   className="flex items-center gap-1.5 group transition-transform duration-300"
                 >
                   <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
                     /
                   </span>
                   <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-400 transition-all duration-500">
-                    Careers
+                    Word Press
+                  </span>
+                  <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
+                    /
+                  </span>
+                </Link>
+              </li>
+               <li className="mb-2">
+                  <Link
+                    href="/servicespage/graphicdesign"
+                    className="flex items-center gap-1.5 group transition-transform duration-300"
+                  >
+                    <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
+                      /
+                    </span>
+                    <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-400 transition-all duration-500">
+                      Graphic Design
+                    </span>
+                    <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
+                      /
+                    </span>
+                  </Link>
+                </li>
+              <li className="mb-2">
+                <Link
+                  href="/servicespage/seooptimization"
+                  className="flex items-center gap-1.5 group transition-transform duration-300"
+                >
+                  <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
+                    /
+                  </span>
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-400 transition-all duration-500">
+                    Seo
+                  </span>
+                  <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
+                    /
+                  </span>
+                </Link>
+               
+              </li>
+              <li className="mb-2">
+                <Link
+                  href="/servicespage/uiuxdesign"
+                  className="flex items-center gap-1.5 group transition-transform duration-300"
+                >
+                  <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
+                    /
+                  </span>
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-400 transition-all duration-500">
+                    UI/UX
                   </span>
                   <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
                     /
@@ -123,14 +173,30 @@ const Footer = () => {
               </li>
               <li className="mb-2">
                 <Link
-                  href="/blog"
+                  href="/servicespage/webdesign"
                   className="flex items-center gap-1.5 group transition-transform duration-300"
                 >
                   <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
                     /
                   </span>
                   <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-400 transition-all duration-500">
-                    Blog
+                    Web Design
+                  </span>
+                  <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
+                    /
+                  </span>
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link
+                  href="/servicespage/digitalmarketing"
+                  className="flex items-center gap-1.5 group transition-transform duration-300"
+                >
+                  <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
+                    /
+                  </span>
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-400 transition-all duration-500">
+                    Marketing
                   </span>
                   <span className="text-transparent group-hover:text-yellow-400 transition duration-200">
                     /
@@ -166,7 +232,10 @@ const Footer = () => {
             <p className="text-xs text-gray-400">
               © 2021–2024 <span className="text-yellow-400">HuboWeb.com</span>.
               All rights reserved |{" "}
-              <Link href="/privacy" className="underline hover:text-yellow-400">
+              <Link
+                href="/privacypolicy"
+                className="underline hover:text-yellow-400"
+              >
                 Privacy Policy
               </Link>
             </p>

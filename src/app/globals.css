@@ -125,34 +125,7 @@
   scrollbar-width: none;
 }
 
-/* @keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
-@keyframes marquee-reverse {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(50%);
-  }
-}
-
-.animate-marquee {
-  animation: marquee 20s linear infinite;
-}
-.animate-marquee-reverse {
-  animation: marquee-reverse 20s linear infinite;
-}
-
-.motion-paused {
-  animation-play-state: paused !important;
-} */
 
 
 
@@ -170,9 +143,10 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(50%);
+    transform: translateX(-50%);
   }
 }
+
 
 .animate-marquee {
   animation: marquee 25s linear infinite;
@@ -181,6 +155,43 @@
   animation: marquee-reverse 25s linear infinite;
 }
 
+
+.motion-paused {
+  animation-play-state: paused !important;
+}
+
+
+
+
+/* 👇 Pehli line: Left to Right */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 15s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 15s linear infinite;
+}
+
+
+/* 👇 Pause when hover */
 .motion-paused {
   animation-play-state: paused !important;
 }

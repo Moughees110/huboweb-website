@@ -54,8 +54,8 @@ export default function WidgetMarqueeSection() {
           {[0, 1, 2, 3].map((rowIndex) => {
             const directionClass =
               rowIndex % 2 === 0
-                ? "animate-marquee"
-                : "animate-marquee-reverse";
+                ? "animate-marquee-left"
+                : "animate-marquee-right";
 
             return (
               <div

@@ -75,40 +75,42 @@ export default function MarqueeDemo() {
   return (
     <div className="relative flex flex-col gap-5 py-10 overflow-hidden">
       {/* First Row (Left) */}
-      <div
-        onMouseEnter={() => setPauseFirst(true)}
-        onMouseLeave={() => setPauseFirst(false)}
-        className="overflow-hidden w-full"
-      >
-        <div
-          className={cn(
-            "flex w-max animate-marquee whitespace-nowrap",
-            pauseFirst && "motion-paused"
-          )}
-        >
-          {[...reviews, ...reviews].map((review, i) => (
-            <ReviewCard key={i} {...review} />
-          ))}
-        </div>
-      </div>
+     {/* First Line – Left to Right */}
+<div
+  onMouseEnter={() => setPauseFirst(true)}
+  onMouseLeave={() => setPauseFirst(false)}
+  className="overflow-hidden w-full"
+>
+  <div
+    className={cn(
+      "flex w-max animate-marquee-left whitespace-nowrap",
+      pauseFirst && "motion-paused"
+    )}
+  >
+    {[...reviews, ...reviews].map((review, i) => (
+      <ReviewCard key={i} {...review} />
+    ))}
+  </div>
+</div>
 
-      {/* Second Row (Right) */}
-      <div
-        onMouseEnter={() => setPauseSecond(true)}
-        onMouseLeave={() => setPauseSecond(false)}
-        className="overflow-hidden w-full"
-      >
-        <div
-          className={cn(
-            "flex w-max animate-marquee-reverse whitespace-nowrap",
-            pauseSecond && "motion-paused"
-          )}
-        >
-          {[...reviews, ...reviews].map((review, i) => (
-            <ReviewCard key={i + 100} {...review} />
-          ))}
-        </div>
-      </div>
+{/* Second Line – Right to Left */}
+<div
+  onMouseEnter={() => setPauseSecond(true)}
+  onMouseLeave={() => setPauseSecond(false)}
+  className="overflow-hidden w-full"
+>
+  <div
+    className={cn(
+      "flex w-max animate-marquee-right whitespace-nowrap",
+      pauseSecond && "motion-paused"
+    )}
+  >
+    {[...reviews, ...reviews].map((review, i) => (
+      <ReviewCard key={i + 100} {...review} />
+    ))}
+  </div>
+</div>
+
     </div>
   );
 }
