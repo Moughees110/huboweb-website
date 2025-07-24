@@ -10,7 +10,7 @@ import {
   BarChart2,
 } from "lucide-react";
 
-export default function DigitalMarketing() {
+export default function DigitalMarketingServices() {
   const services = [
     {
       icon: <Search size={32} />,

@@ -9,9 +9,9 @@ export default function WebDesign() {
   return (
     <div className="mt-10">
       <Hero
-        title="Unlock Your Brand’s Potential with Next-Gen Web Development"
+        title="Unlock Your Brand’s Potential with Stunning Web Design & Powerful Development"
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
-        imageSrc="/img/web-designing.png"
+        imageSrc="/img/webdesign2.webp"
       />
       <WebDevServices/>
       <TechnologyStack/>
