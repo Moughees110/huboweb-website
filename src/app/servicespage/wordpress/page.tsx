@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
+import WordpressServices from "@/app/components/wordpressservices";
 
 export default function WordPress() {
   return (
@@ -9,6 +10,7 @@ export default function WordPress() {
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
         imageSrc="/img/web-designing.png"
       />
+      <WordpressServices/>
     </div>
   );
 }

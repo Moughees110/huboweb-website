@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
+import RoboticAutomation from "@/app/components/roboticautomation";
 
 export default function RoboticProcess() {
   return (
@@ -9,6 +10,7 @@ export default function RoboticProcess() {
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
         imageSrc="/img/web-designing.png"
       />
+      <RoboticAutomation/>
     </div>
   );
 }

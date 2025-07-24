@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
+import CrmAutomationService from "@/app/components/crmautomationservice";
 
 export default function CrmAutomation() {
   return (
@@ -9,6 +10,7 @@ export default function CrmAutomation() {
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
         imageSrc="/img/web-designing.png"
       />
+      <CrmAutomationService/>
     </div>
   );
 }

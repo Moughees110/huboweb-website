@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
+import SqaAndTestingServices from "@/app/components/sqatestingservices";
 
 export default function SQATesting() {
   return (
@@ -9,6 +10,7 @@ export default function SQATesting() {
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
         imageSrc="/img/web-designing.png"
       />
+      <SqaAndTestingServices/>
     </div>
   );
 }

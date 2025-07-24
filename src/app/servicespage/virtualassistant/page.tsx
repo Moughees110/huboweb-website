@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
+import VirtualAssistantServices from "@/app/components/virtualassistantservices";
 
 
 export default function VirtualAssistant() {
@@ -10,7 +11,7 @@ export default function VirtualAssistant() {
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
         imageSrc="/img/web-designing.png"
       />
-      
+      <VirtualAssistantServices/>
     </div>
   );
 }

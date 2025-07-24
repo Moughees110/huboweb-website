@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../../components/hero";
-import Seo from "@/app/components/seo";
+import WebBrowserServices from "@/app/components/webbrowserservices";
+
 
 export default function WebBrowser() {
   return (
@@ -10,7 +11,7 @@ export default function WebBrowser() {
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
         imageSrc="/img/web-designing.png"
       />
-      <Seo/>
+      <WebBrowserServices/>
     </div>
   );
 }
