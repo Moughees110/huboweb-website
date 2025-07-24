@@ -1,35 +1,50 @@
 "use client";
 
-import { FileText, Star, BookOpen, PenTool, ThumbsUp } from "lucide-react";
+import Image from "next/image";
+import { FileText, Star, ThumbsUp } from "lucide-react";
 
 export default function ContentWritingService() {
   return (
     <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white px-6 md:px-16 py-20 space-y-24">
       {/* Why Choose Us */}
-      <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
-          Why Choose Our Content Writing Services
-        </h2>
-        <p className="text-lg text-gray-300 max-w-4xl mb-6">
-          Powerful content drives engagement, builds trust, and converts visitors into loyal customers.
-          Our team of expert content strategists and copywriters crafts compelling, SEO-optimized content
-          tailored to your business goals. Whether it’s website copy, blog posts, or marketing material —
-          we deliver content that speaks directly to your audience.
-        </p>
-        <ul className="space-y-4 text-gray-200">
-          <li className="flex items-start gap-3">
-            <ThumbsUp className="text-yellow-400 mt-1" />
-            Engaging and persuasive copy that resonates with your target audience
-          </li>
-          <li className="flex items-start gap-3">
-            <ThumbsUp className="text-yellow-400 mt-1" />
-            SEO-friendly writing to improve your search engine visibility
-          </li>
-          <li className="flex items-start gap-3">
-            <ThumbsUp className="text-yellow-400 mt-1" />
-            Tailored content strategies based on your niche and industry
-          </li>
-        </ul>
+      <div className="flex flex-col md:flex-row items-start gap-10">
+        {/* Text Content */}
+        <div className="flex-1">
+          <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
+            Why Choose Our Content Writing Services
+          </h2>
+          <p className="text-lg text-gray-300 max-w-4xl mb-6">
+            Powerful content drives engagement, builds trust, and converts visitors into loyal customers.
+            Our team of expert content strategists and copywriters crafts compelling, SEO-optimized content
+            tailored to your business goals. Whether it’s website copy, blog posts, or marketing material —
+            we deliver content that speaks directly to your audience.
+          </p>
+          <ul className="space-y-4 text-gray-200">
+            <li className="flex items-start gap-3">
+              <ThumbsUp className="text-yellow-400 mt-1" />
+              Engaging and persuasive copy that resonates with your target audience
+            </li>
+            <li className="flex items-start gap-3">
+              <ThumbsUp className="text-yellow-400 mt-1" />
+              SEO-friendly writing to improve your search engine visibility
+            </li>
+            <li className="flex items-start gap-3">
+              <ThumbsUp className="text-yellow-400 mt-1" />
+              Tailored content strategies based on your niche and industry
+            </li>
+          </ul>
+        </div>
+
+        {/* Right Image */}
+        <div className="flex-1">
+          <Image
+            src="/img/mobilebig.jpg" // Replace with your actual image
+            alt="Why Choose Us"
+            width={600}
+            height={400}
+            className="rounded-xl object-cover w-full h-auto"
+          />
+        </div>
       </div>
 
       {/* Services We Offer */}
@@ -39,14 +54,35 @@ export default function ContentWritingService() {
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { title: "Website Copywriting", desc: "Conversion-focused content that reflects your brand’s voice and values." },
-            { title: "Blog & Article Writing", desc: "Informative, engaging articles to educate and attract your target audience." },
-            { title: "SEO Content", desc: "Optimized content with strategic keyword placement and high readability." },
-            { title: "Product Descriptions", desc: "Crisp, clear, and persuasive descriptions to boost your e-commerce conversions." },
-            { title: "Social Media Content", desc: "Creative captions and post ideas tailored to your social media platforms." },
-            { title: "Email Copywriting", desc: "Compelling email content that drives opens, clicks, and conversions." }
+            {
+              title: "Website Copywriting",
+              desc: "Conversion-focused content that reflects your brand’s voice and values.",
+            },
+            {
+              title: "Blog & Article Writing",
+              desc: "Informative, engaging articles to educate and attract your target audience.",
+            },
+            {
+              title: "SEO Content",
+              desc: "Optimized content with strategic keyword placement and high readability.",
+            },
+            {
+              title: "Product Descriptions",
+              desc: "Crisp, clear, and persuasive descriptions to boost your e-commerce conversions.",
+            },
+            {
+              title: "Social Media Content",
+              desc: "Creative captions and post ideas tailored to your social media platforms.",
+            },
+            {
+              title: "Email Copywriting",
+              desc: "Compelling email content that drives opens, clicks, and conversions.",
+            },
           ].map((item, i) => (
-            <div key={i} className="bg-white/5 border border-white/10 rounded-xl p-6 space-y-3 hover:border-yellow-400 transition">
+            <div
+              key={i}
+              className="bg-white/5 border border-white/10 rounded-xl p-6 space-y-3 hover:border-yellow-400 transition"
+            >
               <FileText className="text-yellow-400" />
               <h3 className="text-xl font-semibold text-yellow-400">{item.title}</h3>
               <p className="text-gray-300">{item.desc}</p>
@@ -56,20 +92,39 @@ export default function ContentWritingService() {
       </div>
 
       {/* Our Writing Process */}
-      <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
-          Our Writing Process
-        </h2>
-        <ol className="space-y-6 border-l-2 border-yellow-400 pl-6">
-          {["Understanding Your Goals", "Research & Keyword Analysis", "Outline & Strategy", "Content Drafting", "Editing & Proofreading", "Final Approval & Delivery"].map(
-            (step, index) => (
+      <div className="flex flex-col md:flex-row gap-10 items-start">
+        {/* Steps */}
+        <div className="flex-1">
+          <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
+            Our Writing Process
+          </h2>
+          <ol className="space-y-6 border-l-2 border-yellow-400 pl-6">
+            {[
+              "Understanding Your Goals",
+              "Research & Keyword Analysis",
+              "Outline & Strategy",
+              "Content Drafting",
+              "Editing & Proofreading",
+              "Final Approval & Delivery",
+            ].map((step, index) => (
               <li key={index} className="relative">
                 <span className="absolute -left-4 top-1.5 w-3 h-3 bg-yellow-400 rounded-full" />
                 <h4 className="text-lg font-semibold text-white">{step}</h4>
               </li>
-            )
-          )}
-        </ol>
+            ))}
+          </ol>
+        </div>
+
+        {/* Image */}
+        <div className="flex-1">
+          <Image
+            src="/img/tech3.jpg" // Replace with your actual image
+            alt="Our Writing Process"
+            width={600}
+            height={400}
+            className="rounded-xl object-cover w-full h-auto"
+          />
+        </div>
       </div>
 
       {/* Testimonials */}

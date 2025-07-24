@@ -4,14 +4,44 @@ import { Smartphone, Code2, ShieldCheck, TrendingUp, Wrench, Rocket } from "luci
 
 export default function MobileAppServices() {
   return (
-    <section className="w-full bg-gradient-to-br from-[#0d0225] to-gray-900 text-white py-20 px-6 md:px-16">
+    <section className="w-full bg-transparent text-white py-20 px-6 md:px-16">
       {/* Hero Intro */}
-      <div className="text-center mb-20">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">Mobile App Development</h2>
-        <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto">
-          Empower your business with high-performance, feature-rich mobile applications tailored for Android, iOS, and cross-platform environments. Our apps are built to scale, engage, and deliver exceptional user experiences.
-        </p>
-      </div>
+     <div className="text-center mb-20">
+      <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">Mobile App Development</h2>
+      <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto">
+       Empower your business with high-performance, feature-rich mobile applications tailored for Android, iOS, and cross-platform environments. Our apps are built to scale, engage, and deliver exceptional user experiences.
+     </p>
+    </div>
+
+{/* Image Section */}
+<div className="relative flex items-center justify-center mb-20">
+  {/* Main Image Wrapper */}
+  <div className="relative w-[450px] md:w-[600px] h-auto">
+    {/* Main Image */}
+    <img
+      src="/img/mobilebig.jpg"
+      alt="Main Mobile App"
+      className="w-full h-auto rounded-xl shadow-2xl"
+    />
+
+    {/* Top Right Small Image */}
+    <img
+      src="/img/mobiletopright.webp"
+      alt="Small Top Right"
+      className="absolute top-0 right-0 translate-x-1/4 -translate-y-1/4 w-32 md:w-40 rounded-lg shadow-lg"
+    />
+
+    {/* Bottom Left Small Image */}
+    <img
+      src="/img/mobilebottomleft.webp"
+      alt="Small Bottom Left"
+      className="absolute bottom-0 left-0 -translate-x-1/4 translate-y-1/4 w-32 md:w-40 rounded-lg shadow-lg"
+    />
+  </div>
+</div>
+
+
+
 
       {/* Why Mobile Apps */}
       <div className="mb-16">

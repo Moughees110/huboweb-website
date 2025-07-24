@@ -6,12 +6,42 @@ export default function LeadGenerationServices() {
   return (
     <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white py-20 px-4 md:px-16 space-y-24">
       {/* Section: Introduction */}
-      <div className="text-center max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">Lead Generation Services</h2>
-        <p className="text-lg md:text-xl text-gray-300">
-          Supercharge your business with high-quality leads tailored to your audience. Our lead generation service helps you connect with potential customers who are already interested in what you offer, turning prospects into loyal clients.
-        </p>
+      <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-40">
+  {/* Image Section */}
+  <div className="relative md:w-1/2 flex items-center justify-center">
+    {/* Main Large Image */}
+    <img
+      src="/img/lead.jpg"
+      alt="Lead Main"
+      className="w-[350px] md:w-[450px] rounded-xl shadow-2xl"
+    />
+
+    {/* Small Image Top Right */}
+    <img
+      src="/img/lead1.webp"
+      alt="Lead Small 1"
+      className="absolute top-[-30px] right-[10%] w-24 md:w-32 rounded-lg shadow-lg rotate-[6deg]"
+    />
+
+    {/* Small Image Bottom Left */}
+    <img
+      src="/img/lead2.jpg"
+      alt="Lead Small 2"
+      className="absolute bottom-[-30px] left-[10%] w-24 md:w-32 rounded-lg shadow-lg rotate-[-8deg]"
+    />
+  </div>
+
+  {/* Text Section */}
+  <div className="md:w-1/2 text-left space-y-6">
+    <h2 className="text-4xl md:text-5xl font-bold text-yellow-400">
+      Lead Generation Services
+    </h2>
+    <p className="text-lg md:text-xl text-gray-300 max-w-xl">
+      Supercharge your business with high-quality leads tailored to your audience. Our lead generation service helps you connect with potential customers who are already interested in what you offer, turning prospects into loyal clients.
+    </p>
+  </div>
       </div>
+
 
       {/* Section: Why Lead Generation */}
       <div className="grid md:grid-cols-2 gap-12 items-center">

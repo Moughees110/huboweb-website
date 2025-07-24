@@ -6,12 +6,40 @@ export default function SqaAndTestingServices() {
   return (
     <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white py-20 px-6 md:px-16 space-y-24">
       {/* Introduction */}
-      <div className="text-center max-w-4xl mx-auto space-y-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400">Software Quality Assurance & Testing</h2>
-        <p className="text-lg text-gray-300">
-          Ensure your software meets the highest standards of quality, performance, and security with our comprehensive SQA & testing services.
-        </p>
-      </div>
+      <div className="text-center max-w-4xl mx-auto space-y-6 mb-20">
+  <h2 className="text-4xl md:text-5xl font-bold text-yellow-400">
+    Software Quality Assurance & Testing
+  </h2>
+  <p className="text-lg text-gray-300">
+    Ensure your software meets the highest standards of quality, performance, and security with our comprehensive SQA & testing services.
+  </p>
+
+  {/* Images Section */}
+ <div className="relative flex items-center justify-center mt-10">
+  {/* Main Large Image */}
+  <img
+    src="/img/sqa.png"
+    alt="SQA Main"
+    className="w-[500px] md:w-[650px] rounded-xl shadow-2xl"
+  />
+
+  {/* Small Image Top Left */}
+  <img
+    src="/img/sqa1.jpg"
+    alt="SQA Small 1"
+    className="absolute top-[-40px] left-[15%] w-32 md:w-40 rounded-lg shadow-lg rotate-[-6deg]"
+  />
+
+  {/* Small Image Bottom Right */}
+  <img
+    src="/img/sqa2.jpeg"
+    alt="SQA Small 2"
+    className="absolute bottom-[-40px] right-[15%] w-32 md:w-40 rounded-lg shadow-lg rotate-[8deg]"
+  />
+</div>
+
+</div>
+
 
       {/* Importance of SQA */}
       <div className="max-w-5xl mx-auto space-y-6">

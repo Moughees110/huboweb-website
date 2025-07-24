@@ -6,12 +6,42 @@ export default function RoboticAutomation() {
   return (
     <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white py-20 px-4 md:px-10 space-y-20">
       {/* Intro Section */}
-      <div className="text-center space-y-6">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-400">Robotic Process Automation (RPA)</h2>
-        <p className="max-w-4xl mx-auto text-lg md:text-xl text-gray-300">
-          Streamline and optimize repetitive business processes with intelligent automation. Our RPA services help you reduce manual effort, eliminate errors, and enhance productivity using modern bots and automation tools.
-        </p>
-      </div>
+     <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-20">
+  {/* Text Section */}
+  <div className="md:w-1/2 text-left space-y-6">
+    <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-400">
+      Robotic Process Automation (RPA)
+    </h2>
+    <p className="text-lg md:text-xl text-gray-300 max-w-xl">
+      Streamline and optimize repetitive business processes with intelligent automation. Our RPA services help you reduce manual effort, eliminate errors, and enhance productivity using modern bots and automation tools.
+    </p>
+  </div>
+
+  {/* Image Section */}
+  <div className="relative md:w-1/2 flex items-center justify-center">
+    {/* Main Large Image */}
+    <img
+      src="/img/robotic.webp"
+      alt="RPA Main"
+      className="w-[350px] md:w-[450px] rounded-xl shadow-2xl"
+    />
+
+    {/* Small Image Top Left */}
+    <img
+      src="/img/robotic1.webp"
+      alt="RPA Small 1"
+      className="absolute top-[-30px] left-[10%] w-24 md:w-32 rounded-lg shadow-lg rotate-[-6deg]"
+    />
+
+    {/* Small Image Bottom Right */}
+    <img
+      src="/img/robotic2.jpg"
+      alt="RPA Small 2"
+      className="absolute bottom-[-30px] right-[10%] w-24 md:w-32 rounded-lg shadow-lg rotate-[8deg]"
+    />
+  </div>
+</div>
+
 
       {/* Benefits Section */}
       <div className="space-y-6">
