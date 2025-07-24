@@ -54,7 +54,7 @@ const cards = [
   {
     title: "Graphics Design",
     icon: PenTool,
-    slug: "graphicsdesign",
+    slug: "graphicdesign",
     description:
       "Transforming pixels into profit—our cutting-edge graphics design sets your brand apart in the digital landscape.",
     color: "#8b5cf6"
