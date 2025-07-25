@@ -16,11 +16,11 @@ import {
 
 export default function SectionWithOrbit() {
   return (
-    <section className="w-full bg-white text-yellow-300 py-20">
+    <section className="w-full bg-white text-white py-20">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Side with Padding and Improved Styling */}
         <div className="space-y-6 animate-slide-in-left pl-6 md:pl-12">
-          <h1 className="text-4xl md:text-5xl font-bold leading-snug md:leading-tight text-yellow-300">
+          <h1 className="text-4xl md:text-5xl font-bold leading-snug md:leading-tight text-white">
             Building Digital Products <br /> for the Modern World
           </h1>
           <p className="text-base md:text-lg text-black leading-relaxed max-w-xl">
@@ -42,18 +42,18 @@ export default function SectionWithOrbit() {
               outerRadius={150}
               innerRadius={90}
               outerIcons={[
-                <Github className="text-yellow-300 w-12 h-12" />,
-                <Figma className="text-yellow-300 w-12 h-12" />,
-                <Chrome className="text-yellow-300 w-12 h-12" />,
-                <Twitter className="text-yellow-300 w-12 h-12" />,
-                <Gitlab className="text-yellow-300 w-12 h-12" />,
-                <Mail className="text-yellow-300 w-12 h-12" />
+                <Github className="text-white w-12 h-12" />,
+                <Figma className="text-white w-12 h-12" />,
+                <Chrome className="text-white w-12 h-12" />,
+                <Twitter className="text-white w-12 h-12" />,
+                <Gitlab className="text-white w-12 h-12" />,
+                <Mail className="text-white w-12 h-12" />
               ]}
               innerIcons={[
-                <Dribbble className="text-yellow-300 w-10 h-10" />,
-                <Slack className="text-yellow-300 w-10 h-10" />,
-                <Youtube className="text-yellow-300 w-10 h-10" />,
-                <Linkedin className="text-yellow-300 w-10 h-10" />
+                <Dribbble className="text-white w-10 h-10" />,
+                <Slack className="text-white w-10 h-10" />,
+                <Youtube className="text-white w-10 h-10" />,
+                <Linkedin className="text-white w-10 h-10" />
               ]}
             />
           </div>

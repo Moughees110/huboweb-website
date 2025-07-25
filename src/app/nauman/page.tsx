@@ -24,7 +24,7 @@ export default function Nauman() {
         {/* LEFT: Info Area */}
         <div className="w-full md:w-1/2 flex items-center justify-start px-8 py-10 bg-transparent">
           <div className="max-w-2xl w-full">
-            <h1 className="text-5xl font-bold text-yellow-300 mb-4">
+            <h1 className="text-5xl font-bold text-white mb-4">
               Numan Khan
             </h1>
 
@@ -87,26 +87,26 @@ export default function Nauman() {
               {/* Info List with Icons */}
               <div className="grid grid-cols-1 gap-3 text-sm text-gray-200">
                 <div className="flex items-center gap-2">
-                  <Cake size={18} className="text-yellow-300" /> Birthday: May
+                  <Cake size={18} className="text-white" /> Birthday: May
                   15, 1987
                 </div>
                 <div className="flex items-center gap-2">
-                  <Calendar size={18} className="text-yellow-300" /> Age: 37
+                  <Calendar size={18} className="text-white" /> Age: 37
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone size={18} className="text-yellow-300" /> +92 333
+                  <Phone size={18} className="text-white" /> +92 333
                   1234567
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail size={18} className="text-yellow-300" />{" "}
+                  <Mail size={18} className="text-white" />{" "}
                   numan.khan@example.com
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin size={18} className="text-yellow-300" /> Lahore,
+                  <MapPin size={18} className="text-white" /> Lahore,
                   Pakistan
                 </div>
                 <div className="flex items-center gap-2">
-                  <GraduationCap size={18} className="text-yellow-300" /> CFA,
+                  <GraduationCap size={18} className="text-white" /> CFA,
                   LUMS Lahore
                 </div>
               </div>
@@ -127,7 +127,7 @@ export default function Nauman() {
 
       {/* 🔽 About Section */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-6 text-yellow-300">
+        <h2 className="text-3xl font-bold mb-6 text-white">
           About Numan Khan
         </h2>
         <p className="mb-6 leading-relaxed text-gray-300">

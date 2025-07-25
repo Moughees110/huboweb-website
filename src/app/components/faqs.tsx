@@ -35,7 +35,7 @@ export default function Faqs({ imageSrc }: { imageSrc: string }) {
   };
 
   return (
-    <section className="bg-transparent text-yellow-300 py-20 px-4 sm:px-6 lg:px-12">
+    <section className="bg-transparent text-white py-20 px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left: FAQs */}
         <div>

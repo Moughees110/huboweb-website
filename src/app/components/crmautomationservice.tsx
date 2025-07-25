@@ -15,7 +15,7 @@ export default function CrmAutomationService() {
     <section className="w-full bg-transparent text-white px-6 md:px-16 py-20 space-y-28">
       {/* Why CRM Automation? */}
       <div className="bg-gradient-to-r from-[#0e162e] to-[#1f2a48] rounded-2xl p-10 shadow-xl">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-300 mb-6">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
           Why CRM Automation Matters
         </h2>
         <p className="text-lg text-gray-300 max-w-5xl mb-6">
@@ -28,19 +28,19 @@ export default function CrmAutomationService() {
         </p>
         <ul className="grid md:grid-cols-2 gap-4 text-gray-200">
           <li className="flex items-start gap-3">
-            <Zap className="text-yellow-300 mt-1" />
+            <Zap className="text-white mt-1" />
             Automated lead capturing and segmentation
           </li>
           <li className="flex items-start gap-3">
-            <Zap className="text-yellow-300 mt-1" />
+            <Zap className="text-white mt-1" />
             Real-time performance analytics and insights
           </li>
           <li className="flex items-start gap-3">
-            <Zap className="text-yellow-300 mt-1" />
+            <Zap className="text-white mt-1" />
             Seamless integration with your existing tools
           </li>
           <li className="flex items-start gap-3">
-            <Zap className="text-yellow-300 mt-1" />
+            <Zap className="text-white mt-1" />
             Smart workflows to reduce manual errors
           </li>
         </ul>
@@ -48,38 +48,38 @@ export default function CrmAutomationService() {
 
       {/* What We Automate */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-300 mb-10">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-10">
           What We Automate
         </h2>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
           {[
             {
-              icon: <Workflow className="text-yellow-300 w-6 h-6" />,
+              icon: <Workflow className="text-white w-6 h-6" />,
               title: "Sales Pipeline Automation",
               desc: "Streamline your entire sales funnel from lead capture to deal closure."
             },
             {
-              icon: <Bot className="text-yellow-300 w-6 h-6" />,
+              icon: <Bot className="text-white w-6 h-6" />,
               title: "Chatbot & Communication",
               desc: "Engage customers with AI-driven responses, auto-emails, and notifications."
             },
             {
-              icon: <DatabaseZap className="text-yellow-300 w-6 h-6" />,
+              icon: <DatabaseZap className="text-white w-6 h-6" />,
               title: "Data Sync & Management",
               desc: "Ensure all customer data is accurate, updated, and stored securely."
             },
             {
-              icon: <UserCheck className="text-yellow-300 w-6 h-6" />,
+              icon: <UserCheck className="text-white w-6 h-6" />,
               title: "Lead Qualification",
               desc: "Filter and score leads based on engagement and behavior."
             },
             {
-              icon: <ShieldCheck className="text-yellow-300 w-6 h-6" />,
+              icon: <ShieldCheck className="text-white w-6 h-6" />,
               title: "Security & Compliance",
               desc: "Implement data policies that keep you compliant with industry regulations."
             },
             {
-              icon: <Zap className="text-yellow-300 w-6 h-6" />,
+              icon: <Zap className="text-white w-6 h-6" />,
               title: "Workflow Triggers",
               desc: "Trigger actions like follow-ups, escalations, or status changes automatically."
             }
@@ -89,7 +89,7 @@ export default function CrmAutomationService() {
               className="bg-[#121b35] rounded-xl p-6 border border-white/10 hover:border-cyan-400 transition"
             >
               <div className="mb-3">{item.icon}</div>
-              <h3 className="text-xl font-semibold text-yellow-300 mb-2">
+              <h3 className="text-xl font-semibold text-white mb-2">
                 {item.title}
               </h3>
               <p className="text-gray-300">{item.desc}</p>
@@ -100,7 +100,7 @@ export default function CrmAutomationService() {
 
       {/* Our CRM Implementation Process */}
       <div className="bg-[#121b35] p-10 rounded-2xl border border-white/10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-300 mb-6">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
           Our CRM Implementation Process
         </h2>
         <div className="space-y-8">
@@ -133,7 +133,7 @@ export default function CrmAutomationService() {
 
       {/* Testimonials */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-300 mb-10 text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-10 text-center">
           What Clients Say About Our CRM Services
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -144,7 +144,7 @@ export default function CrmAutomationService() {
             >
               <div className="flex gap-1">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-300" />
+                  <Star key={i} className="w-5 h-5 text-white" />
                 ))}
               </div>
               <p className="text-gray-300">
@@ -160,7 +160,7 @@ export default function CrmAutomationService() {
 
       {/* FAQs */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-300 mb-8">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-8">
           Frequently Asked Questions
         </h2>
         <div className="space-y-6">
@@ -191,7 +191,7 @@ export default function CrmAutomationService() {
 
       {/* Call to Action */}
       <div className="text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-300 mb-4">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
           Ready to Automate Your CRM?
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto mb-6">

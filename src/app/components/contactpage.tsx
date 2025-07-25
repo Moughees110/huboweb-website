@@ -9,7 +9,7 @@ export default function ContactPage() {
   const { theme } = useTheme();
 
   return (
-    <section className="w-full py-16 px-4 md:px-12 lg:px-24 text-yellow-300 bg-transparent">
+    <section className="w-full py-16 px-4 md:px-12 lg:px-24 text-white bg-transparent">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
@@ -117,7 +117,7 @@ export default function ContactPage() {
         {/* Google Map */}
         {/* Google Map Section - Modern UI */}
         <div className="mt-24 relative px-4">
-          <h3 className="text-3xl font-bold text-center text-yellow-300 mb-12">
+          <h3 className="text-3xl font-bold text-center text-white mb-12">
             Our Location
           </h3>
 
@@ -134,7 +134,7 @@ export default function ContactPage() {
 
             {/* Floating Info Card */}
             <div className="absolute bottom-6 left-6 bg-[#070121]/90 border border-yellow-400 text-white rounded-xl p-6 shadow-lg backdrop-blur-md w-[300px] max-w-[90%]">
-              <h4 className="text-xl font-semibold mb-2 text-yellow-300">
+              <h4 className="text-xl font-semibold mb-2 text-white">
                 Head Office
               </h4>
               <p className="text-sm text-gray-300 leading-relaxed">

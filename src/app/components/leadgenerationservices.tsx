@@ -40,7 +40,7 @@ export default function LeadGenerationServices() {
 
         {/* Text Section */}
         <div className="md:w-1/2 text-left space-y-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-yellow-300">
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
             Lead Generation Services
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-xl">
@@ -55,7 +55,7 @@ export default function LeadGenerationServices() {
       {/* Section: Why Lead Generation */}
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
-          <h3 className="text-3xl font-semibold text-yellow-300">
+          <h3 className="text-3xl font-semibold text-white">
             Why Lead Generation is Crucial
           </h3>
           <p className="text-gray-300">
@@ -68,7 +68,7 @@ export default function LeadGenerationServices() {
           </p>
         </div>
         <div className="bg-[#1a1f3c] p-6 rounded-xl shadow-md">
-          <Rocket className="text-yellow-300 w-12 h-12 mb-4" />
+          <Rocket className="text-white w-12 h-12 mb-4" />
           <h4 className="text-xl font-semibold text-white">
             Boost Conversions
           </h4>
@@ -81,12 +81,12 @@ export default function LeadGenerationServices() {
 
       {/* Section: Our Approach */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-semibold text-yellow-300 text-center">
+        <h3 className="text-3xl font-semibold text-white text-center">
           Our Lead Generation Approach
         </h3>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-[#1a1f3c] p-6 rounded-xl">
-            <Target className="text-yellow-300 w-10 h-10 mb-3" />
+            <Target className="text-white w-10 h-10 mb-3" />
             <h4 className="text-xl font-semibold text-white">
               Targeted Campaigns
             </h4>
@@ -96,7 +96,7 @@ export default function LeadGenerationServices() {
             </p>
           </div>
           <div className="bg-[#1a1f3c] p-6 rounded-xl">
-            <Users className="text-yellow-300 w-10 h-10 mb-3" />
+            <Users className="text-white w-10 h-10 mb-3" />
             <h4 className="text-xl font-semibold text-white">
               Data-Driven Insights
             </h4>
@@ -106,7 +106,7 @@ export default function LeadGenerationServices() {
             </p>
           </div>
           <div className="bg-[#1a1f3c] p-6 rounded-xl">
-            <MailCheck className="text-yellow-300 w-10 h-10 mb-3" />
+            <MailCheck className="text-white w-10 h-10 mb-3" />
             <h4 className="text-xl font-semibold text-white">
               Email & Outreach Automation
             </h4>
@@ -120,7 +120,7 @@ export default function LeadGenerationServices() {
 
       {/* Section: Success Metrics */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-semibold text-yellow-300 text-center">
+        <h3 className="text-3xl font-semibold text-white text-center">
           Success Metrics We Track
         </h3>
         <ul className="text-gray-300 list-disc pl-6 max-w-3xl mx-auto">
@@ -134,7 +134,7 @@ export default function LeadGenerationServices() {
 
       {/* Section: Testimonials */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-semibold text-yellow-300 text-center">
+        <h3 className="text-3xl font-semibold text-white text-center">
           What Our Clients Say
         </h3>
         <div className="grid md:grid-cols-2 gap-8">
@@ -143,7 +143,7 @@ export default function LeadGenerationServices() {
               “We’ve doubled our qualified leads thanks to their expert
               campaigns. Their team is responsive, smart, and results-driven.”
             </p>
-            <p className="text-yellow-300 mt-4 font-semibold">
+            <p className="text-white mt-4 font-semibold">
               — Ayesha Tariq, Growth Manager
             </p>
           </div>
@@ -152,7 +152,7 @@ export default function LeadGenerationServices() {
               “Their lead generation service gave our sales pipeline the fuel it
               needed. Absolutely recommended!”
             </p>
-            <p className="text-yellow-300 mt-4 font-semibold">
+            <p className="text-white mt-4 font-semibold">
               — Hamza Sheikh, Co-founder
             </p>
           </div>
@@ -161,7 +161,7 @@ export default function LeadGenerationServices() {
 
       {/* Section: Call to Action */}
       <div className="text-center space-y-4 mt-16">
-        <h3 className="text-3xl font-semibold text-yellow-300">
+        <h3 className="text-3xl font-semibold text-white">
           Ready to Attract More Leads?
         </h3>
         <p className="text-gray-300 max-w-2xl mx-auto">

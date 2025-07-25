@@ -4,14 +4,14 @@ export default function PrivacyPolicy() {
   return (
     <section className="bg-transparent text-white py-20 px-6 md:px-12 backdrop-blur-md">
       <div className="max-w-5xl mx-auto bg-white/5 p-10 rounded-xl border border-white/10 shadow-2xl">
-        <h1 className="text-4xl md:text-5xl font-bold text-yellow-300 text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
           Privacy Policy
         </h1>
 
         <div className="space-y-10 text-gray-300">
           {/* Section 1 */}
           <div>
-            <h2 className="text-xl font-semibold text-yellow-300 mb-2">
+            <h2 className="text-xl font-semibold text-white mb-2">
               1.Our Commitment to Privacy
             </h2>
             <p>
@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
 
           {/* Section 2 */}
           <div>
-            <h2 className="text-xl font-semibold text-yellow-300 mb-2">
+            <h2 className="text-xl font-semibold text-white mb-2">
               2. What information do we collect?
             </h2>
             <p>
@@ -58,7 +58,7 @@ export default function PrivacyPolicy() {
 
           {/* Section 3 */}
           <div>
-            <h2 className="text-xl font-semibold text-yellow-300 mb-2">
+            <h2 className="text-xl font-semibold text-white mb-2">
               3.Data Security
             </h2>
             <p>
@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
 
           {/* Section 4 */}
           <div>
-            <h2 className="text-xl font-semibold text-yellow-300 mb-2">
+            <h2 className="text-xl font-semibold text-white mb-2">
               Childrens Online Privacy Protection Act Compliance
             </h2>
             <p>
@@ -88,7 +88,7 @@ export default function PrivacyPolicy() {
 
           {/* Section 5 */}
           <div>
-            <h2 className="text-xl font-semibold text-yellow-300 mb-2">
+            <h2 className="text-xl font-semibold text-white mb-2">
               5.Opt-In Information and Third-Party Sharing
             </h2>
             <p>
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
           </div>
           {/* Section 6 */}
           <div>
-            <h2 className="text-xl font-semibold text-yellow-300 mb-2">
+            <h2 className="text-xl font-semibold text-white mb-2">
               6. Opt-In for Marketing Text Messages
             </h2>
             <p>
@@ -119,7 +119,7 @@ export default function PrivacyPolicy() {
           </div>
           {/* Section 7 */}
           <div>
-            <h2 className="text-xl font-semibold text-yellow-300 mb-2">
+            <h2 className="text-xl font-semibold text-white mb-2">
               7. Your Rights
             </h2>
             <p>
@@ -135,7 +135,7 @@ export default function PrivacyPolicy() {
           </div>
           {/* Section 8*/}
           <div>
-            <h2 className="text-xl font-semibold text-yellow-300 mb-2">
+            <h2 className="text-xl font-semibold text-white mb-2">
               8. Changes to this Privacy Policy
             </h2>
             <p>
@@ -147,7 +147,7 @@ export default function PrivacyPolicy() {
           </div>
           {/* Section 9 */}
           <div>
-            <h2 className="text-xl font-semibold text-yellow-300 mb-2">
+            <h2 className="text-xl font-semibold text-white mb-2">
               9. Contacting Us
             </h2>
             <p>

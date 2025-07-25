@@ -53,7 +53,7 @@ export default function DigitalMarketingServices() {
     <section className="w-full bg-transparent py-20 px-4 md:px-12 text-white">
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="text-center">
-          <h2 className="text-yellow-300 text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-white text-4xl md:text-5xl font-bold mb-4">
             Comprehensive Digital Marketing Services
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto text-lg">
@@ -68,7 +68,7 @@ export default function DigitalMarketingServices() {
               key={i}
               className="bg-[#0f0b2b] border border-gray-800 rounded-2xl p-6 hover:shadow-lg hover:shadow-yellow-500/10 transition duration-300"
             >
-              <div className="flex items-center gap-4 mb-4 text-yellow-300">
+              <div className="flex items-center gap-4 mb-4 text-white">
                 {item.icon}{" "}
                 <h3 className="text-xl font-semibold">{item.title}</h3>
               </div>

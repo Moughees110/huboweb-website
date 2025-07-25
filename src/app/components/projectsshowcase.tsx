@@ -31,7 +31,7 @@ export default function ProjectShowcase() {
   return (
     <section className="w-full bg-transparent text-white py-20 px-4 md:px-10">
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
           Project Showcase
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
@@ -59,7 +59,7 @@ export default function ProjectShowcase() {
               />
             </div>
             <div className="p-6">
-              <h4 className="text-lg font-semibold text-yellow-300 mb-1">
+              <h4 className="text-lg font-semibold text-white mb-1">
                 {project.title}
               </h4>
               <p className="text-sm text-gray-400 italic mb-2">

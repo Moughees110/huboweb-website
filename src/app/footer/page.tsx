@@ -30,7 +30,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-r from-[#070121] to-[#170080] text-yellow-300 pt-2">
+    <footer className="bg-gradient-to-r from-[#070121] to-[#170080] text-white pt-2">
       {/* Top Gradient Border */}
       <div className="w-full h-[2px] bg-gradient-to-r from-w via-gray-300 to-white mb-8"></div>
 
@@ -66,7 +66,7 @@ const Footer = () => {
                 className="relative p-[2px] rounded-full"
               >
                 <div className="bg-gradient-to-r from-blue-900 to-gray-900 p-[2px] rounded-full">
-                  <div className="bg-[#070121] p-3 rounded-full text-yellow-300 hover:scale-110 transition-transform duration-300">
+                  <div className="bg-[#070121] p-3 rounded-full text-white hover:scale-110 transition-transform duration-300">
                     {icon}
                   </div>
                 </div>
@@ -87,13 +87,13 @@ const Footer = () => {
                     href={path}
                     className="flex items-center gap-1.5 group transition-transform duration-300"
                   >
-                    <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                    <span className="text-transparent group-hover:text-white transition duration-200">
                       /
                     </span>
-                    <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-300 transition-all duration-500">
+                    <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
                       {name}
                     </span>
-                    <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                    <span className="text-transparent group-hover:text-white transition duration-200">
                       /
                     </span>
                   </Link>
@@ -111,13 +111,13 @@ const Footer = () => {
                   href="/servicespage/wordpress"
                   className="flex items-center gap-1.5 group transition-transform duration-300"
                 >
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
-                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-300 transition-all duration-500">
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
                     Word Press
                   </span>
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
                 </Link>
@@ -127,13 +127,13 @@ const Footer = () => {
                   href="/servicespage/graphicdesign"
                   className="flex items-center gap-1.5 group transition-transform duration-300"
                 >
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
-                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-300 transition-all duration-500">
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
                     Graphic Design
                   </span>
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
                 </Link>
@@ -143,13 +143,13 @@ const Footer = () => {
                   href="/servicespage/seooptimization"
                   className="flex items-center gap-1.5 group transition-transform duration-300"
                 >
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
-                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-300 transition-all duration-500">
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
                     Seo
                   </span>
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
                 </Link>
@@ -159,13 +159,13 @@ const Footer = () => {
                   href="/servicespage/uiuxdesign"
                   className="flex items-center gap-1.5 group transition-transform duration-300"
                 >
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
-                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-300 transition-all duration-500">
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
                     UI/UX
                   </span>
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
                 </Link>
@@ -175,13 +175,13 @@ const Footer = () => {
                   href="/servicespage/webdesign"
                   className="flex items-center gap-1.5 group transition-transform duration-300"
                 >
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
-                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-300 transition-all duration-500">
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
                     Web Design
                   </span>
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
                 </Link>
@@ -191,13 +191,13 @@ const Footer = () => {
                   href="/servicespage/digitalmarketing"
                   className="flex items-center gap-1.5 group transition-transform duration-300"
                 >
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
-                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-yellow-300 transition-all duration-500">
+                  <span className="group-hover:translate-x-1 group-hover:px-1 group-hover:bg-clip-text group-hover:text-white transition-all duration-500">
                     Marketing
                   </span>
-                  <span className="text-transparent group-hover:text-yellow-300 transition duration-200">
+                  <span className="text-transparent group-hover:text-white transition duration-200">
                     /
                   </span>
                 </Link>
@@ -229,11 +229,11 @@ const Footer = () => {
             {/* Copyright */}
             {/* Copyright */}
             <p className="text-xs text-gray-400">
-              © 2021–2024 <span className="text-yellow-300">HuboWeb.com</span>.
+              © 2021–2024 <span className="text-white">HuboWeb.com</span>.
               All rights reserved |{" "}
               <Link
                 href="/privacypolicy"
-                className="underline hover:text-yellow-300"
+                className="underline hover:text-white"
               >
                 Privacy Policy
               </Link>

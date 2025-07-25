@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function AiServices() {
   return (
-    <section className="relative w-full bg-white text-yellow-300 py-20 px-4 md:px-10">
+    <section className="relative w-full bg-white text-white py-20 px-4 md:px-10">
       {/* Top Heading */}
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-bold leading-snug max-w-4xl mx-auto">

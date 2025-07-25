@@ -5,7 +5,7 @@ import { CheckCircle } from "lucide-react";
 
 export default function ServicesSection() {
   return (
-    <section className="w-full bg-white text-yellow-300 py-20">
+    <section className="w-full bg-white text-white py-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 md:px-10 gap-12">
         {/* Left Side Images */}
         <div className="relative w-full md:w-1/2 h-[450px]">
@@ -52,19 +52,19 @@ export default function ServicesSection() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
             <div className="flex items-center gap-3">
-              <CheckCircle className="text-yellow-300 w-5 h-5" />
+              <CheckCircle className="text-white w-5 h-5" />
               <span className="text-black">Drag & Drop Editing</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="text-yellow-300 w-5 h-5" />
+              <CheckCircle className="text-white w-5 h-5" />
               <span className="text-black">Unlimited Creativity</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="text-yellow-300 w-5 h-5" />
+              <CheckCircle className="text-white w-5 h-5" />
               <span className="text-black">Responsive Design</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="text-yellow-300 w-5 h-5" />
+              <CheckCircle className="text-white w-5 h-5" />
               <span className="text-black">Global Styling</span>
             </div>
           </div>

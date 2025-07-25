@@ -24,7 +24,7 @@ const DashboardPage = () => {
             height={800}
             className="rounded-xl w-full h-auto"
           />
-          <h1 className="text-3xl font-bold mt-4 hover:text-yellow-300">
+          <h1 className="text-3xl font-bold mt-4 hover:text-white">
             How to Design a Clean & Functional Admin Dashboard
           </h1>
           <p className="text-white mt-2">
@@ -36,7 +36,7 @@ const DashboardPage = () => {
 
         {/* Inside Post */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold hover:text-yellow-300">
+          <h2 className="text-2xl font-semibold hover:text-white">
             Key Principles of Dashboard UX
           </h2>
           <Image
@@ -46,7 +46,7 @@ const DashboardPage = () => {
             height={800}
             className="rounded-xl w-full h-auto"
           />
-          <h2 className="text-3xl font-bold hover:text-yellow-300">
+          <h2 className="text-3xl font-bold hover:text-white">
             Prioritize Clarity, Structure & Visual Hierarchy
           </h2>
           <p>
@@ -77,7 +77,7 @@ const DashboardPage = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className="flex space-x-4 mt-4 border-b pb-4 cursor-pointer hover:text-yellow-300"
+              className="flex space-x-4 mt-4 border-b pb-4 cursor-pointer hover:text-white"
             >
               <Image
                 src={item.avatar}
@@ -89,7 +89,7 @@ const DashboardPage = () => {
               <div>
                 <div className="flex items-center space-x-2">
                   <h4 className="font-medium">{item.username}</h4>
-                  <button className="flex items-center text-gray-400 text-lg hover:text-yellow-300 transition duration-300">
+                  <button className="flex items-center text-gray-400 text-lg hover:text-white transition duration-300">
                     <Reply className="mr-1 w-4 h-4" /> Reply
                   </button>
                 </div>
@@ -114,10 +114,10 @@ const DashboardPage = () => {
           />
           <h3 className="text-white text-2xl font-semibold mt-2">Jamson</h3>
           <div className="flex justify-center space-x-4 mt-2 text-2xl text-gray-400">
-            <Twitter className="hover:text-yellow-300" />
-            <Facebook className="hover:text-yellow-300" />
-            <Linkedin className="hover:text-yellow-300" />
-            <Instagram className="hover:text-yellow-300" />
+            <Twitter className="hover:text-white" />
+            <Facebook className="hover:text-white" />
+            <Linkedin className="hover:text-white" />
+            <Instagram className="hover:text-white" />
           </div>
           <p className="text-white mt-2">
             UX designer focused on admin panels, SaaS UI kits, and interactive
@@ -128,7 +128,7 @@ const DashboardPage = () => {
         {/* Search */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-300">|</span> Search
+            <span className="text-white">|</span> Search
           </h3>
           <div className="flex items-center border rounded-full px-3 py-2 border-gray-700">
             <Search className="text-gray-400 text-xl mr-2" />
@@ -143,7 +143,7 @@ const DashboardPage = () => {
         {/* Categories */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-300">|</span> Categories
+            <span className="text-white">|</span> Categories
           </h3>
           {[
             "UI/UX",
@@ -154,7 +154,7 @@ const DashboardPage = () => {
           ].map((cat, i) => (
             <p
               key={i}
-              className="text-white hover:text-yellow-300 cursor-pointer"
+              className="text-white hover:text-white cursor-pointer"
             >
               {cat} <span className="text-sm text-gray-500">(8)</span>
             </p>
@@ -164,7 +164,7 @@ const DashboardPage = () => {
         {/* Recent Posts */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-300">|</span> Recent Posts
+            <span className="text-white">|</span> Recent Posts
           </h3>
           {[
             "Building KPI Dashboards with Recharts",
@@ -172,7 +172,7 @@ const DashboardPage = () => {
             "Designing CRUD Interfaces That Don’t Suck"
           ].map((title, i) => (
             <div key={i} className="mb-2">
-              <h4 className="text-white hover:text-yellow-300 cursor-pointer font-medium">
+              <h4 className="text-white hover:text-white cursor-pointer font-medium">
                 {title}
               </h4>
               <p className="text-sm text-gray-500">Jul {20 + i}, 2024</p>
@@ -183,7 +183,7 @@ const DashboardPage = () => {
         {/* Tags */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-300">|</span> Tags
+            <span className="text-white">|</span> Tags
           </h3>
           <div className="flex flex-wrap gap-2">
             {[

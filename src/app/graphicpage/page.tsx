@@ -24,7 +24,7 @@ const GraphicPage = () => {
             height={800}
             className="rounded-xl w-full h-auto"
           />
-          <h1 className="text-3xl font-bold mt-4 hover:text-yellow-300">
+          <h1 className="text-3xl font-bold mt-4 hover:text-white">
             Crafting Impactful UI/UX in Graphic Design
           </h1>
           <p className="text-white mt-2">
@@ -36,7 +36,7 @@ const GraphicPage = () => {
 
         {/* Inside Post */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold hover:text-yellow-300">
+          <h2 className="text-2xl font-semibold hover:text-white">
             Visual Consistency & User Experience
           </h2>
           <Image
@@ -46,7 +46,7 @@ const GraphicPage = () => {
             height={800}
             className="rounded-xl w-full h-auto"
           />
-          <h2 className="text-3xl font-bold hover:text-yellow-300">
+          <h2 className="text-3xl font-bold hover:text-white">
             Elevate Brand Identity Through Design
           </h2>
           <p>
@@ -78,7 +78,7 @@ const GraphicPage = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className="flex space-x-4 mt-4 border-b pb-4 cursor-pointer hover:text-yellow-300"
+              className="flex space-x-4 mt-4 border-b pb-4 cursor-pointer hover:text-white"
             >
               <Image
                 src={item.avatar}
@@ -90,7 +90,7 @@ const GraphicPage = () => {
               <div>
                 <div className="flex items-center space-x-2">
                   <h4 className="font-medium">{item.username}</h4>
-                  <button className="flex items-center text-gray-400 text-lg hover:text-yellow-300 transition duration-300">
+                  <button className="flex items-center text-gray-400 text-lg hover:text-white transition duration-300">
                     <Reply className="mr-1 w-4 h-4" /> Reply
                   </button>
                 </div>
@@ -115,10 +115,10 @@ const GraphicPage = () => {
           />
           <h3 className="text-white text-2xl font-semibold mt-2">Sarah Khan</h3>
           <div className="flex justify-center space-x-4 mt-2 text-2xl text-gray-400">
-            <Twitter className="hover:text-yellow-300" />
-            <Facebook className="hover:text-yellow-300" />
-            <Linkedin className="hover:text-yellow-300" />
-            <Instagram className="hover:text-yellow-300" />
+            <Twitter className="hover:text-white" />
+            <Facebook className="hover:text-white" />
+            <Linkedin className="hover:text-white" />
+            <Instagram className="hover:text-white" />
           </div>
           <p className="text-white mt-2">
             UI/UX Designer focused on building aesthetic, functional, and
@@ -129,7 +129,7 @@ const GraphicPage = () => {
         {/* Search */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-300">|</span> Search
+            <span className="text-white">|</span> Search
           </h3>
           <div className="flex items-center border rounded-full px-3 py-2 border-gray-700">
             <Search className="text-gray-400 text-xl mr-2" />
@@ -144,13 +144,13 @@ const GraphicPage = () => {
         {/* Categories */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-300">|</span> Categories
+            <span className="text-white">|</span> Categories
           </h3>
           {["UI/UX", "Branding", "Color Theory", "Typography", "Tools"].map(
             (cat, i) => (
               <p
                 key={i}
-                className="text-white hover:text-yellow-300 cursor-pointer"
+                className="text-white hover:text-white cursor-pointer"
               >
                 {cat} <span className="text-sm text-gray-500">(08)</span>
               </p>
@@ -161,7 +161,7 @@ const GraphicPage = () => {
         {/* Recent Posts */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-300">|</span> Recent Posts
+            <span className="text-white">|</span> Recent Posts
           </h3>
           {[
             "Choosing the Right Color Palette",
@@ -169,7 +169,7 @@ const GraphicPage = () => {
             "How to Design for Accessibility"
           ].map((title, i) => (
             <div key={i} className="mb-2">
-              <h4 className="text-white hover:text-yellow-300 cursor-pointer font-medium">
+              <h4 className="text-white hover:text-white cursor-pointer font-medium">
                 {title}
               </h4>
               <p className="text-sm text-gray-500">Jul {10 + i}, 2024</p>
@@ -180,7 +180,7 @@ const GraphicPage = () => {
         {/* Tags */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-300">|</span> Tags
+            <span className="text-white">|</span> Tags
           </h3>
           <div className="flex flex-wrap gap-2">
             {["UI", "UX", "Figma", "Illustrator", "Design", "Mockup"].map(

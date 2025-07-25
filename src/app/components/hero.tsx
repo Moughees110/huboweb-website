@@ -21,7 +21,7 @@ const Hero = ({
         {/* Left Side - Text */}
 
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-yellow-300 leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
             {title}
           </h1>
           <p className="text-lg text-white max-w-xl mx-auto md:mx-0">

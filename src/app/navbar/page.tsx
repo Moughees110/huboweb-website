@@ -38,7 +38,7 @@ const Navbar = () => {
     {/* Logo */}
     <div className="flex items-center">
       <Image
-        src="/img/huboweb2.png"
+        src="/img/huboweb.png"
         alt="Logo"
         className="h-10 w-auto"
         width={100}
@@ -50,7 +50,7 @@ const Navbar = () => {
     <div className="flex items-center md:hidden ml-auto">
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="focus:outline-none text-yellow-300 bg-transparent p-2 rounded-full"
+        className="focus:outline-none text-white bg-transparent p-2 rounded-full"
       >
         {menuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
@@ -68,8 +68,8 @@ const Navbar = () => {
           href={path}
           className={`relative group cursor-pointer px-4 py-2 rounded-full overflow-hidden transition duration-300 ${
             activeItem === name
-              ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-300"
-              : "text-yellow-300 hover:text-[#071c55]"
+              ? "bg-gradient-to-r from-blue-900 to-gray-900 text-white"
+              : "text-white hover:text-[#071c55]"
           }`}
         >
           <div
@@ -119,14 +119,14 @@ const Navbar = () => {
       <div
         className={`flex items-center px-5 py-2 rounded-full overflow-hidden transition-all duration-300 ${
           activeItem === "Contact Us"
-            ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-300"
+            ? "bg-gradient-to-r from-blue-900 to-gray-900 text-white"
             : "bg-transparent hover:bg-white"
         }`}
       >
         <div
           className={`relative flex flex-col justify-center items-center text-sm font-medium ${
             activeItem === "Contact Us"
-              ? "text-yellow-300"
+              ? "text-white"
               : "text-black bg-clip-text bg-gradient-to-r from-blue-900 to-gray-900"
           }`}
         >

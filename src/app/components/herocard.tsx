@@ -20,7 +20,7 @@ export default function HeroCard() {
 
         {/* Content */}
         <div className="p-0 text-center bg-transparent">
-          <h2 className="text-2xl font-bold text-yellow-300 mb-2">
+          <h2 className="text-2xl font-bold text-white mb-2">
             Step into the future of design
           </h2>
           <p className="text-gray-300 text-lg mb-6">
@@ -34,7 +34,7 @@ export default function HeroCard() {
             <button className="px-5 py-2 bg-white border border-gray-300 text-gray-800 rounded-full hover:bg-gray-100 transition">
               Learn More
             </button>
-            <button className="px-5 py-2 bg-gradient-to-r from-blue-900 to-gray-900 cursor-pointer text-yellow-300 font-semibold rounded-full transition">
+            <button className="px-5 py-2 bg-gradient-to-r from-blue-900 to-gray-900 cursor-pointer text-white font-semibold rounded-full transition">
               Get Started
             </button>
           </div>

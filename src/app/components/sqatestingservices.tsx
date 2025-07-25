@@ -14,7 +14,7 @@ export default function SqaAndTestingServices() {
     <section className="w-full bg-transparent text-white py-20 px-6 md:px-16 space-y-24">
       {/* Introduction */}
       <div className="text-center max-w-4xl mx-auto space-y-6 mb-20">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300">
+        <h2 className="text-4xl md:text-5xl font-bold text-white">
           Software Quality Assurance & Testing
         </h2>
         <p className="text-lg text-gray-300">
@@ -50,7 +50,7 @@ export default function SqaAndTestingServices() {
 
       {/* Importance of SQA */}
       <div className="max-w-5xl mx-auto space-y-6">
-        <h3 className="text-3xl font-semibold text-yellow-300 flex items-center gap-2">
+        <h3 className="text-3xl font-semibold text-white flex items-center gap-2">
           <ShieldCheck /> Why SQA Matters
         </h3>
         <p className="text-gray-300">
@@ -63,7 +63,7 @@ export default function SqaAndTestingServices() {
 
       {/* Our Services */}
       <div className="max-w-5xl mx-auto space-y-6">
-        <h3 className="text-3xl font-semibold text-yellow-300 flex items-center gap-2">
+        <h3 className="text-3xl font-semibold text-white flex items-center gap-2">
           <ClipboardCheck /> Our Testing Services
         </h3>
         <ul className="list-disc pl-5 text-gray-300 space-y-2">
@@ -80,7 +80,7 @@ export default function SqaAndTestingServices() {
 
       {/* Process Overview */}
       <div className="max-w-5xl mx-auto space-y-6">
-        <h3 className="text-3xl font-semibold text-yellow-300 flex items-center gap-2">
+        <h3 className="text-3xl font-semibold text-white flex items-center gap-2">
           <TestTubes /> Our QA Process
         </h3>
         <p className="text-gray-300">
@@ -93,7 +93,7 @@ export default function SqaAndTestingServices() {
 
       {/* Tools We Use */}
       <div className="max-w-5xl mx-auto space-y-6">
-        <h3 className="text-3xl font-semibold text-yellow-300 flex items-center gap-2">
+        <h3 className="text-3xl font-semibold text-white flex items-center gap-2">
           <Bug /> Tools & Technologies
         </h3>
         <p className="text-gray-300">
@@ -105,12 +105,12 @@ export default function SqaAndTestingServices() {
 
       {/* FAQs */}
       <div className="max-w-5xl mx-auto space-y-6">
-        <h3 className="text-3xl font-semibold text-yellow-300 flex items-center gap-2">
+        <h3 className="text-3xl font-semibold text-white flex items-center gap-2">
           <HelpCircle /> Frequently Asked Questions
         </h3>
         <div className="space-y-4 text-gray-300">
           <div>
-            <p className="font-semibold text-yellow-300">
+            <p className="font-semibold text-white">
               Do you offer both manual and automated testing?
             </p>
             <p>
@@ -118,7 +118,7 @@ export default function SqaAndTestingServices() {
             </p>
           </div>
           <div>
-            <p className="font-semibold text-yellow-300">
+            <p className="font-semibold text-white">
               Can I hire a dedicated QA team?
             </p>
             <p>
@@ -127,7 +127,7 @@ export default function SqaAndTestingServices() {
             </p>
           </div>
           <div>
-            <p className="font-semibold text-yellow-300">
+            <p className="font-semibold text-white">
               What industries do you serve?
             </p>
             <p>
@@ -140,7 +140,7 @@ export default function SqaAndTestingServices() {
 
       {/* CTA */}
       <div className="text-center max-w-3xl mx-auto space-y-6">
-        <h3 className="text-3xl font-bold text-yellow-300">
+        <h3 className="text-3xl font-bold text-white">
           Let’s Build Quality Software Together
         </h3>
         <p className="text-gray-300">
