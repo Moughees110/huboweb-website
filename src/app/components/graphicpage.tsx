@@ -16,7 +16,7 @@ export default function GraphicPage() {
     <section className="w-full bg-transparent text-white px-6 md:px-16 py-20 space-y-24">
       {/* Why Choose Us */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Why Choose Our Graphic Design Services
         </h2>
         <div className="flex flex-col md:flex-row gap-10">
@@ -29,15 +29,15 @@ export default function GraphicPage() {
             </p>
             <ul className="space-y-4 text-gray-200">
               <li className="flex items-start gap-3">
-                <CheckCircle className="text-yellow-300 mt-1" />
+                <CheckCircle className="text-white mt-1" />
                 Innovative & Custom Designs Tailored to Your Brand
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle className="text-yellow-300 mt-1" />
+                <CheckCircle className="text-white mt-1" />
                 Unlimited Revisions Until You're Satisfied
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle className="text-yellow-300 mt-1" />
+                <CheckCircle className="text-white mt-1" />
                 Fast Turnaround Time with Quality Assurance
               </li>
             </ul>
@@ -56,7 +56,7 @@ export default function GraphicPage() {
 
       {/* Services We Offer */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Services We Offer
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -96,8 +96,8 @@ export default function GraphicPage() {
               key={i}
               className="bg-white/5 border border-white/10 rounded-xl p-6 space-y-3 hover:border-yellow-400 transition"
             >
-              <item.icon className="text-yellow-300 w-8 h-8" />
-              <h3 className="text-xl font-semibold text-yellow-300">
+              <item.icon className="text-white w-8 h-8" />
+              <h3 className="text-xl font-semibold text-white">
                 {item.title}
               </h3>
               <p className="text-gray-300">{item.desc}</p>
@@ -108,7 +108,7 @@ export default function GraphicPage() {
 
       {/* Our Design Process */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Our Design Process
         </h2>
         <div className="flex flex-col md:flex-row gap-10">
@@ -143,7 +143,7 @@ export default function GraphicPage() {
 
       {/* Testimonials */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-10">
           What Our Clients Say
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -154,7 +154,7 @@ export default function GraphicPage() {
             >
               <div className="flex gap-2">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-300" />
+                  <Star key={i} className="w-5 h-5 text-white" />
                 ))}
               </div>
               <p className="text-gray-300">
@@ -169,7 +169,7 @@ export default function GraphicPage() {
 
       {/* FAQ Section */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
           Frequently Asked Questions
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
@@ -205,7 +205,7 @@ export default function GraphicPage() {
 
       {/* Call to Action */}
       <div className="text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
           Ready to Elevate Your Brand?
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto mb-6">

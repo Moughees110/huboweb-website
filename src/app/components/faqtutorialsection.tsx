@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function FaqTutorialSection() {
   return (
-    <section className="bg-transparent text-yellow-300 py-20 px-6 md:px-16 relative">
+    <section className="bg-transparent text-white py-20 px-6 md:px-16 relative">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Content */}
         <div className="md:w-1/2">

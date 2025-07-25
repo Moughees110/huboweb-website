@@ -27,7 +27,7 @@ export default function ToolsTechnology() {
   return (
     <section className="w-full bg-transparent text-white py-20 px-4 md:px-10">
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
           Tools & Technologies We Use
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
@@ -46,7 +46,7 @@ export default function ToolsTechnology() {
             viewport={{ once: true }}
             className="flex flex-col items-center justify-center bg-[#0e0b2a] border border-gray-800 rounded-xl p-6 hover:shadow-yellow-500/20 transition-shadow text-center"
           >
-            <tool.icon className="h-10 w-10 text-yellow-300 mb-4" />
+            <tool.icon className="h-10 w-10 text-white mb-4" />
             <p className="text-sm font-medium text-gray-200">{tool.name}</p>
           </motion.div>
         ))}

@@ -24,7 +24,7 @@ export default function Akhter() {
         {/* LEFT: Info Area */}
         <div className="w-full md:w-1/2 flex items-center justify-start px-8 py-10 bg-transparent">
           <div className="max-w-2xl w-full">
-            <h1 className="text-5xl font-bold text-yellow-300 mb-4">
+            <h1 className="text-5xl font-bold text-white mb-4">
               Akhter Hussain
             </h1>
 
@@ -87,26 +87,26 @@ export default function Akhter() {
               {/* Info List with Icons */}
               <div className="grid grid-cols-1 gap-3 text-sm text-gray-200">
                 <div className="flex items-center gap-2">
-                  <Cake size={18} className="text-yellow-300" /> Birthday: Mar
+                  <Cake size={18} className="text-white" /> Birthday: Mar
                   12, 1988
                 </div>
                 <div className="flex items-center gap-2">
-                  <Calendar size={18} className="text-yellow-300" /> Age: 36
+                  <Calendar size={18} className="text-white" /> Age: 36
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone size={18} className="text-yellow-300" /> +92 312
+                  <Phone size={18} className="text-white" /> +92 312
                   6547890
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail size={18} className="text-yellow-300" />{" "}
+                  <Mail size={18} className="text-white" />{" "}
                   akhter@example.com
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin size={18} className="text-yellow-300" /> Islamabad,
+                  <MapPin size={18} className="text-white" /> Islamabad,
                   Pakistan
                 </div>
                 <div className="flex items-center gap-2">
-                  <GraduationCap size={18} className="text-yellow-300" /> MBA,
+                  <GraduationCap size={18} className="text-white" /> MBA,
                   FAST Islamabad
                 </div>
               </div>
@@ -127,7 +127,7 @@ export default function Akhter() {
 
       {/* 🔽 About Section */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-6 text-yellow-300">
+        <h2 className="text-3xl font-bold mb-6 text-white">
           About Akhter Hussain
         </h2>
         <p className="mb-6 leading-relaxed text-gray-300">

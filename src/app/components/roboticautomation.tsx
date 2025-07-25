@@ -17,7 +17,7 @@ export default function RoboticAutomation() {
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-20">
         {/* Text Section */}
         <div className="md:w-1/2 text-left space-y-6">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-300">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-white">
             Robotic Process Automation (RPA)
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-xl">
@@ -55,24 +55,24 @@ export default function RoboticAutomation() {
 
       {/* Benefits Section */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-yellow-300">Why RPA Matters</h3>
+        <h3 className="text-3xl font-bold text-white">Why RPA Matters</h3>
         <ul className="grid gap-6 md:grid-cols-2 text-gray-300">
           <li className="flex gap-4">
-            <Zap className="text-yellow-300" />
+            <Zap className="text-white" />
             <span>
               Increase operational efficiency and speed through task automation.
             </span>
           </li>
           <li className="flex gap-4">
-            <Cpu className="text-yellow-300" />
+            <Cpu className="text-white" />
             <span>Eliminate human errors in repetitive processes.</span>
           </li>
           <li className="flex gap-4">
-            <ShieldCheck className="text-yellow-300" />
+            <ShieldCheck className="text-white" />
             <span>Ensure compliance by standardizing workflows.</span>
           </li>
           <li className="flex gap-4">
-            <Workflow className="text-yellow-300" />
+            <Workflow className="text-white" />
             <span>Free up your workforce to focus on higher-value tasks.</span>
           </li>
         </ul>
@@ -80,7 +80,7 @@ export default function RoboticAutomation() {
 
       {/* What We Automate Section */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-yellow-300">
+        <h3 className="text-3xl font-bold text-white">
           What Can Be Automated?
         </h3>
         <p className="text-gray-300">
@@ -88,27 +88,27 @@ export default function RoboticAutomation() {
         </p>
         <ul className="grid gap-4 md:grid-cols-2 text-gray-300">
           <li className="flex gap-4">
-            <CheckCircle className="text-yellow-300" /> Data entry and data
+            <CheckCircle className="text-white" /> Data entry and data
             migration
           </li>
           <li className="flex gap-4">
-            <CheckCircle className="text-yellow-300" /> Invoice processing and
+            <CheckCircle className="text-white" /> Invoice processing and
             finance tasks
           </li>
           <li className="flex gap-4">
-            <CheckCircle className="text-yellow-300" /> HR onboarding and
+            <CheckCircle className="text-white" /> HR onboarding and
             document handling
           </li>
           <li className="flex gap-4">
-            <CheckCircle className="text-yellow-300" /> Customer service ticket
+            <CheckCircle className="text-white" /> Customer service ticket
             routing
           </li>
           <li className="flex gap-4">
-            <CheckCircle className="text-yellow-300" /> Inventory updates and
+            <CheckCircle className="text-white" /> Inventory updates and
             logistics
           </li>
           <li className="flex gap-4">
-            <CheckCircle className="text-yellow-300" /> Report generation and
+            <CheckCircle className="text-white" /> Report generation and
             dashboard updates
           </li>
         </ul>
@@ -116,7 +116,7 @@ export default function RoboticAutomation() {
 
       {/* Our Process Section */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-yellow-300">
+        <h3 className="text-3xl font-bold text-white">
           Our RPA Implementation Process
         </h3>
         <ol className="list-decimal ml-6 text-gray-300 space-y-2">
@@ -138,7 +138,7 @@ export default function RoboticAutomation() {
 
       {/* Testimonials Section */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-yellow-300">
+        <h3 className="text-3xl font-bold text-white">
           What Our Clients Say
         </h3>
         <div className="grid gap-6 md:grid-cols-2">
@@ -147,7 +147,7 @@ export default function RoboticAutomation() {
               “The RPA bots developed by their team have saved us hundreds of
               hours every month. Exceptional service and results!”
             </p>
-            <p className="text-yellow-300 mt-2 font-semibold">
+            <p className="text-white mt-2 font-semibold">
               — Adeel H., Operations Manager
             </p>
           </div>
@@ -156,17 +156,17 @@ export default function RoboticAutomation() {
               “Their automation workflows integrated seamlessly with our CRM and
               finance systems. Highly recommend for scalable automation.”
             </p>
-            <p className="text-yellow-300 mt-2 font-semibold">— Sana A., CTO</p>
+            <p className="text-white mt-2 font-semibold">— Sana A., CTO</p>
           </div>
         </div>
       </div>
 
       {/* FAQ Section */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-yellow-300">FAQs</h3>
+        <h3 className="text-3xl font-bold text-white">FAQs</h3>
         <div className="space-y-4 text-gray-300">
           <div>
-            <h4 className="flex gap-2 items-center font-semibold text-yellow-300">
+            <h4 className="flex gap-2 items-center font-semibold text-white">
               <HelpCircle className="w-5 h-5" /> Is RPA suitable for small
               businesses?
             </h4>
@@ -176,7 +176,7 @@ export default function RoboticAutomation() {
             </p>
           </div>
           <div>
-            <h4 className="flex gap-2 items-center font-semibold text-yellow-300">
+            <h4 className="flex gap-2 items-center font-semibold text-white">
               <HelpCircle className="w-5 h-5" /> How long does it take to
               implement?
             </h4>
@@ -190,7 +190,7 @@ export default function RoboticAutomation() {
 
       {/* Call to Action */}
       <div className="text-center space-y-4">
-        <h3 className="text-3xl font-bold text-yellow-300">
+        <h3 className="text-3xl font-bold text-white">
           Ready to Automate?
         </h3>
         <p className="text-gray-300">

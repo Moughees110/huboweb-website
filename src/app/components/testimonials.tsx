@@ -50,7 +50,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="bg-transparent text-yellow-300 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-transparent text-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">Client testimonials</h2>
         <p className="text-sm text-gray-300 mb-12">
@@ -82,14 +82,14 @@ export default function Testimonials() {
                         >
                           {testimonial.name}
                         </h3>
-                        <p className="text-sm text-yellow-300 mt-1">
+                        <p className="text-sm text-white mt-1">
                           {testimonial.title}
                         </p>
                       </div>
                       <div className="flex gap-3 mt-2 text-gray-300">
-                        <Facebook className="w-4 h-4 cursor-pointer hover:text-yellow-300" />
-                        <Twitter className="w-4 h-4 cursor-pointer hover:text-yellow-300" />
-                        <Linkedin className="w-4 h-4 cursor-pointer hover:text-yellow-300" />
+                        <Facebook className="w-4 h-4 cursor-pointer hover:text-white" />
+                        <Twitter className="w-4 h-4 cursor-pointer hover:text-white" />
+                        <Linkedin className="w-4 h-4 cursor-pointer hover:text-white" />
                       </div>
                     </div>
                     <div className="relative bg-[#1F1F4B] text-white p-4 rounded-lg shadow-md flex-1">
@@ -104,7 +104,7 @@ export default function Testimonials() {
                         {[...Array(5)].map((_, i) => (
                           <Star
                             key={i}
-                            className="w-4 h-4 text-yellow-300 fill-yellow-400"
+                            className="w-4 h-4 text-white fill-yellow-400"
                           />
                         ))}
                       </div>

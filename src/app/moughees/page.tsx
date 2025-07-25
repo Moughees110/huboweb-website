@@ -24,7 +24,7 @@ export default function Moughees() {
         {/* LEFT: Info Area */}
         <div className="w-full md:w-1/2 flex items-center justify-start px-8 py-10 bg-transparent">
           <div className="max-w-2xl w-full">
-            <h1 className="text-5xl font-bold text-yellow-300 mb-4">
+            <h1 className="text-5xl font-bold text-white mb-4">
               Moughees Raza
             </h1>
 
@@ -87,26 +87,26 @@ export default function Moughees() {
               {/* Info List with Icons */}
               <div className="grid grid-cols-1 gap-3 text-sm text-gray-200">
                 <div className="flex items-center gap-2">
-                  <Cake size={18} className="text-yellow-300" /> Birthday: July
+                  <Cake size={18} className="text-white" /> Birthday: July
                   5, 1990
                 </div>
                 <div className="flex items-center gap-2">
-                  <Calendar size={18} className="text-yellow-300" /> Age: 34
+                  <Calendar size={18} className="text-white" /> Age: 34
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone size={18} className="text-yellow-300" /> +92 301
+                  <Phone size={18} className="text-white" /> +92 301
                   1122334
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail size={18} className="text-yellow-300" />{" "}
+                  <Mail size={18} className="text-white" />{" "}
                   moughees@example.com
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin size={18} className="text-yellow-300" /> Karachi,
+                  <MapPin size={18} className="text-white" /> Karachi,
                   Pakistan
                 </div>
                 <div className="flex items-center gap-2">
-                  <GraduationCap size={18} className="text-yellow-300" /> MS
+                  <GraduationCap size={18} className="text-white" /> MS
                   Software Engg., NUST
                 </div>
               </div>
@@ -127,7 +127,7 @@ export default function Moughees() {
 
       {/* 🔽 About Section */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-6 text-yellow-300">
+        <h2 className="text-3xl font-bold mb-6 text-white">
           About Moughees Raza
         </h2>
         <p className="mb-6 leading-relaxed text-gray-300">

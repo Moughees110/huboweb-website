@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function WebBrowserServices() {
   return (
-    <section className="w-full bg-transparent text-yellow-300 py-20 px-4 md:px-10 space-y-24">
+    <section className="w-full bg-transparent text-white py-20 px-4 md:px-10 space-y-24">
       {/* Introduction */}
       <div className="text-center space-y-6">
         <h2 className="text-4xl font-bold">

@@ -10,7 +10,7 @@ export default function ContentWritingService() {
       <div className="flex flex-col md:flex-row items-start gap-10">
         {/* Text Content */}
         <div className="flex-1">
-          <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Why Choose Our Content Writing Services
           </h2>
           <p className="text-lg text-gray-300 max-w-4xl mb-6">
@@ -23,16 +23,16 @@ export default function ContentWritingService() {
           </p>
           <ul className="space-y-4 text-gray-200">
             <li className="flex items-start gap-3">
-              <ThumbsUp className="text-yellow-300 mt-1" />
+              <ThumbsUp className="text-white mt-1" />
               Engaging and persuasive copy that resonates with your target
               audience
             </li>
             <li className="flex items-start gap-3">
-              <ThumbsUp className="text-yellow-300 mt-1" />
+              <ThumbsUp className="text-white mt-1" />
               SEO-friendly writing to improve your search engine visibility
             </li>
             <li className="flex items-start gap-3">
-              <ThumbsUp className="text-yellow-300 mt-1" />
+              <ThumbsUp className="text-white mt-1" />
               Tailored content strategies based on your niche and industry
             </li>
           </ul>
@@ -52,7 +52,7 @@ export default function ContentWritingService() {
 
       {/* Services We Offer */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Services We Offer
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -86,8 +86,8 @@ export default function ContentWritingService() {
               key={i}
               className="bg-white/5 border border-white/10 rounded-xl p-6 space-y-3 hover:border-yellow-400 transition"
             >
-              <FileText className="text-yellow-300" />
-              <h3 className="text-xl font-semibold text-yellow-300">
+              <FileText className="text-white" />
+              <h3 className="text-xl font-semibold text-white">
                 {item.title}
               </h3>
               <p className="text-gray-300">{item.desc}</p>
@@ -100,7 +100,7 @@ export default function ContentWritingService() {
       <div className="flex flex-col md:flex-row gap-10 items-start">
         {/* Steps */}
         <div className="flex-1">
-          <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our Writing Process
           </h2>
           <ol className="space-y-6 border-l-2 border-yellow-400 pl-6">
@@ -134,7 +134,7 @@ export default function ContentWritingService() {
 
       {/* Testimonials */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-10">
           What Our Clients Say
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -145,7 +145,7 @@ export default function ContentWritingService() {
             >
               <div className="flex gap-2">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-300" />
+                  <Star key={i} className="w-5 h-5 text-white" />
                 ))}
               </div>
               <p className="text-gray-300">
@@ -161,7 +161,7 @@ export default function ContentWritingService() {
 
       {/* FAQ Section */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
           Frequently Asked Questions
         </h2>
         <div className="space-y-6">
@@ -197,7 +197,7 @@ export default function ContentWritingService() {
 
       {/* Call to Action */}
       <div className="text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
           Need Content That Converts?
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto mb-6">

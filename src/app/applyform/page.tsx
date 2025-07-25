@@ -5,7 +5,7 @@ export default function ApplyForm() {
   return (
     <section className="bg-transparent py-16 px-4 flex justify-center items-center mt-20">
       <form className="w-full max-w-5xl  backdrop-blur-md border border-blue-800/10 rounded-xl p-10 shadow-2xl space-y-8 text-white">
-        <h2 className="text-3xl text-yellow-300 font-bold text-center">
+        <h2 className="text-3xl text-white font-bold text-center">
           Apply Now
         </h2>
 

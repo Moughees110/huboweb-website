@@ -38,9 +38,9 @@ const iconItems = [
 
 export default function WidgetMarqueeSection() {
   return (
-    <section className="bg-transparent py-24 px-4 md:px-12 text-yellow-300 overflow-hidden">
+    <section className="bg-transparent py-24 px-4 md:px-12 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-6xl font-bold text-yellow-300/10 mb-[-28px]">
+        <h2 className="text-6xl font-bold text-white/10 mb-[-28px]">
           250+
         </h2>
         <h3 className="text-3xl md:text-4xl font-bold mb-4">

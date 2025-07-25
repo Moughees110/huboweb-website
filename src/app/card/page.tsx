@@ -66,7 +66,7 @@ const services = [
 
 export default function Card() {
   return (
-    <section className="py-16 px-4 sm:px-6 bg-transparent text-yellow-300">
+    <section className="py-16 px-4 sm:px-6 bg-transparent text-white">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl font-bold mb-2">
           <TextAnimate animation="blurInUp" by="character" once>
@@ -106,7 +106,7 @@ export default function Card() {
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-semibold transition-colors duration-300 group-hover:text-yellow-300">
+              <h3 className="text-2xl font-semibold transition-colors duration-300 group-hover:text-white">
                 {service.title}
               </h3>
 
@@ -119,7 +119,7 @@ export default function Card() {
               <div className="mt-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <Link
                   href="/service"
-                  className="flex items-center gap-2 px-4 py-2 rounded-full border border-white text-yellow-300 bg-transparent hover:bg-white hover:text-[#070121] transition-all duration-300"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full border border-white text-white bg-transparent hover:bg-white hover:text-[#070121] transition-all duration-300"
                 >
                   Read More <Send size={16} />
                 </Link>

@@ -125,7 +125,7 @@ export default function PortfolioPage() {
   return (
     <section className="w-full bg-transparent py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl text-yellow-300 font-bold mb-4">
+        <h2 className="text-4xl text-white font-bold mb-4">
           My Creative Work & Portfolio
         </h2>
         <p className="text-gray-400 mb-10">
@@ -189,7 +189,7 @@ function HoverButton({
       onClick={onClick}
       className={`relative group px-4 py-2 rounded-full border text-sm font-medium transition duration-300 ${
         isActive
-          ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-300"
+          ? "bg-gradient-to-r from-blue-900 to-gray-900 text-white"
           : "text-white hover:text-[#071c55] hover:bg-yellow-300"
       }`}
     >
@@ -221,7 +221,7 @@ import { Send } from "lucide-react";
 function AnimatedHoverButton({ label, slug }: { label: string; slug: string }) {
   return (
     <Link href={`/${slug}`}>
-      <button className="relative group flex items-center gap-2 px-2 py-1 bg-gradient-to-r from-blue-900 to-gray-900   text-yellow-300  hover:bg-white rounded-full border hover:border-yellow-400 transition-all duration-300 overflow-hidden ">
+      <button className="relative group flex items-center gap-2 px-2 py-1 bg-gradient-to-r from-blue-900 to-gray-900   text-white  hover:bg-white rounded-full border hover:border-yellow-400 transition-all duration-300 overflow-hidden ">
         <span className="transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0 flex items-center gap-1">
           <Send size={16} className="stroke-current" />
           {label}

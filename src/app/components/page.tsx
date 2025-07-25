@@ -61,8 +61,8 @@ const ReviewCard = ({
         className="w-14 h-14 rounded-full object-cover"
       />
       <div>
-        <h4 className="text-sm font-medium text-yellow-300">{name}</h4>
-        <p className="text-xs text-yellow-300/60">{username}</p>
+        <h4 className="text-sm font-medium text-white">{name}</h4>
+        <p className="text-xs text-white/60">{username}</p>
       </div>
     </div>
     <blockquote className="mt-2 text-sm text-gray-400 whitespace-normal break-words overflow-hidden">

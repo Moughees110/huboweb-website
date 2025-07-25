@@ -16,7 +16,7 @@ export default function WordpressServices() {
     <section className="w-full bg-transparent text-white py-20 px-4 md:px-12 space-y-20">
       {/* WordPress Services Overview */}
       <div>
-        <h2 className="text-3xl md:text-4xl font-bold text-yellow-300 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           Our WordPress Development Services
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
@@ -56,8 +56,8 @@ export default function WordpressServices() {
               key={idx}
               className="bg-white/5 p-6 rounded-xl shadow-md border border-white/10 space-y-3 hover:shadow-yellow-400/20 transition-all"
             >
-              <div className="text-yellow-300">{item.icon}</div>
-              <h3 className="text-xl font-semibold text-yellow-300">
+              <div className="text-white">{item.icon}</div>
+              <h3 className="text-xl font-semibold text-white">
                 {item.title}
               </h3>
               <p className="text-white/90">{item.desc}</p>
@@ -68,7 +68,7 @@ export default function WordpressServices() {
 
       {/* Development Process */}
       <div>
-        <h2 className="text-3xl md:text-4xl font-bold text-yellow-300 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           Our WordPress Development Process
         </h2>
         <ol className="space-y-8 relative border-l border-yellow-400 pl-6">
@@ -101,7 +101,7 @@ export default function WordpressServices() {
           ].map((step, index) => (
             <li key={index} className="relative">
               <div className="absolute -left-3 top-1 w-6 h-6 bg-yellow-300 rounded-full border-4 border-[#070121]"></div>
-              <h4 className="text-xl font-semibold text-yellow-300">
+              <h4 className="text-xl font-semibold text-white">
                 {step.title}
               </h4>
               <p className="text-white/90 mt-1">{step.content}</p>
@@ -112,7 +112,7 @@ export default function WordpressServices() {
 
       {/* Tools & Platforms */}
       <div>
-        <h2 className="text-3xl md:text-4xl font-bold text-yellow-300 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           Tools & Platforms We Work With
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -142,7 +142,7 @@ export default function WordpressServices() {
 
       {/* Why Choose Us */}
       <div>
-        <h2 className="text-3xl md:text-4xl font-bold text-yellow-300 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           Why Choose Our WordPress Services?
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
@@ -172,7 +172,7 @@ export default function WordpressServices() {
               key={i}
               className="bg-white/5 p-6 rounded-xl shadow-md border border-white/10 hover:shadow-yellow-400/20 transition-all"
             >
-              <h3 className="text-xl font-semibold text-yellow-300 mb-2">
+              <h3 className="text-xl font-semibold text-white mb-2">
                 {item.title}
               </h3>
               <p className="text-white/90">{item.content}</p>
@@ -183,7 +183,7 @@ export default function WordpressServices() {
 
       {/* FAQs */}
       <div>
-        <h2 className="text-3xl md:text-4xl font-bold text-yellow-300 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           Frequently Asked Questions
         </h2>
         <div className="space-y-6">
@@ -209,7 +209,7 @@ export default function WordpressServices() {
               key={index}
               className="bg-white/5 p-5 rounded-lg border border-white/10"
             >
-              <h4 className="text-lg font-semibold text-yellow-300">
+              <h4 className="text-lg font-semibold text-white">
                 {item.q}
               </h4>
               <p className="text-white/90 mt-2">{item.a}</p>
