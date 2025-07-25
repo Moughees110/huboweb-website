@@ -35,8 +35,8 @@ export default function SectionWithOrbit() {
         </div>
 
         {/* Right Side with extra left margin */}
-        <div className="md:w-1/2 flex items-center justify-center min-h-[450px] md:ml-12">
-          <div className="relative h-[400px] w-[400px]">
+        <div className="md:w-1/2 ml-14 flex items-center justify-center min-h-[450px] md:ml-12">
+          <div className="relative h-[400px] w-[350px]">
             <OrbitingCircles
               iconSize={48}
               outerRadius={150}

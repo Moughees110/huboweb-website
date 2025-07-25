@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
@@ -34,12 +33,11 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 px-4 sm:px-6 py-4 bg-transparent backdrop-blur-md shadow-md flex items-center justify-between rounded-[30px]">
-
+    <nav className="fixed top-0 left-0 w-full z-50 px-4 sm:px-6 py-4 bg-transparent backdrop-blur-md shadow-md flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center">
         <Image
-          src="/img/huboweb2.png"
+          src="/img/huboweb.png"
           alt="Logo"
           className="h-10 w-auto"
           width={100}
@@ -70,7 +68,7 @@ const Navbar = () => {
             className={`relative group cursor-pointer px-4 py-2 rounded-full overflow-hidden transition duration-300 ${
               activeItem === name
                 ? "bg-gradient-to-r from-blue-900 to-gray-900 text-white"
-                : "text-white hover:text-[#071c55]"
+                : "text-white hover:text-[#071C55]"
             }`}
           >
             <div
@@ -102,12 +100,29 @@ const Navbar = () => {
             </div>
           </Link>
         ))}
+
+        {/* ✅ Contact Us in Mobile Menu Only */}
+        <Link
+          href="/contact"
+          className="md:hidden group relative rounded-full px-[2px] py-[2px] bg-gradient-to-r from-blue-900 to-gray-900 transition-all duration-300"
+        >
+          <div className="flex items-center px-5 py-2 rounded-full bg-transparent hover:bg-white transition-all duration-300">
+            <div className="relative flex flex-col justify-center items-center text-sm font-medium text-white hover:text-black">
+              <span className="transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0">
+                Contact Us <span className="text-[10px]">▾</span>
+              </span>
+              <span className="absolute transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+                Contact Us <span className="text-[10px]">▾</span>
+              </span>
+            </div>
+          </div>
+        </Link>
       </div>
 
-      {/* Contact Us Button */}
+      {/* ✅ Contact Us Button for Desktop Only */}
       <Link
         href="/contact"
-        className="group relative rounded-full px-[2px] py-[2px] bg-gradient-to-r from-blue-900 to-gray-900 transition-all duration-300"
+        className="hidden md:block group relative rounded-full px-[2px] py-[2px] bg-gradient-to-r from-blue-900 to-gray-900 transition-all duration-300"
       >
         <div
           className={`flex items-center px-5 py-2 rounded-full overflow-hidden transition-all duration-300 ${

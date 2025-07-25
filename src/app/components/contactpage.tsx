@@ -105,7 +105,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="text-center">
-                <button className="bg-yellow-300 cursor-pointer text-[#071c55] border border-amber-400 hover:bg-white  font-semibold py-2 px-6 rounded-full transition">
+                <button className="bg-white cursor-pointer text-[#071c55] border  hover:bg-[#071c55] hover:text-white  font-semibold py-2 px-6 rounded-full transition">
                   Send Message
                 </button>
               </div>

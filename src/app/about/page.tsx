@@ -12,7 +12,7 @@ export default function About() {
         imageSrc="/img/ecommerce-softwares.png"
       />
       <Team/>
-      <OverTeam/>
+      {/* <OverTeam/> */}
     </div>
   )
 }
