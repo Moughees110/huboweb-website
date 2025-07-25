@@ -39,7 +39,7 @@ export default function ServicesSection() {
           <span className="px-4 py-1 text-sm font-semibold rounded-full bg-[#1F1F4B] text-white inline-block w-fit">
             Build with Elementor
           </span>
-          <h2 className="text-4xl md:text-5xl font-extrabold leading-snug">
+          <h2 className="text-4xl md:text-5xl text-black font-extrabold leading-snug">
             Build website visually with the Elementor Page Builder.
           </h2>
           <p className="text-black text-lg">
@@ -52,19 +52,19 @@ export default function ServicesSection() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
             <div className="flex items-center gap-3">
-              <CheckCircle className="text-white w-5 h-5" />
+              <CheckCircle className="text-black w-5 h-5" />
               <span className="text-black">Drag & Drop Editing</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="text-white w-5 h-5" />
+              <CheckCircle className="text-black w-5 h-5" />
               <span className="text-black">Unlimited Creativity</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="text-white w-5 h-5" />
+              <CheckCircle className="text-black w-5 h-5" />
               <span className="text-black">Responsive Design</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="text-white w-5 h-5" />
+              <CheckCircle className="text-black w-5 h-5" />
               <span className="text-black">Global Styling</span>
             </div>
           </div>

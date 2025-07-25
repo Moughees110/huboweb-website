@@ -75,17 +75,17 @@ export default function CareerSection() {
           {/* Social Media Row */}
           <div className="mb-8">
             <div className="flex items-center justify-between border-b border-gray-600 pb-3">
-              <p className="font-semibold text-white text-lg">
+              <p className="font-semibold text-black text-lg">
                 Social Media :
               </p>
               <div className="flex gap-2">
-                <a href="#" className="bg-yellow-300 p-2 rounded-sm text-black">
+                <a href="#" className="bg-black p-2 rounded-sm text-white">
                   <Facebook className="w-4 h-4" />
                 </a>
-                <a href="#" className="bg-yellow-300 p-2 rounded-sm text-black">
+                <a href="#" className="bg-black p-2 rounded-sm text-white">
                   <Twitter className="w-4 h-4" />
                 </a>
-                <a href="#" className="bg-yellow-300 p-2 rounded-sm text-black">
+                <a href="#" className="bg-black p-2 rounded-sm text-white">
                   <Youtube className="w-4 h-4" />
                 </a>
               </div>
@@ -96,7 +96,7 @@ export default function CareerSection() {
           <div className="flex flex-col md:flex-row justify-between items-start gap-10">
             {/* Left Text */}
             <div className="md:w-1/2">
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl text-black font-bold leading-tight mb-6">
                 More Jobs Equal a <br /> Better World
               </h1>
               <p className="text-black mb-4">

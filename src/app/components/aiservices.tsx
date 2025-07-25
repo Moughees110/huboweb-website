@@ -8,7 +8,7 @@ export default function AiServices() {
     <section className="relative w-full bg-white text-white py-20 px-4 md:px-10">
       {/* Top Heading */}
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-5xl font-bold leading-snug max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-5xl text-black font-bold leading-snug max-w-4xl mx-auto">
           Craft Stunning Visuals with our Powerful AI Tools
         </h2>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-black">
