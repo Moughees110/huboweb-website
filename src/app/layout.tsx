@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="bg-gradient-to-r from-[#070121] to-[#170080]">
+      <body className="bg-gradient-to-r from-[#070121] to-[#170080] ">
         <Navbar />
         {children}
         <Footer /> {/* ✅ Now it's inside <body> */}

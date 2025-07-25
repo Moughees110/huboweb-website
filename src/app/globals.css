@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+/* pages/globals.css */
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+
 /* Horizontal marquee animations */
 @keyframes marquee {
   from {

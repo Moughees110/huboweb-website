@@ -34,126 +34,118 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-  <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 bg-transparent backdrop-blur-md shadow-md flex items-center justify-between rounded-[30px]">
-    {/* Logo */}
-    <div className="flex items-center">
-      <Image
-        src="/img/huboweb2.png"
-        alt="Logo"
-        className="h-10 w-auto"
-        width={100}
-        height={40}
-      />
-    </div>
+    <nav className="fixed top-0 left-0 w-full z-50 px-4 sm:px-6 py-4 bg-transparent backdrop-blur-md shadow-md flex items-center justify-between rounded-[30px]">
 
-    {/* Right Section: Toggle Button (Mobile only) */}
-    <div className="flex items-center md:hidden ml-auto">
-      <button
-        onClick={() => setMenuOpen(!menuOpen)}
-        className="focus:outline-none text-yellow-300 bg-transparent p-2 rounded-full"
+      {/* Logo */}
+      <div className="flex items-center">
+        <Image
+          src="/img/huboweb2.png"
+          alt="Logo"
+          className="h-10 w-auto"
+          width={100}
+          height={40}
+        />
+      </div>
+
+      {/* Mobile Toggle */}
+      <div className="md:hidden">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="focus:outline-none text-yellow-400 bg-transparent p-2 rounded-full"
+        >
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Nav Links */}
+      <div
+        className={`${
+          menuOpen ? "flex" : "hidden"
+        } md:flex absolute md:static top-full left-0 w-full md:w-auto flex-col md:flex-row bg-[#070121] md:bg-transparent shadow-md md:shadow-none rounded-b-xl md:rounded-none mt-2 md:mt-0 p-4 md:p-0 gap-4 md:gap-6 z-20`}
       >
-        {menuOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
-    </div>
+        {navItems.map(({ name, path }) => (
+          <Link
+            key={name}
+            href={path}
+            className={`relative group cursor-pointer px-4 py-2 rounded-full overflow-hidden transition duration-300 ${
+              activeItem === name
+                ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-400"
+                : "text-yellow-400 hover:text-[#071c55]"
+            }`}
+          >
+            <div
+              className={`absolute inset-0 rounded-full transition-transform duration-300 ${
+                activeItem === name
+                  ? "scale-0"
+                  : "bg-yellow-400 scale-0 group-hover:scale-100"
+              }`}
+            />
+            <div className="relative z-10 flex flex-col items-center justify-center h-full font-medium">
+              <span
+                className={`transition-all duration-200 ${
+                  activeItem === name
+                    ? "opacity-0 -translate-y-full"
+                    : "group-hover:-translate-y-full group-hover:opacity-0"
+                }`}
+              >
+                {name} <span className="text-[10px]">▾</span>
+              </span>
+              <span
+                className={`absolute transition-all duration-300 ${
+                  activeItem === name
+                    ? "translate-y-0 opacity-100"
+                    : "translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
+                }`}
+              >
+                {name} <span className="text-[10px]">▾</span>
+              </span>
+            </div>
+          </Link>
+        ))}
+      </div>
 
-    {/* Nav Links (including contact on mobile) */}
-    <div
-      className={`${
-        menuOpen ? "flex" : "hidden"
-      } md:flex absolute md:static top-full right-0 w-full md:w-auto flex-col md:flex-row bg-[#070121] md:bg-transparent shadow-md md:shadow-none rounded-b-xl md:rounded-none mt-2 md:mt-0 p-4 md:p-0 gap-4 md:gap-6 z-20`}
-    >
-      {navItems.map(({ name, path }) => (
-        <Link
-          key={name}
-          href={path}
-          className={`relative group cursor-pointer px-4 py-2 rounded-full overflow-hidden transition duration-300 ${
-            activeItem === name
-              ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-300"
-              : "text-yellow-300 hover:text-[#071c55]"
+      {/* Contact Us Button */}
+      <Link
+        href="/contact"
+        className="group relative rounded-full px-[2px] py-[2px] bg-yellow-400 transition-all duration-300"
+      >
+        <div
+          className={`flex items-center px-5 py-2 rounded-full overflow-hidden transition-all duration-300 ${
+            activeItem === "Contact Us"
+              ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-400"
+              : "bg-transparent hover:bg-white"
           }`}
         >
           <div
-            className={`absolute inset-0 rounded-full transition-transform duration-300 ${
-              activeItem === name
-                ? "scale-0"
-                : "bg-yellow-300 scale-0 group-hover:scale-100"
+            className={`relative flex flex-col justify-center items-center text-sm font-medium ${
+              activeItem === "Contact Us"
+                ? "text-yellow-400"
+                : "text-black bg-clip-text bg-gradient-to-r from-blue-900 to-gray-900"
             }`}
-          />
-          <div className="relative z-10 flex flex-col items-center justify-center h-full font-medium">
+          >
             <span
-              className={`transition-all duration-200 ${
-                activeItem === name
+              className={`transition-all duration-300 ${
+                activeItem === "Contact Us"
                   ? "opacity-0 -translate-y-full"
                   : "group-hover:-translate-y-full group-hover:opacity-0"
               }`}
             >
-              {name} <span className="text-[10px]">▾</span>
+              Contact Us <span className="text-[10px]">▾</span>
             </span>
             <span
               className={`absolute transition-all duration-300 ${
-                activeItem === name
+                activeItem === "Contact Us"
                   ? "translate-y-0 opacity-100"
                   : "translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
               }`}
             >
-              {name} <span className="text-[10px]">▾</span>
+              Contact Us <span className="text-[10px]">▾</span>
             </span>
           </div>
-        </Link>
-      ))}
-
-      {/* Contact Us - Mobile Only */}
-      <Link
-        href="/contact"
-        className="md:hidden relative group rounded-full px-4 py-2 bg-yellow-300 text-black text-center text-sm font-medium"
-      >
-        Contact Us
-      </Link>
-    </div>
-
-    {/* Desktop Contact Us Button */}
-    <Link
-      href="/contact"
-      className="hidden md:block group relative rounded-full px-[2px] py-[2px] bg-yellow-300 transition-all duration-300"
-    >
-      <div
-        className={`flex items-center px-5 py-2 rounded-full overflow-hidden transition-all duration-300 ${
-          activeItem === "Contact Us"
-            ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-300"
-            : "bg-transparent hover:bg-white"
-        }`}
-      >
-        <div
-          className={`relative flex flex-col justify-center items-center text-sm font-medium ${
-            activeItem === "Contact Us"
-              ? "text-yellow-300"
-              : "text-black bg-clip-text bg-gradient-to-r from-blue-900 to-gray-900"
-          }`}
-        >
-          <span
-            className={`transition-all duration-300 ${
-              activeItem === "Contact Us"
-                ? "opacity-0 -translate-y-full"
-                : "group-hover:-translate-y-full group-hover:opacity-0"
-            }`}
-          >
-            Contact Us <span className="text-[10px]">▾</span>
-          </span>
-          <span
-            className={`absolute transition-all duration-300 ${
-              activeItem === "Contact Us"
-                ? "translate-y-0 opacity-100"
-                : "translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
-            }`}
-          >
-            Contact Us <span className="text-[10px]">▾</span>
-          </span>
         </div>
-      </div>
-    </Link>
-  </nav>
-);
-
+      </Link>
+    </nav>
+  );
 };
 
 export default Navbar;
