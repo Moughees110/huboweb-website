@@ -6,7 +6,7 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
+  CarouselPrevious
 } from "@/components/ui/carousel";
 import { Facebook, Twitter, Linkedin, Star } from "lucide-react";
 
@@ -16,41 +16,41 @@ const testimonials = [
     title: "Student loan refinancing",
     text: "SoFi has made my refinancing experience social, interesting, and fun through their community events and member engagement. I found their advisors supportive and responsive. Highly recommend them to anyone looking to refinance.",
     image: "/img/client.jpg",
-    color: "#F97316",
+    color: "#F97316"
   },
   {
     name: "Michael W.",
     title: "Student loan refinancing",
     text: "SoFi career coaching has helped me tremendously over the past few months. I doubt I would have been able to make the amount of progress in such a short time if I didn't have it available to me. They really understand what job seekers need.",
     image: "/img/client.jpg",
-    color: "#06B6D4",
+    color: "#06B6D4"
   },
   {
     name: "Sophia R.",
     title: "Home Loan",
     text: "Getting a home loan through SoFi was incredibly smooth and efficient. I felt supported every step of the way. Their team made the process easy and stress-free.",
     image: "/img/client.jpg",
-    color: "#84CC16",
+    color: "#84CC16"
   },
   {
     name: "David K.",
     title: "Investment Advice",
     text: "Their investment tools and advisors helped me make smarter decisions with my portfolio. I now feel much more confident in my financial future.",
     image: "/img/client.jpg",
-    color: "#A855F7",
+    color: "#A855F7"
   },
   {
     name: "Emily T.",
     title: "Career Coaching",
     text: "Thanks to SoFi, I landed my dream job in less than 3 months! The career coaching really works. I gained clarity, confidence, and real strategy to move forward.",
     image: "/img/client.jpg",
-    color: "#F43F5E",
-  },
+    color: "#F43F5E"
+  }
 ];
 
 export default function Testimonials() {
   return (
-    <div className="bg-transparent text-yellow-400 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-transparent text-yellow-300 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">Client testimonials</h2>
         <p className="text-sm text-gray-300 mb-12">
@@ -82,14 +82,14 @@ export default function Testimonials() {
                         >
                           {testimonial.name}
                         </h3>
-                        <p className="text-sm text-yellow-400 mt-1">
+                        <p className="text-sm text-yellow-300 mt-1">
                           {testimonial.title}
                         </p>
                       </div>
                       <div className="flex gap-3 mt-2 text-gray-300">
-                        <Facebook className="w-4 h-4 cursor-pointer hover:text-yellow-400" />
-                        <Twitter className="w-4 h-4 cursor-pointer hover:text-yellow-400" />
-                        <Linkedin className="w-4 h-4 cursor-pointer hover:text-yellow-400" />
+                        <Facebook className="w-4 h-4 cursor-pointer hover:text-yellow-300" />
+                        <Twitter className="w-4 h-4 cursor-pointer hover:text-yellow-300" />
+                        <Linkedin className="w-4 h-4 cursor-pointer hover:text-yellow-300" />
                       </div>
                     </div>
                     <div className="relative bg-[#1F1F4B] text-white p-4 rounded-lg shadow-md flex-1">
@@ -104,7 +104,7 @@ export default function Testimonials() {
                         {[...Array(5)].map((_, i) => (
                           <Star
                             key={i}
-                            className="w-4 h-4 text-yellow-400 fill-yellow-400"
+                            className="w-4 h-4 text-yellow-300 fill-yellow-400"
                           />
                         ))}
                       </div>

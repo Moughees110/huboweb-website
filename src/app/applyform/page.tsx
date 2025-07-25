@@ -1,11 +1,11 @@
 "use client";
-import { Send  } from "lucide-react";
+import { Send } from "lucide-react";
 
 export default function ApplyForm() {
   return (
     <section className="bg-transparent py-16 px-4 flex justify-center items-center mt-20">
-      <form className="w-full max-w-5xl bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-10 shadow-2xl space-y-8 text-white">
-        <h2 className="text-3xl text-yellow-400 font-bold text-center">
+      <form className="w-full max-w-5xl  backdrop-blur-md border border-blue-800/10 rounded-xl p-10 shadow-2xl space-y-8 text-white">
+        <h2 className="text-3xl text-yellow-300 font-bold text-center">
           Apply Now
         </h2>
 
@@ -120,10 +120,10 @@ export default function ApplyForm() {
         ></textarea>
 
         <div>
-          <label className="block text-sm font-medium mb-1">CV Upload</label>
+          <label className="block py-2 text-sm font-medium mb-1">CV Upload</label>
           <input
             type="file"
-            className="block w-full text-sm text-white bg-white/10 border border-white/20 rounded-md cursor-pointer file:bg-blue-900 file:text-white file:px-4 file:py-1 file:border-0 file:rounded file:mr-4"
+            className="block  w-full text-sm text-white bg-transparent border border-white/20 rounded-md cursor-pointer file:bg-blue-950 file:text-white file:px-4 file:py-1 file:border-0 file:rounded file:mr-4"
           />
         </div>
 
@@ -132,7 +132,6 @@ export default function ApplyForm() {
             type="reset"
             className="px-6 py-1 flex items-center gap-2 rounded-full bg-gray-800/20 border border-white/20 hover:bg-white/20 transition"
           >
-          
             Cancel
           </button>
 

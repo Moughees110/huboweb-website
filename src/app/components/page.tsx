@@ -55,16 +55,19 @@ const ReviewCard = ({
 }) => (
   <div className="w-64 shrink-0 p-4 border rounded-xl border-gray-900 bg-gray-950/10 mx-2">
     <div className="flex items-center gap-3">
-      <img src={img} alt={name} className="w-14 h-14 rounded-full object-cover" />
+      <img
+        src={img}
+        alt={name}
+        className="w-14 h-14 rounded-full object-cover"
+      />
       <div>
-        <h4 className="text-sm font-medium text-yellow-400">{name}</h4>
-        <p className="text-xs text-yellow-400/60">{username}</p>
+        <h4 className="text-sm font-medium text-yellow-300">{name}</h4>
+        <p className="text-xs text-yellow-300/60">{username}</p>
       </div>
     </div>
     <blockquote className="mt-2 text-sm text-gray-400 whitespace-normal break-words overflow-hidden">
-  {body}
-</blockquote>
-
+      {body}
+    </blockquote>
   </div>
 );
 
@@ -75,42 +78,41 @@ export default function MarqueeDemo() {
   return (
     <div className="relative flex flex-col gap-5 py-10 overflow-hidden">
       {/* First Row (Left) */}
-     {/* First Line – Left to Right */}
-<div
-  onMouseEnter={() => setPauseFirst(true)}
-  onMouseLeave={() => setPauseFirst(false)}
-  className="overflow-hidden w-full"
->
-  <div
-    className={cn(
-      "flex w-max animate-marquee-left whitespace-nowrap",
-      pauseFirst && "motion-paused"
-    )}
-  >
-    {[...reviews, ...reviews].map((review, i) => (
-      <ReviewCard key={i} {...review} />
-    ))}
-  </div>
-</div>
+      {/* First Line – Left to Right */}
+      <div
+        onMouseEnter={() => setPauseFirst(true)}
+        onMouseLeave={() => setPauseFirst(false)}
+        className="overflow-hidden w-full"
+      >
+        <div
+          className={cn(
+            "flex w-max animate-marquee-left whitespace-nowrap",
+            pauseFirst && "motion-paused"
+          )}
+        >
+          {[...reviews, ...reviews].map((review, i) => (
+            <ReviewCard key={i} {...review} />
+          ))}
+        </div>
+      </div>
 
-{/* Second Line – Right to Left */}
-<div
-  onMouseEnter={() => setPauseSecond(true)}
-  onMouseLeave={() => setPauseSecond(false)}
-  className="overflow-hidden w-full"
->
-  <div
-    className={cn(
-      "flex w-max animate-marquee-right whitespace-nowrap",
-      pauseSecond && "motion-paused"
-    )}
-  >
-    {[...reviews, ...reviews].map((review, i) => (
-      <ReviewCard key={i + 100} {...review} />
-    ))}
-  </div>
-</div>
-
+      {/* Second Line – Right to Left */}
+      <div
+        onMouseEnter={() => setPauseSecond(true)}
+        onMouseLeave={() => setPauseSecond(false)}
+        className="overflow-hidden w-full"
+      >
+        <div
+          className={cn(
+            "flex w-max animate-marquee-right whitespace-nowrap",
+            pauseSecond && "motion-paused"
+          )}
+        >
+          {[...reviews, ...reviews].map((review, i) => (
+            <ReviewCard key={i + 100} {...review} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

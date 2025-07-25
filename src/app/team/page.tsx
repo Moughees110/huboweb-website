@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation"; // ✅ IMPORT
-import { Instagram, Linkedin, Facebook, Twitter,Send } from "lucide-react";
+import { Instagram, Linkedin, Facebook, Twitter, Send } from "lucide-react";
 
 const teamMembers = [
   {
@@ -48,7 +48,7 @@ export default function Team() {
   const router = useRouter(); // ✅ INIT ROUTER
 
   return (
-    <section className="py-36 px-6 bg-gradient-to-r from-[#070121] to-gray-900 text-yellow-400">
+    <section className="py-36 px-6 bg-transparent text-yellow-300">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-center">WHO WE ARE</h2>
         <p className="text-sm text-white text-center mb-10">
@@ -92,7 +92,7 @@ export default function Team() {
                     {/* ✅ OnClick navigation */}
                     <button
                       onClick={() => router.push(getMemberRoute(member.name))}
-                      className="mt-2 bg-white text-black text-sm px-3 py-1 rounded-full flex items-center gap-1 hover:bg-[#070121] hover:text-yellow-400 transition"
+                      className="mt-2 bg-white text-black text-sm px-3 py-1 rounded-full flex items-center gap-1 hover:bg-[#070121] hover:text-yellow-300 transition"
                     >
                       Details
                       <Send size={16} />

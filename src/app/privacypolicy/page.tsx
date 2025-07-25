@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
   return (
     <section className="bg-transparent text-white py-20 px-6 md:px-12 backdrop-blur-md">
       <div className="max-w-5xl mx-auto bg-white/5 p-10 rounded-xl border border-white/10 shadow-2xl">
-        <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-yellow-300 text-center mb-12">
           Privacy Policy
         </h1>
 

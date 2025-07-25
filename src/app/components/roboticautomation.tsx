@@ -1,66 +1,78 @@
 "use client";
 
-import { Bot, Cpu, Workflow, ShieldCheck, Zap, HelpCircle, CheckCircle } from "lucide-react";
+import {
+  Bot,
+  Cpu,
+  Workflow,
+  ShieldCheck,
+  Zap,
+  HelpCircle,
+  CheckCircle
+} from "lucide-react";
 
 export default function RoboticAutomation() {
   return (
     <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white py-20 px-4 md:px-10 space-y-20">
       {/* Intro Section */}
-     <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-20">
-  {/* Text Section */}
-  <div className="md:w-1/2 text-left space-y-6">
-    <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-400">
-      Robotic Process Automation (RPA)
-    </h2>
-    <p className="text-lg md:text-xl text-gray-300 max-w-xl">
-      Streamline and optimize repetitive business processes with intelligent automation. Our RPA services help you reduce manual effort, eliminate errors, and enhance productivity using modern bots and automation tools.
-    </p>
-  </div>
+      <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-20">
+        {/* Text Section */}
+        <div className="md:w-1/2 text-left space-y-6">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-300">
+            Robotic Process Automation (RPA)
+          </h2>
+          <p className="text-lg md:text-xl text-gray-300 max-w-xl">
+            Streamline and optimize repetitive business processes with
+            intelligent automation. Our RPA services help you reduce manual
+            effort, eliminate errors, and enhance productivity using modern bots
+            and automation tools.
+          </p>
+        </div>
 
-  {/* Image Section */}
-  <div className="relative md:w-1/2 flex items-center justify-center">
-    {/* Main Large Image */}
-    <img
-      src="/img/robotic.webp"
-      alt="RPA Main"
-      className="w-[350px] md:w-[450px] rounded-xl shadow-2xl"
-    />
+        {/* Image Section */}
+        <div className="relative md:w-1/2 flex items-center justify-center">
+          {/* Main Large Image */}
+          <img
+            src="/img/robotic.webp"
+            alt="RPA Main"
+            className="w-[350px] md:w-[450px] rounded-xl shadow-2xl"
+          />
 
-    {/* Small Image Top Left */}
-    <img
-      src="/img/robotic1.webp"
-      alt="RPA Small 1"
-      className="absolute top-[-30px] left-[10%] w-24 md:w-32 rounded-lg shadow-lg rotate-[-6deg]"
-    />
+          {/* Small Image Top Left */}
+          <img
+            src="/img/robotic1.webp"
+            alt="RPA Small 1"
+            className="absolute top-[-30px] left-[10%] w-24 md:w-32 rounded-lg shadow-lg rotate-[-6deg]"
+          />
 
-    {/* Small Image Bottom Right */}
-    <img
-      src="/img/robotic2.jpg"
-      alt="RPA Small 2"
-      className="absolute bottom-[-30px] right-[10%] w-24 md:w-32 rounded-lg shadow-lg rotate-[8deg]"
-    />
-  </div>
-</div>
-
+          {/* Small Image Bottom Right */}
+          <img
+            src="/img/robotic2.jpg"
+            alt="RPA Small 2"
+            className="absolute bottom-[-30px] right-[10%] w-24 md:w-32 rounded-lg shadow-lg rotate-[8deg]"
+          />
+        </div>
+      </div>
 
       {/* Benefits Section */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-yellow-400">Why RPA Matters</h3>
+        <h3 className="text-3xl font-bold text-yellow-300">Why RPA Matters</h3>
         <ul className="grid gap-6 md:grid-cols-2 text-gray-300">
           <li className="flex gap-4">
-            <Zap className="text-yellow-400" />
-            <span>Increase operational efficiency and speed through task automation.</span>
+            <Zap className="text-yellow-300" />
+            <span>
+              Increase operational efficiency and speed through task automation.
+            </span>
           </li>
           <li className="flex gap-4">
-            <Cpu className="text-yellow-400" />
+            <Cpu className="text-yellow-300" />
             <span>Eliminate human errors in repetitive processes.</span>
           </li>
           <li className="flex gap-4">
-            <ShieldCheck className="text-yellow-400" />
+            <ShieldCheck className="text-yellow-300" />
             <span>Ensure compliance by standardizing workflows.</span>
           </li>
           <li className="flex gap-4">
-            <Workflow className="text-yellow-400" />
+            <Workflow className="text-yellow-300" />
             <span>Free up your workforce to focus on higher-value tasks.</span>
           </li>
         </ul>
@@ -68,65 +80,126 @@ export default function RoboticAutomation() {
 
       {/* What We Automate Section */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-yellow-400">What Can Be Automated?</h3>
-        <p className="text-gray-300">We specialize in automating tasks across departments:</p>
+        <h3 className="text-3xl font-bold text-yellow-300">
+          What Can Be Automated?
+        </h3>
+        <p className="text-gray-300">
+          We specialize in automating tasks across departments:
+        </p>
         <ul className="grid gap-4 md:grid-cols-2 text-gray-300">
-          <li className="flex gap-4"><CheckCircle className="text-yellow-400" /> Data entry and data migration</li>
-          <li className="flex gap-4"><CheckCircle className="text-yellow-400" /> Invoice processing and finance tasks</li>
-          <li className="flex gap-4"><CheckCircle className="text-yellow-400" /> HR onboarding and document handling</li>
-          <li className="flex gap-4"><CheckCircle className="text-yellow-400" /> Customer service ticket routing</li>
-          <li className="flex gap-4"><CheckCircle className="text-yellow-400" /> Inventory updates and logistics</li>
-          <li className="flex gap-4"><CheckCircle className="text-yellow-400" /> Report generation and dashboard updates</li>
+          <li className="flex gap-4">
+            <CheckCircle className="text-yellow-300" /> Data entry and data
+            migration
+          </li>
+          <li className="flex gap-4">
+            <CheckCircle className="text-yellow-300" /> Invoice processing and
+            finance tasks
+          </li>
+          <li className="flex gap-4">
+            <CheckCircle className="text-yellow-300" /> HR onboarding and
+            document handling
+          </li>
+          <li className="flex gap-4">
+            <CheckCircle className="text-yellow-300" /> Customer service ticket
+            routing
+          </li>
+          <li className="flex gap-4">
+            <CheckCircle className="text-yellow-300" /> Inventory updates and
+            logistics
+          </li>
+          <li className="flex gap-4">
+            <CheckCircle className="text-yellow-300" /> Report generation and
+            dashboard updates
+          </li>
         </ul>
       </div>
 
       {/* Our Process Section */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-yellow-400">Our RPA Implementation Process</h3>
+        <h3 className="text-3xl font-bold text-yellow-300">
+          Our RPA Implementation Process
+        </h3>
         <ol className="list-decimal ml-6 text-gray-300 space-y-2">
-          <li>We analyze and identify automation-ready processes within your organization.</li>
+          <li>
+            We analyze and identify automation-ready processes within your
+            organization.
+          </li>
           <li>Design custom bots tailored to your workflow requirements.</li>
-          <li>Develop and test the automation solution in a secure environment.</li>
-          <li>Deploy bots and ensure smooth integration with your existing systems.</li>
+          <li>
+            Develop and test the automation solution in a secure environment.
+          </li>
+          <li>
+            Deploy bots and ensure smooth integration with your existing
+            systems.
+          </li>
           <li>Monitor, support, and continuously optimize the RPA setup.</li>
         </ol>
       </div>
 
       {/* Testimonials Section */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-yellow-400">What Our Clients Say</h3>
+        <h3 className="text-3xl font-bold text-yellow-300">
+          What Our Clients Say
+        </h3>
         <div className="grid gap-6 md:grid-cols-2">
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <p className="text-gray-300">“The RPA bots developed by their team have saved us hundreds of hours every month. Exceptional service and results!”</p>
-            <p className="text-yellow-400 mt-2 font-semibold">— Adeel H., Operations Manager</p>
+            <p className="text-gray-300">
+              “The RPA bots developed by their team have saved us hundreds of
+              hours every month. Exceptional service and results!”
+            </p>
+            <p className="text-yellow-300 mt-2 font-semibold">
+              — Adeel H., Operations Manager
+            </p>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <p className="text-gray-300">“Their automation workflows integrated seamlessly with our CRM and finance systems. Highly recommend for scalable automation.”</p>
-            <p className="text-yellow-400 mt-2 font-semibold">— Sana A., CTO</p>
+            <p className="text-gray-300">
+              “Their automation workflows integrated seamlessly with our CRM and
+              finance systems. Highly recommend for scalable automation.”
+            </p>
+            <p className="text-yellow-300 mt-2 font-semibold">— Sana A., CTO</p>
           </div>
         </div>
       </div>
 
       {/* FAQ Section */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-yellow-400">FAQs</h3>
+        <h3 className="text-3xl font-bold text-yellow-300">FAQs</h3>
         <div className="space-y-4 text-gray-300">
           <div>
-            <h4 className="flex gap-2 items-center font-semibold text-yellow-400"><HelpCircle className="w-5 h-5" /> Is RPA suitable for small businesses?</h4>
-            <p>Yes! RPA can streamline processes in businesses of all sizes, making operations faster and more reliable.</p>
+            <h4 className="flex gap-2 items-center font-semibold text-yellow-300">
+              <HelpCircle className="w-5 h-5" /> Is RPA suitable for small
+              businesses?
+            </h4>
+            <p>
+              Yes! RPA can streamline processes in businesses of all sizes,
+              making operations faster and more reliable.
+            </p>
           </div>
           <div>
-            <h4 className="flex gap-2 items-center font-semibold text-yellow-400"><HelpCircle className="w-5 h-5" /> How long does it take to implement?</h4>
-            <p>It depends on the complexity, but many automations can be designed and deployed within 2–4 weeks.</p>
+            <h4 className="flex gap-2 items-center font-semibold text-yellow-300">
+              <HelpCircle className="w-5 h-5" /> How long does it take to
+              implement?
+            </h4>
+            <p>
+              It depends on the complexity, but many automations can be designed
+              and deployed within 2–4 weeks.
+            </p>
           </div>
         </div>
       </div>
 
       {/* Call to Action */}
       <div className="text-center space-y-4">
-        <h3 className="text-3xl font-bold text-yellow-400">Ready to Automate?</h3>
-        <p className="text-gray-300">Let’s build powerful bots that save time and improve efficiency. Contact us today to get started.</p>
-        <button className="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 rounded-full transition-all">Get a Free RPA Consultation</button>
+        <h3 className="text-3xl font-bold text-yellow-300">
+          Ready to Automate?
+        </h3>
+        <p className="text-gray-300">
+          Let’s build powerful bots that save time and improve efficiency.
+          Contact us today to get started.
+        </p>
+        <button className="bg-yellow-300 hover:bg-yellow-300 text-black font-semibold px-6 py-3 rounded-full transition-all">
+          Get a Free RPA Consultation
+        </button>
       </div>
     </section>
   );

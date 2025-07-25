@@ -10,26 +10,29 @@ export default function ContentWritingService() {
       <div className="flex flex-col md:flex-row items-start gap-10">
         {/* Text Content */}
         <div className="flex-1">
-          <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
             Why Choose Our Content Writing Services
           </h2>
           <p className="text-lg text-gray-300 max-w-4xl mb-6">
-            Powerful content drives engagement, builds trust, and converts visitors into loyal customers.
-            Our team of expert content strategists and copywriters crafts compelling, SEO-optimized content
-            tailored to your business goals. Whether it’s website copy, blog posts, or marketing material —
-            we deliver content that speaks directly to your audience.
+            Powerful content drives engagement, builds trust, and converts
+            visitors into loyal customers. Our team of expert content
+            strategists and copywriters crafts compelling, SEO-optimized content
+            tailored to your business goals. Whether it’s website copy, blog
+            posts, or marketing material — we deliver content that speaks
+            directly to your audience.
           </p>
           <ul className="space-y-4 text-gray-200">
             <li className="flex items-start gap-3">
-              <ThumbsUp className="text-yellow-400 mt-1" />
-              Engaging and persuasive copy that resonates with your target audience
+              <ThumbsUp className="text-yellow-300 mt-1" />
+              Engaging and persuasive copy that resonates with your target
+              audience
             </li>
             <li className="flex items-start gap-3">
-              <ThumbsUp className="text-yellow-400 mt-1" />
+              <ThumbsUp className="text-yellow-300 mt-1" />
               SEO-friendly writing to improve your search engine visibility
             </li>
             <li className="flex items-start gap-3">
-              <ThumbsUp className="text-yellow-400 mt-1" />
+              <ThumbsUp className="text-yellow-300 mt-1" />
               Tailored content strategies based on your niche and industry
             </li>
           </ul>
@@ -49,42 +52,44 @@ export default function ContentWritingService() {
 
       {/* Services We Offer */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
           Services We Offer
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             {
               title: "Website Copywriting",
-              desc: "Conversion-focused content that reflects your brand’s voice and values.",
+              desc: "Conversion-focused content that reflects your brand’s voice and values."
             },
             {
               title: "Blog & Article Writing",
-              desc: "Informative, engaging articles to educate and attract your target audience.",
+              desc: "Informative, engaging articles to educate and attract your target audience."
             },
             {
               title: "SEO Content",
-              desc: "Optimized content with strategic keyword placement and high readability.",
+              desc: "Optimized content with strategic keyword placement and high readability."
             },
             {
               title: "Product Descriptions",
-              desc: "Crisp, clear, and persuasive descriptions to boost your e-commerce conversions.",
+              desc: "Crisp, clear, and persuasive descriptions to boost your e-commerce conversions."
             },
             {
               title: "Social Media Content",
-              desc: "Creative captions and post ideas tailored to your social media platforms.",
+              desc: "Creative captions and post ideas tailored to your social media platforms."
             },
             {
               title: "Email Copywriting",
-              desc: "Compelling email content that drives opens, clicks, and conversions.",
-            },
+              desc: "Compelling email content that drives opens, clicks, and conversions."
+            }
           ].map((item, i) => (
             <div
               key={i}
               className="bg-white/5 border border-white/10 rounded-xl p-6 space-y-3 hover:border-yellow-400 transition"
             >
-              <FileText className="text-yellow-400" />
-              <h3 className="text-xl font-semibold text-yellow-400">{item.title}</h3>
+              <FileText className="text-yellow-300" />
+              <h3 className="text-xl font-semibold text-yellow-300">
+                {item.title}
+              </h3>
               <p className="text-gray-300">{item.desc}</p>
             </div>
           ))}
@@ -95,7 +100,7 @@ export default function ContentWritingService() {
       <div className="flex flex-col md:flex-row gap-10 items-start">
         {/* Steps */}
         <div className="flex-1">
-          <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
             Our Writing Process
           </h2>
           <ol className="space-y-6 border-l-2 border-yellow-400 pl-6">
@@ -105,10 +110,10 @@ export default function ContentWritingService() {
               "Outline & Strategy",
               "Content Drafting",
               "Editing & Proofreading",
-              "Final Approval & Delivery",
+              "Final Approval & Delivery"
             ].map((step, index) => (
               <li key={index} className="relative">
-                <span className="absolute -left-4 top-1.5 w-3 h-3 bg-yellow-400 rounded-full" />
+                <span className="absolute -left-4 top-1.5 w-3 h-3 bg-yellow-300 rounded-full" />
                 <h4 className="text-lg font-semibold text-white">{step}</h4>
               </li>
             ))}
@@ -129,7 +134,7 @@ export default function ContentWritingService() {
 
       {/* Testimonials */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-10">
           What Our Clients Say
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -140,12 +145,13 @@ export default function ContentWritingService() {
             >
               <div className="flex gap-2">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400" />
+                  <Star key={i} className="w-5 h-5 text-yellow-300" />
                 ))}
               </div>
               <p className="text-gray-300">
-                “Their writing transformed our online presence. The tone was spot on,
-                the SEO results were impressive, and our audience engagement doubled!”
+                “Their writing transformed our online presence. The tone was
+                spot on, the SEO results were impressive, and our audience
+                engagement doubled!”
               </p>
               <p className="text-white font-semibold">— Ahmed Rehman</p>
             </div>
@@ -155,7 +161,7 @@ export default function ContentWritingService() {
 
       {/* FAQ Section */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-8">
           Frequently Asked Questions
         </h2>
         <div className="space-y-6">
@@ -164,8 +170,8 @@ export default function ContentWritingService() {
               Do you write for specific industries?
             </h4>
             <p className="text-gray-300">
-              Yes, our writers have experience across various industries including tech, real estate,
-              health, fashion, and more.
+              Yes, our writers have experience across various industries
+              including tech, real estate, health, fashion, and more.
             </p>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-lg p-5">
@@ -173,7 +179,8 @@ export default function ContentWritingService() {
               Will the content be SEO optimized?
             </h4>
             <p className="text-gray-300">
-              Absolutely. We use researched keywords, meta-friendly structures, and engaging headers for better rankings.
+              Absolutely. We use researched keywords, meta-friendly structures,
+              and engaging headers for better rankings.
             </p>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-lg p-5">
@@ -181,7 +188,8 @@ export default function ContentWritingService() {
               Do you offer revisions?
             </h4>
             <p className="text-gray-300">
-              Yes, we offer up to 3 free revisions for every piece of content to ensure full satisfaction.
+              Yes, we offer up to 3 free revisions for every piece of content to
+              ensure full satisfaction.
             </p>
           </div>
         </div>
@@ -189,13 +197,14 @@ export default function ContentWritingService() {
 
       {/* Call to Action */}
       <div className="text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-4">
           Need Content That Converts?
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto mb-6">
-          Let our expert writers craft compelling content tailored to your goals. Contact us today and elevate your brand with powerful words.
+          Let our expert writers craft compelling content tailored to your
+          goals. Contact us today and elevate your brand with powerful words.
         </p>
-        <button className="bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full hover:bg-yellow-300 transition">
+        <button className="bg-yellow-300 text-black font-semibold py-3 px-6 rounded-full hover:bg-yellow-300 transition">
           Request a Free Consultation
         </button>
       </div>

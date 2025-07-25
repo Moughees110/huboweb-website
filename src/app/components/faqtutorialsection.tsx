@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function FaqTutorialSection() {
   return (
-    <section className="bg-transparent text-yellow-400 py-20 px-6 md:px-16 relative">
+    <section className="bg-transparent text-yellow-300 py-20 px-6 md:px-16 relative">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Content */}
         <div className="md:w-1/2">
@@ -27,7 +27,7 @@ export default function FaqTutorialSection() {
               product.
             </TextAnimate>
           </p>
-          <button className="bg-yellow-400 cursor-pointer text-[#071c55] border border-amber-400 hover:bg-white  font-semibold py-2 px-6 rounded-full transition">
+          <button className="bg-yellow-300 cursor-pointer text-[#071c55] border border-amber-400 hover:bg-white  font-semibold py-2 px-6 rounded-full transition">
             View More
           </button>
         </div>

@@ -50,7 +50,7 @@ const Navbar = () => {
       <div className="md:hidden">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="focus:outline-none text-yellow-400 bg-transparent p-2 rounded-full"
+          className="focus:outline-none text-yellow-300 bg-transparent p-2 rounded-full"
         >
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -68,15 +68,15 @@ const Navbar = () => {
             href={path}
             className={`relative group cursor-pointer px-4 py-2 rounded-full overflow-hidden transition duration-300 ${
               activeItem === name
-                ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-400"
-                : "text-yellow-400 hover:text-[#071c55]"
+                ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-300"
+                : "text-yellow-300 hover:text-[#071c55]"
             }`}
           >
             <div
               className={`absolute inset-0 rounded-full transition-transform duration-300 ${
                 activeItem === name
                   ? "scale-0"
-                  : "bg-yellow-400 scale-0 group-hover:scale-100"
+                  : "bg-yellow-300 scale-0 group-hover:scale-100"
               }`}
             />
             <div className="relative z-10 flex flex-col items-center justify-center h-full font-medium">
@@ -106,19 +106,19 @@ const Navbar = () => {
       {/* Contact Us Button */}
       <Link
         href="/contact"
-        className="group relative rounded-full px-[2px] py-[2px] bg-yellow-400 transition-all duration-300"
+        className="group relative rounded-full px-[2px] py-[2px] bg-yellow-300 transition-all duration-300"
       >
         <div
           className={`flex items-center px-5 py-2 rounded-full overflow-hidden transition-all duration-300 ${
             activeItem === "Contact Us"
-              ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-400"
+              ? "bg-gradient-to-r from-blue-900 to-gray-900 text-yellow-300"
               : "bg-transparent hover:bg-white"
           }`}
         >
           <div
             className={`relative flex flex-col justify-center items-center text-sm font-medium ${
               activeItem === "Contact Us"
-                ? "text-yellow-400"
+                ? "text-yellow-300"
                 : "text-black bg-clip-text bg-gradient-to-r from-blue-900 to-gray-900"
             }`}
           >

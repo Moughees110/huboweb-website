@@ -8,7 +8,7 @@ import {
   Activity,
   Globe,
   Layers3,
-  LayoutDashboard,
+  LayoutDashboard
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -16,54 +16,56 @@ const techStack = [
   {
     title: "Frontend",
     description: "React.js, Next.js, Tailwind CSS, HTML5, CSS3, TypeScript",
-    icon: <LayoutDashboard className="h-8 w-8 text-yellow-400" />,
+    icon: <LayoutDashboard className="h-8 w-8 text-yellow-300" />
   },
   {
     title: "Backend",
     description: "Node.js, Express.js, Firebase, REST APIs, GraphQL",
-    icon: <Server className="h-8 w-8 text-yellow-400" />,
+    icon: <Server className="h-8 w-8 text-yellow-300" />
   },
   {
     title: "Database",
     description: "MongoDB, PostgreSQL, MySQL, Firestore",
-    icon: <Database className="h-8 w-8 text-yellow-400" />,
+    icon: <Database className="h-8 w-8 text-yellow-300" />
   },
   {
     title: "CMS",
     description: "WordPress, Sanity.io, Strapi, Contentful",
-    icon: <Layers3 className="h-8 w-8 text-yellow-400" />,
+    icon: <Layers3 className="h-8 w-8 text-yellow-300" />
   },
   {
     title: "DevOps",
     description: "Vercel, Netlify, GitHub Actions, Docker",
-    icon: <Cloud className="h-8 w-8 text-yellow-400" />,
+    icon: <Cloud className="h-8 w-8 text-yellow-300" />
   },
   {
     title: "Performance",
     description: "SEO, Lighthouse Audits, PageSpeed Optimization",
-    icon: <Activity className="h-8 w-8 text-yellow-400" />,
+    icon: <Activity className="h-8 w-8 text-yellow-300" />
   },
   {
     title: "APIs",
     description: "REST, GraphQL, OAuth, 3rd Party Integrations",
-    icon: <Globe className="h-8 w-8 text-yellow-400" />,
+    icon: <Globe className="h-8 w-8 text-yellow-300" />
   },
   {
     title: "Testing",
-    description: "Jest, React Testing Library, Postman, Unit & Integration Tests",
-    icon: <Code className="h-8 w-8 text-yellow-400" />,
-  },
+    description:
+      "Jest, React Testing Library, Postman, Unit & Integration Tests",
+    icon: <Code className="h-8 w-8 text-yellow-300" />
+  }
 ];
 
 export default function TechnologyStack() {
   return (
     <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white py-20 px-4 md:px-10">
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-4">
           Technology Stack
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          We use modern tools and technologies to build scalable, fast, and reliable web solutions.
+          We use modern tools and technologies to build scalable, fast, and
+          reliable web solutions.
         </p>
       </div>
 
@@ -78,7 +80,9 @@ export default function TechnologyStack() {
             className="bg-[#0e0b2a] border border-gray-800 rounded-2xl p-6 shadow-md hover:shadow-yellow-500/20 transition-shadow"
           >
             <div className="mb-4">{tech.icon}</div>
-            <h3 className="text-xl font-semibold text-yellow-400 mb-2">{tech.title}</h3>
+            <h3 className="text-xl font-semibold text-yellow-300 mb-2">
+              {tech.title}
+            </h3>
             <p className="text-gray-400 text-sm">{tech.description}</p>
           </motion.div>
         ))}

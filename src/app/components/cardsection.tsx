@@ -166,15 +166,15 @@ export default function CardSection() {
                 <div className="w-20 h-20 flex items-center justify-center rounded-full border-4 border-[var(--clr)] text-[var(--clr)] transition-transform duration-500 group-hover:scale-110">
                   <card.icon size={36} />
                 </div>
-                <h3 className="text-yellow-400 text-xl font-semibold group-hover:text-[var(--clr)] transition-colors duration-300">
+                <h3 className="text-yellow-300 text-xl font-semibold group-hover:text-[var(--clr)] transition-colors duration-300">
                   {card.title}
                 </h3>
-                <p className="text-sm text-gray-300 group-hover:text-yellow-400 transition duration-300">
+                <p className="text-sm text-gray-300 group-hover:text-yellow-300 transition duration-300">
                   {card.description}
                 </p>
                 <Link
                   href={`/servicespage/${card.slug}`}
-                  className="inline-block mt-2 px-5 py-2 border-2 border-[var(--clr)] text-yellow-400 rounded-full transition-all duration-300 group-hover:bg-[var(--clr)] group-hover:text-black"
+                  className="inline-block mt-2 px-5 py-2 border-2 border-[var(--clr)] text-yellow-300 rounded-full transition-all duration-300 group-hover:bg-[var(--clr)] group-hover:text-black"
                 >
                   Read More
                 </Link>
@@ -213,7 +213,7 @@ export default function CardSection() {
             </button>
           ))}
           <button
-            className="px-4 py-2 rounded bg-white/10 text-yellow-400 hover:bg-white/20 transition"
+            className="px-4 py-2 rounded bg-white/10 text-yellow-300 hover:bg-white/20 transition"
             disabled={currentPage === totalPages}
             onClick={() => setCurrentPage((p) => p + 1)}
           >

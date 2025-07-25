@@ -8,7 +8,7 @@ import {
   Instagram,
   FileText,
   LayoutTemplate,
-  Contact2,
+  Contact2
 } from "lucide-react";
 
 export default function GraphicPage() {
@@ -16,27 +16,28 @@ export default function GraphicPage() {
     <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white px-6 md:px-16 py-20 space-y-24">
       {/* Why Choose Us */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
           Why Choose Our Graphic Design Services
         </h2>
         <div className="flex flex-col md:flex-row gap-10">
           <div className="flex-1">
             <p className="text-lg text-gray-300 max-w-3xl mb-6">
-              At our software house, we don’t just design — we tell your brand’s story
-              through stunning visuals. With a team of seasoned graphic designers,
-              we ensure every design is modern, brand-focused, and conversion-optimized.
+              At our software house, we don’t just design — we tell your brand’s
+              story through stunning visuals. With a team of seasoned graphic
+              designers, we ensure every design is modern, brand-focused, and
+              conversion-optimized.
             </p>
             <ul className="space-y-4 text-gray-200">
               <li className="flex items-start gap-3">
-                <CheckCircle className="text-yellow-400 mt-1" />
+                <CheckCircle className="text-yellow-300 mt-1" />
                 Innovative & Custom Designs Tailored to Your Brand
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle className="text-yellow-400 mt-1" />
+                <CheckCircle className="text-yellow-300 mt-1" />
                 Unlimited Revisions Until You're Satisfied
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle className="text-yellow-400 mt-1" />
+                <CheckCircle className="text-yellow-300 mt-1" />
                 Fast Turnaround Time with Quality Assurance
               </li>
             </ul>
@@ -54,58 +55,60 @@ export default function GraphicPage() {
       </div>
 
       {/* Services We Offer */}
-     <div>
-      <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
-        Services We Offer
-      </h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {[
-          {
-            title: "Logo Design",
-            desc: "Unique, timeless logos that reflect your brand identity.",
-            icon: PenTool,
-          },
-          {
-            title: "Branding & Identity",
-            desc: "Full brand kits with color palettes, typography, and brand guidelines.",
-            icon: BadgePercent,
-          },
-          {
-            title: "Social Media Posts",
-            desc: "Eye-catching designs for all platforms to boost your online presence.",
-            icon: Instagram,
-          },
-          {
-            title: "Brochures & Flyers",
-            desc: "Creative and informative designs for marketing materials.",
-            icon: FileText,
-          },
-          {
-            title: "Posters & Banners",
-            desc: "Large-scale visuals optimized for both digital and print use.",
-            icon: LayoutTemplate,
-          },
-          {
-            title: "Business Cards",
-            desc: "Professional, clean, and impactful business card designs.",
-            icon: Contact2,
-          },
-        ].map((item, i) => (
-          <div
-            key={i}
-            className="bg-white/5 border border-white/10 rounded-xl p-6 space-y-3 hover:border-yellow-400 transition"
-          >
-            <item.icon className="text-yellow-400 w-8 h-8" />
-            <h3 className="text-xl font-semibold text-yellow-400">{item.title}</h3>
-            <p className="text-gray-300">{item.desc}</p>
-          </div>
-        ))}
+      <div>
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
+          Services We Offer
+        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Logo Design",
+              desc: "Unique, timeless logos that reflect your brand identity.",
+              icon: PenTool
+            },
+            {
+              title: "Branding & Identity",
+              desc: "Full brand kits with color palettes, typography, and brand guidelines.",
+              icon: BadgePercent
+            },
+            {
+              title: "Social Media Posts",
+              desc: "Eye-catching designs for all platforms to boost your online presence.",
+              icon: Instagram
+            },
+            {
+              title: "Brochures & Flyers",
+              desc: "Creative and informative designs for marketing materials.",
+              icon: FileText
+            },
+            {
+              title: "Posters & Banners",
+              desc: "Large-scale visuals optimized for both digital and print use.",
+              icon: LayoutTemplate
+            },
+            {
+              title: "Business Cards",
+              desc: "Professional, clean, and impactful business card designs.",
+              icon: Contact2
+            }
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-white/5 border border-white/10 rounded-xl p-6 space-y-3 hover:border-yellow-400 transition"
+            >
+              <item.icon className="text-yellow-300 w-8 h-8" />
+              <h3 className="text-xl font-semibold text-yellow-300">
+                {item.title}
+              </h3>
+              <p className="text-gray-300">{item.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
 
       {/* Our Design Process */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-6">
           Our Design Process
         </h2>
         <div className="flex flex-col md:flex-row gap-10">
@@ -117,10 +120,10 @@ export default function GraphicPage() {
                 "Concept Sketches",
                 "Design Execution",
                 "Feedback & Revisions",
-                "Final Delivery",
+                "Final Delivery"
               ].map((step, index) => (
                 <li key={index} className="relative">
-                  <span className="absolute -left-4 top-1.5 w-3 h-3 bg-yellow-400 rounded-full" />
+                  <span className="absolute -left-4 top-1.5 w-3 h-3 bg-yellow-300 rounded-full" />
                   <h4 className="text-lg font-semibold text-white">{step}</h4>
                 </li>
               ))}
@@ -140,7 +143,7 @@ export default function GraphicPage() {
 
       {/* Testimonials */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-10">
           What Our Clients Say
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -149,15 +152,14 @@ export default function GraphicPage() {
               key={id}
               className="bg-white/5 border border-white/10 p-6 rounded-xl space-y-4"
             >
-              
               <div className="flex gap-2">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400" />
+                  <Star key={i} className="w-5 h-5 text-yellow-300" />
                 ))}
               </div>
               <p className="text-gray-300">
-                “The team delivered exactly what I envisioned. Their designs are clean,
-                professional, and aligned perfectly with my brand!”
+                “The team delivered exactly what I envisioned. Their designs are
+                clean, professional, and aligned perfectly with my brand!”
               </p>
               <p className="text-white font-semibold">— Sarah Malik</p>
             </div>
@@ -167,29 +169,35 @@ export default function GraphicPage() {
 
       {/* FAQ Section */}
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-8">
           Frequently Asked Questions
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white/5 border border-white/10 rounded-lg p-5 space-y-2">
-           
-            <h4 className="font-semibold text-white">How many revisions are included?</h4>
+            <h4 className="font-semibold text-white">
+              How many revisions are included?
+            </h4>
             <p className="text-gray-300">
-              We offer unlimited revisions until you're fully satisfied with the final design.
+              We offer unlimited revisions until you're fully satisfied with the
+              final design.
             </p>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-lg p-5 space-y-2">
-           
-            <h4 className="font-semibold text-white">Do you provide source files?</h4>
+            <h4 className="font-semibold text-white">
+              Do you provide source files?
+            </h4>
             <p className="text-gray-300">
-              Yes, we provide all editable source files in formats like AI, PSD, or Figma.
+              Yes, we provide all editable source files in formats like AI, PSD,
+              or Figma.
             </p>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-lg p-5 space-y-2">
-           
-            <h4 className="font-semibold text-white">How long does it take to deliver?</h4>
+            <h4 className="font-semibold text-white">
+              How long does it take to deliver?
+            </h4>
             <p className="text-gray-300">
-              Turnaround time varies based on complexity but typically ranges from 2 to 5 business days.
+              Turnaround time varies based on complexity but typically ranges
+              from 2 to 5 business days.
             </p>
           </div>
         </div>
@@ -197,11 +205,12 @@ export default function GraphicPage() {
 
       {/* Call to Action */}
       <div className="text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-4">
           Ready to Elevate Your Brand?
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto mb-6">
-          Let our creative team turn your vision into a visual masterpiece. Get in touch today and experience design excellence.
+          Let our creative team turn your vision into a visual masterpiece. Get
+          in touch today and experience design excellence.
         </p>
         <Image
           src="/img/tech3.jpg"
@@ -210,7 +219,7 @@ export default function GraphicPage() {
           height={300}
           className="mx-auto rounded-xl mb-6"
         />
-        <button className="bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full hover:bg-yellow-300 transition">
+        <button className="bg-yellow-300 text-black font-semibold py-3 px-6 rounded-full hover:bg-yellow-300 transition">
           Get a Free Quote
         </button>
       </div>

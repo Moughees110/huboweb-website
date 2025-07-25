@@ -7,32 +7,36 @@ const caseStudies = [
   {
     title: "E-Commerce Redesign",
     category: "Web App UI",
-    description: "Revamped an e-commerce platform to improve user retention and conversion rates.",
-    image: "/img/built-with-elementor (2).png",
+    description:
+      "Revamped an e-commerce platform to improve user retention and conversion rates.",
+    image: "/img/built-with-elementor (2).png"
   },
   {
     title: "Finance Dashboard",
     category: "Dashboard UX",
-    description: "Designed a clean and intuitive finance dashboard for real-time data insights.",
-    image: "/img/dashboard.jpg",
+    description:
+      "Designed a clean and intuitive finance dashboard for real-time data insights.",
+    image: "/img/dashboard.jpg"
   },
   {
     title: "Mobile Food App",
     category: "Mobile UI/UX",
-    description: "Crafted a user-friendly mobile food ordering experience with gamified UI.",
-    image: "/img/dashboard2.jpg",
-  },
+    description:
+      "Crafted a user-friendly mobile food ordering experience with gamified UI.",
+    image: "/img/dashboard2.jpg"
+  }
 ];
 
 export default function CaseStudies() {
   return (
     <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white py-20 px-4 md:px-10">
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-4">
           Case Studies
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          Discover how we’ve helped businesses transform their ideas into intuitive user experiences.
+          Discover how we’ve helped businesses transform their ideas into
+          intuitive user experiences.
         </p>
       </div>
 
@@ -55,8 +59,12 @@ export default function CaseStudies() {
               />
             </div>
             <div className="p-6">
-              <h4 className="text-yellow-400 text-lg font-semibold mb-1">{item.title}</h4>
-              <p className="text-sm text-gray-400 italic mb-2">{item.category}</p>
+              <h4 className="text-yellow-300 text-lg font-semibold mb-1">
+                {item.title}
+              </h4>
+              <p className="text-sm text-gray-400 italic mb-2">
+                {item.category}
+              </p>
               <p className="text-gray-300 text-sm">{item.description}</p>
             </div>
           </motion.div>

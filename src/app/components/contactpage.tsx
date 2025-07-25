@@ -9,7 +9,7 @@ export default function ContactPage() {
   const { theme } = useTheme();
 
   return (
-    <section className="w-full py-16 px-4 md:px-12 lg:px-24 text-yellow-400 bg-transparent">
+    <section className="w-full py-16 px-4 md:px-12 lg:px-24 text-yellow-300 bg-transparent">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
@@ -105,9 +105,9 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="text-center">
-                <button className="bg-yellow-400 cursor-pointer text-[#071c55] border border-amber-400 hover:bg-white  font-semibold py-2 px-6 rounded-full transition">
-            Send Message
-          </button>
+                <button className="bg-yellow-300 cursor-pointer text-[#071c55] border border-amber-400 hover:bg-white  font-semibold py-2 px-6 rounded-full transition">
+                  Send Message
+                </button>
               </div>
             </form>
           </MagicCard>
@@ -115,32 +115,34 @@ export default function ContactPage() {
 
         {/* Google Map */}
         {/* Google Map */}
-{/* Google Map Section - Modern UI */}
-<div className="mt-24 relative px-4">
-  <h3 className="text-3xl font-bold text-center text-yellow-400 mb-12">Our Location</h3>
+        {/* Google Map Section - Modern UI */}
+        <div className="mt-24 relative px-4">
+          <h3 className="text-3xl font-bold text-center text-yellow-300 mb-12">
+            Our Location
+          </h3>
 
-  <div className="relative w-full max-w-6xl mx-auto h-[450px] rounded-3xl overflow-hidden shadow-xl border border-white/10 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-md">
-    {/* Embedded Google Map */}
-    <iframe
-      title="Google Map - Lahore"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13608.093241732082!2d74.32154765000001!3d31.54970095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483aa823e7f%3A0xb1b36ff4ff5d53e9!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1721587070700!5m2!1sen!2s"
-      className="w-full h-full grayscale-[15%] contrast-125 saturate-150"
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
+          <div className="relative w-full max-w-6xl mx-auto h-[450px] rounded-3xl overflow-hidden shadow-xl border border-white/10 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-md">
+            {/* Embedded Google Map */}
+            <iframe
+              title="Google Map - Lahore"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13608.093241732082!2d74.32154765000001!3d31.54970095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483aa823e7f%3A0xb1b36ff4ff5d53e9!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1721587070700!5m2!1sen!2s"
+              className="w-full h-full grayscale-[15%] contrast-125 saturate-150"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
 
-    {/* Floating Info Card */}
-    <div className="absolute bottom-6 left-6 bg-[#070121]/90 border border-yellow-400 text-white rounded-xl p-6 shadow-lg backdrop-blur-md w-[300px] max-w-[90%]">
-      <h4 className="text-xl font-semibold mb-2 text-yellow-400">Head Office</h4>
-      <p className="text-sm text-gray-300 leading-relaxed">
-        HuboWeb HQ, Model Town Link Road, Lahore, Pakistan
-      </p>
-    </div>
-  </div>
-</div>
-
-
+            {/* Floating Info Card */}
+            <div className="absolute bottom-6 left-6 bg-[#070121]/90 border border-yellow-400 text-white rounded-xl p-6 shadow-lg backdrop-blur-md w-[300px] max-w-[90%]">
+              <h4 className="text-xl font-semibold mb-2 text-yellow-300">
+                Head Office
+              </h4>
+              <p className="text-sm text-gray-300 leading-relaxed">
+                HuboWeb HQ, Model Town Link Road, Lahore, Pakistan
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -30,25 +30,57 @@ export default function Seo() {
     <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white py-20 px-6 md:px-16 space-y-24">
       {/* Heading */}
       <div className="text-center space-y-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400">SEO Optimization Services</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-yellow-300">
+          SEO Optimization Services
+        </h2>
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-          We help you dominate search engine rankings and drive more traffic through result-driven SEO strategies.
+          We help you dominate search engine rankings and drive more traffic
+          through result-driven SEO strategies.
         </p>
       </div>
 
       {/* Services Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {[
-          { icon: <Search />, title: "On-Page SEO", desc: "Optimize your website's content, HTML, and meta tags to improve visibility." },
-          { icon: <TrendingUp />, title: "Off-Page SEO", desc: "Build authority through quality backlinks and social signals." },
-          { icon: <LineChart />, title: "Technical SEO", desc: "Improve site speed, crawlability, and structure for better indexing." },
-          { icon: <BarChart3 />, title: "Keyword Research", desc: "Find and target the right keywords that bring the most value." },
-          { icon: <Rocket />, title: "Site Audit", desc: "Identify and fix SEO issues with comprehensive audits." },
-          { icon: <Globe2 />, title: "Local SEO", desc: "Boost visibility in local searches and maps for nearby customers." }
+          {
+            icon: <Search />,
+            title: "On-Page SEO",
+            desc: "Optimize your website's content, HTML, and meta tags to improve visibility."
+          },
+          {
+            icon: <TrendingUp />,
+            title: "Off-Page SEO",
+            desc: "Build authority through quality backlinks and social signals."
+          },
+          {
+            icon: <LineChart />,
+            title: "Technical SEO",
+            desc: "Improve site speed, crawlability, and structure for better indexing."
+          },
+          {
+            icon: <BarChart3 />,
+            title: "Keyword Research",
+            desc: "Find and target the right keywords that bring the most value."
+          },
+          {
+            icon: <Rocket />,
+            title: "Site Audit",
+            desc: "Identify and fix SEO issues with comprehensive audits."
+          },
+          {
+            icon: <Globe2 />,
+            title: "Local SEO",
+            desc: "Boost visibility in local searches and maps for nearby customers."
+          }
         ].map((service, i) => (
-          <div key={i} className="bg-gray-800 rounded-2xl p-6 hover:scale-[1.02] transition-transform border border-gray-700">
-            <div className="text-yellow-400 mb-4 text-3xl">{service.icon}</div>
-            <h3 className="text-xl font-semibold mb-2 text-yellow-400">{service.title}</h3>
+          <div
+            key={i}
+            className="bg-gray-800 rounded-2xl p-6 hover:scale-[1.02] transition-transform border border-gray-700"
+          >
+            <div className="text-yellow-300 mb-4 text-3xl">{service.icon}</div>
+            <h3 className="text-xl font-semibold mb-2 text-yellow-300">
+              {service.title}
+            </h3>
             <p className="text-gray-300 text-sm">{service.desc}</p>
           </div>
         ))}
@@ -56,15 +88,23 @@ export default function Seo() {
 
       {/* SEO Workflow Process */}
       <div className="space-y-10">
-        <h2 className="text-3xl font-bold text-yellow-400 text-center">Our SEO Workflow</h2>
+        <h2 className="text-3xl font-bold text-yellow-300 text-center">
+          Our SEO Workflow
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {[
             { title: "Audit & Analysis", image: "/img/dashboard.jpg" },
             { title: "Keyword Research", image: "/img/dashboard2.jpg" },
-            { title: "Implementation", image: "/img/Online-Complaint-Management.png" },
+            {
+              title: "Implementation",
+              image: "/img/Online-Complaint-Management.png"
+            },
             { title: "Monitoring & Reporting", image: "/img/6596cd6c691be.jpg" }
           ].map((step, i) => (
-            <div key={i} className="bg-gray-800 rounded-xl overflow-hidden shadow-md">
+            <div
+              key={i}
+              className="bg-gray-800 rounded-xl overflow-hidden shadow-md"
+            >
               <Image
                 src={step.image}
                 alt={step.title}
@@ -73,7 +113,9 @@ export default function Seo() {
                 className="w-full h-44 object-cover"
               />
               <div className="p-4 text-center">
-                <h4 className="text-yellow-400 text-lg font-semibold">{step.title}</h4>
+                <h4 className="text-yellow-300 text-lg font-semibold">
+                  {step.title}
+                </h4>
               </div>
             </div>
           ))}
@@ -82,12 +124,14 @@ export default function Seo() {
 
       {/* Tools We Use */}
       <div className="space-y-8">
-        <h2 className="text-3xl font-bold text-yellow-400 text-center">Powerful Tools We Use</h2>
+        <h2 className="text-3xl font-bold text-yellow-300 text-center">
+          Powerful Tools We Use
+        </h2>
         <div className="flex flex-wrap justify-center gap-8">
           {tools.map((tool, i) => (
             <div
               key={i}
-              className="flex flex-col items-center text-white hover:text-yellow-400 transition duration-300"
+              className="flex flex-col items-center text-white hover:text-yellow-300 transition duration-300"
             >
               <div className="grayscale hover:grayscale-0 transition duration-300">
                 {tool.icon}
@@ -100,7 +144,9 @@ export default function Seo() {
 
       {/* SEO Results */}
       <div className="space-y-10">
-        <h2 className="text-3xl font-bold text-yellow-400 text-center">SEO Achievements</h2>
+        <h2 className="text-3xl font-bold text-yellow-300 text-center">
+          SEO Achievements
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {[
             { stat: "+250%", label: "Organic Traffic Growth" },
@@ -108,7 +154,9 @@ export default function Seo() {
             { stat: "+10k", label: "Monthly Visitors" }
           ].map((item, i) => (
             <div key={i} className="bg-gray-800 rounded-2xl p-8 text-center">
-              <h3 className="text-4xl text-yellow-400 font-extrabold">{item.stat}</h3>
+              <h3 className="text-4xl text-yellow-300 font-extrabold">
+                {item.stat}
+              </h3>
               <p className="text-gray-300 mt-2">{item.label}</p>
             </div>
           ))}
@@ -117,7 +165,9 @@ export default function Seo() {
 
       {/* FAQs */}
       <div className="space-y-10">
-        <h2 className="text-3xl font-bold text-yellow-400 text-center">SEO FAQs</h2>
+        <h2 className="text-3xl font-bold text-yellow-300 text-center">
+          SEO FAQs
+        </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
@@ -137,8 +187,11 @@ export default function Seo() {
               a: "No one can guarantee rankings, but we follow best practices that increase your chances significantly."
             }
           ].map((faq, i) => (
-            <div key={i} className="bg-gray-800 rounded-xl p-6 border border-gray-700">
-              <h4 className="text-lg text-yellow-400 font-semibold mb-2 flex items-center gap-2">
+            <div
+              key={i}
+              className="bg-gray-800 rounded-xl p-6 border border-gray-700"
+            >
+              <h4 className="text-lg text-yellow-300 font-semibold mb-2 flex items-center gap-2">
                 <HelpCircle className="w-5 h-5" /> {faq.q}
               </h4>
               <p className="text-gray-300 text-sm">{faq.a}</p>
@@ -149,11 +202,14 @@ export default function Seo() {
 
       {/* Final CTA */}
       <div className="text-center space-y-6 mt-16">
-        <h2 className="text-4xl font-bold text-yellow-400">Ready to Rank Higher?</h2>
+        <h2 className="text-4xl font-bold text-yellow-300">
+          Ready to Rank Higher?
+        </h2>
         <p className="text-lg text-gray-300 max-w-xl mx-auto">
-          Let's talk about how we can help you dominate search results and grow your business.
+          Let's talk about how we can help you dominate search results and grow
+          your business.
         </p>
-        <button className="mt-4 bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition">
+        <button className="mt-4 bg-yellow-300 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition">
           Get a Free SEO Audit
         </button>
       </div>

@@ -24,7 +24,7 @@ export default function Nauman() {
         {/* LEFT: Info Area */}
         <div className="w-full md:w-1/2 flex items-center justify-start px-8 py-10 bg-transparent">
           <div className="max-w-2xl w-full">
-            <h1 className="text-5xl font-bold text-yellow-400 mb-4">
+            <h1 className="text-5xl font-bold text-yellow-300 mb-4">
               Numan Khan
             </h1>
 
@@ -127,7 +127,7 @@ export default function Nauman() {
 
       {/* 🔽 About Section */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-6 text-yellow-400">
+        <h2 className="text-3xl font-bold mb-6 text-yellow-300">
           About Numan Khan
         </h2>
         <p className="mb-6 leading-relaxed text-gray-300">

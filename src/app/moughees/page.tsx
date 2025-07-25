@@ -24,23 +24,51 @@ export default function Moughees() {
         {/* LEFT: Info Area */}
         <div className="w-full md:w-1/2 flex items-center justify-start px-8 py-10 bg-transparent">
           <div className="max-w-2xl w-full">
-            <h1 className="text-5xl font-bold text-yellow-400 mb-4">
+            <h1 className="text-5xl font-bold text-yellow-300 mb-4">
               Moughees Raza
             </h1>
 
             {/* 🔗 Social Media Icons */}
             <div className="flex gap-4 mb-8">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <Twitter size={22} className="text-blue-400 hover:text-blue-500" />
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Twitter
+                  size={22}
+                  className="text-blue-400 hover:text-blue-500"
+                />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <Facebook size={22} className="text-blue-600 hover:text-blue-700" />
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook
+                  size={22}
+                  className="text-blue-600 hover:text-blue-700"
+                />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <Instagram size={22} className="text-pink-500 hover:text-pink-600" />
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram
+                  size={22}
+                  className="text-pink-500 hover:text-pink-600"
+                />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <Linkedin size={22} className="text-blue-500 hover:text-blue-600" />
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin
+                  size={22}
+                  className="text-blue-500 hover:text-blue-600"
+                />
               </a>
             </div>
 
@@ -59,22 +87,27 @@ export default function Moughees() {
               {/* Info List with Icons */}
               <div className="grid grid-cols-1 gap-3 text-sm text-gray-200">
                 <div className="flex items-center gap-2">
-                  <Cake size={18} className="text-yellow-300" /> Birthday: July 5, 1990
+                  <Cake size={18} className="text-yellow-300" /> Birthday: July
+                  5, 1990
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar size={18} className="text-yellow-300" /> Age: 34
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone size={18} className="text-yellow-300" /> +92 301 1122334
+                  <Phone size={18} className="text-yellow-300" /> +92 301
+                  1122334
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail size={18} className="text-yellow-300" /> moughees@example.com
+                  <Mail size={18} className="text-yellow-300" />{" "}
+                  moughees@example.com
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin size={18} className="text-yellow-300" /> Karachi, Pakistan
+                  <MapPin size={18} className="text-yellow-300" /> Karachi,
+                  Pakistan
                 </div>
                 <div className="flex items-center gap-2">
-                  <GraduationCap size={18} className="text-yellow-300" /> MS Software Engg., NUST
+                  <GraduationCap size={18} className="text-yellow-300" /> MS
+                  Software Engg., NUST
                 </div>
               </div>
             </div>
@@ -94,20 +127,28 @@ export default function Moughees() {
 
       {/* 🔽 About Section */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-6 text-yellow-400">
+        <h2 className="text-3xl font-bold mb-6 text-yellow-300">
           About Moughees Raza
         </h2>
         <p className="mb-6 leading-relaxed text-gray-300">
-          Moughees Raza is a passionate and forward-thinking Chief Technical Officer with extensive experience in building scalable, secure, and high-performance systems. He has played a pivotal role in modernizing enterprise software and leading high-caliber development teams.
+          Moughees Raza is a passionate and forward-thinking Chief Technical
+          Officer with extensive experience in building scalable, secure, and
+          high-performance systems. He has played a pivotal role in modernizing
+          enterprise software and leading high-caliber development teams.
         </p>
         <p className="mb-6 leading-relaxed text-gray-300">
-          He is an expert in distributed systems, DevSecOps, and cutting-edge cloud infrastructure. Moughees believes in writing clean code, promoting engineering excellence, and empowering his team with mentorship and growth opportunities.
+          He is an expert in distributed systems, DevSecOps, and cutting-edge
+          cloud infrastructure. Moughees believes in writing clean code,
+          promoting engineering excellence, and empowering his team with
+          mentorship and growth opportunities.
         </p>
         <p className="leading-relaxed text-gray-300">
-          Outside of work, he’s an advocate of open-source contributions, AI research, and spends time experimenting with emerging tech. Moughees also enjoys photography and volunteering in tech education programs.
+          Outside of work, he’s an advocate of open-source contributions, AI
+          research, and spends time experimenting with emerging tech. Moughees
+          also enjoys photography and volunteering in tech education programs.
         </p>
       </section>
-      <PartnersPage/>
+      <PartnersPage />
     </main>
   );
 }

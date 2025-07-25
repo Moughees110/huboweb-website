@@ -7,7 +7,7 @@ import {
   MapPin,
   GraduationCap,
   Calendar,
-   Twitter,
+  Twitter,
   Facebook,
   Instagram,
   Linkedin
@@ -24,21 +24,49 @@ export default function Anosh() {
         {/* LEFT: Info Area */}
         <div className="w-full md:w-1/2 flex items-center justify-start px-8 py-10 bg-transparent">
           <div className="max-w-2xl w-full">
-            <h1 className="text-5xl font-bold text-yellow-400 mb-8">
+            <h1 className="text-5xl font-bold text-yellow-300 mb-8">
               Anosh Haider
             </h1>
             <div className="flex gap-4 mb-8">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <Twitter size={22} className="text-blue-400 hover:text-blue-500" />
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Twitter
+                  size={22}
+                  className="text-blue-400 hover:text-blue-500"
+                />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <Facebook size={22} className="text-blue-600 hover:text-blue-700" />
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook
+                  size={22}
+                  className="text-blue-600 hover:text-blue-700"
+                />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <Instagram size={22} className="text-pink-500 hover:text-pink-600" />
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram
+                  size={22}
+                  className="text-pink-500 hover:text-pink-600"
+                />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <Linkedin size={22} className="text-blue-500 hover:text-blue-600" />
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin
+                  size={22}
+                  className="text-blue-500 hover:text-blue-600"
+                />
               </a>
             </div>
 
@@ -57,22 +85,27 @@ export default function Anosh() {
               {/* Info List with Icons */}
               <div className="grid grid-cols-1 gap-3 text-sm text-gray-200">
                 <div className="flex items-center gap-2">
-                  <Cake size={18} className="text-yellow-300" /> Birthday: Jan 1, 1995
+                  <Cake size={18} className="text-yellow-300" /> Birthday: Jan
+                  1, 1995
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar size={18} className="text-yellow-300" /> Age: 29
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone size={18} className="text-yellow-300" /> +92 300 1234567
+                  <Phone size={18} className="text-yellow-300" /> +92 300
+                  1234567
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail size={18} className="text-yellow-300" /> anosh@example.com
+                  <Mail size={18} className="text-yellow-300" />{" "}
+                  anosh@example.com
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin size={18} className="text-yellow-300" /> Lahore, Pakistan
+                  <MapPin size={18} className="text-yellow-300" /> Lahore,
+                  Pakistan
                 </div>
                 <div className="flex items-center gap-2">
-                  <GraduationCap size={18} className="text-yellow-300" /> BSCS, PU Lahore
+                  <GraduationCap size={18} className="text-yellow-300" /> BSCS,
+                  PU Lahore
                 </div>
               </div>
             </div>
@@ -92,7 +125,7 @@ export default function Anosh() {
 
       {/* 🔽 About Section */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-6 text-yellow-400">
+        <h2 className="text-3xl font-bold mb-6 text-yellow-300">
           About Anosh Haider
         </h2>
         <p className="mb-6 leading-relaxed text-gray-300">
@@ -115,7 +148,7 @@ export default function Anosh() {
           conferences, and writes about technology trends and startup culture.
         </p>
       </section>
-      <PartnersPage/>
+      <PartnersPage />
     </main>
   );
 }

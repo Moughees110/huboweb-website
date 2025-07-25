@@ -24,19 +24,19 @@ const GamePage = () => {
             height={800}
             className="rounded-xl w-full h-auto"
           />
-          <h1 className="text-3xl font-bold mt-4 hover:text-yellow-400">
+          <h1 className="text-3xl font-bold mt-4 hover:text-yellow-300">
             Crafting Immersive Game Interfaces in 2025
           </h1>
           <p className="text-white mt-2">
             Discover how UI/UX designers are building interactive and intuitive
-            game interfaces using tools like Figma, Unity UI Toolkit, and
-            Unreal UMG.
+            game interfaces using tools like Figma, Unity UI Toolkit, and Unreal
+            UMG.
           </p>
         </div>
 
         {/* Inside Post */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold hover:text-yellow-400">
+          <h2 className="text-2xl font-semibold hover:text-yellow-300">
             Game Design Workflow
           </h2>
           <Image
@@ -46,7 +46,7 @@ const GamePage = () => {
             height={800}
             className="rounded-xl w-full h-auto"
           />
-          <h2 className="text-3xl font-bold hover:text-yellow-400">
+          <h2 className="text-3xl font-bold hover:text-yellow-300">
             Improving Player Experience Through UI Prototypes
           </h2>
           <p>
@@ -77,7 +77,7 @@ const GamePage = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className="flex space-x-4 mt-4 border-b pb-4 cursor-pointer hover:text-yellow-400"
+              className="flex space-x-4 mt-4 border-b pb-4 cursor-pointer hover:text-yellow-300"
             >
               <Image
                 src={item.avatar}
@@ -89,7 +89,7 @@ const GamePage = () => {
               <div>
                 <div className="flex items-center space-x-2">
                   <h4 className="font-medium">{item.username}</h4>
-                  <button className="flex items-center text-gray-400 text-lg hover:text-yellow-400 transition duration-300">
+                  <button className="flex items-center text-gray-400 text-lg hover:text-yellow-300 transition duration-300">
                     <Reply className="mr-1 w-4 h-4" /> Reply
                   </button>
                 </div>
@@ -116,10 +116,10 @@ const GamePage = () => {
             Ayesha Khan
           </h3>
           <div className="flex justify-center space-x-4 mt-2 text-2xl text-gray-400">
-            <Twitter className="hover:text-yellow-400" />
-            <Facebook className="hover:text-yellow-400" />
-            <Linkedin className="hover:text-yellow-400" />
-            <Instagram className="hover:text-yellow-400" />
+            <Twitter className="hover:text-yellow-300" />
+            <Facebook className="hover:text-yellow-300" />
+            <Linkedin className="hover:text-yellow-300" />
+            <Instagram className="hover:text-yellow-300" />
           </div>
           <p className="text-white mt-2">
             Game UI/UX designer passionate about creating immersive experiences
@@ -130,7 +130,7 @@ const GamePage = () => {
         {/* Search */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-400">|</span> Search
+            <span className="text-yellow-300">|</span> Search
           </h3>
           <div className="flex items-center border rounded-full px-3 py-2 border-gray-700">
             <Search className="text-gray-400 text-xl mr-2" />
@@ -145,7 +145,7 @@ const GamePage = () => {
         {/* Categories */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-400">|</span> Categories
+            <span className="text-yellow-300">|</span> Categories
           </h3>
           {[
             "Game UI",
@@ -156,7 +156,7 @@ const GamePage = () => {
           ].map((cat, i) => (
             <p
               key={i}
-              className="text-white hover:text-yellow-400 cursor-pointer"
+              className="text-white hover:text-yellow-300 cursor-pointer"
             >
               {cat} <span className="text-sm text-gray-500">(12)</span>
             </p>
@@ -166,7 +166,7 @@ const GamePage = () => {
         {/* Recent Posts */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-400">|</span> Recent Posts
+            <span className="text-yellow-300">|</span> Recent Posts
           </h3>
           {[
             "Designing Game Menus for VR",
@@ -174,7 +174,7 @@ const GamePage = () => {
             "Figma vs Adobe XD for Game Interfaces"
           ].map((title, i) => (
             <div key={i} className="mb-2">
-              <h4 className="text-white hover:text-yellow-400 cursor-pointer font-medium">
+              <h4 className="text-white hover:text-yellow-300 cursor-pointer font-medium">
                 {title}
               </h4>
               <p className="text-sm text-gray-500">Jul {10 + i}, 2024</p>
@@ -185,24 +185,19 @@ const GamePage = () => {
         {/* Tags */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-400">|</span> Tags
+            <span className="text-yellow-300">|</span> Tags
           </h3>
           <div className="flex flex-wrap gap-2">
-            {[
-              "GameUI",
-              "UXDesign",
-              "Unity",
-              "HUD",
-              "MenuDesign",
-              "Figma"
-            ].map((tag) => (
-              <span
-                key={tag}
-                className="bg-gray-800 px-3 py-1 rounded-full text-sm hover:bg-yellow-400 hover:text-black cursor-pointer"
-              >
-                {tag}
-              </span>
-            ))}
+            {["GameUI", "UXDesign", "Unity", "HUD", "MenuDesign", "Figma"].map(
+              (tag) => (
+                <span
+                  key={tag}
+                  className="bg-gray-800 px-3 py-1 rounded-full text-sm hover:bg-yellow-300 hover:text-black cursor-pointer"
+                >
+                  {tag}
+                </span>
+              )
+            )}
           </div>
         </div>
       </aside>

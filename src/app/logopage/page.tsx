@@ -24,7 +24,7 @@ const LogoPage = () => {
             height={800}
             className="rounded-xl w-full h-auto"
           />
-          <h1 className="text-3xl font-bold mt-4 hover:text-yellow-400">
+          <h1 className="text-3xl font-bold mt-4 hover:text-yellow-300">
             Designing Memorable Company Logos That Speak Brand
           </h1>
           <p className="text-white mt-2">
@@ -36,7 +36,7 @@ const LogoPage = () => {
 
         {/* Inside Post */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold hover:text-yellow-400">
+          <h2 className="text-2xl font-semibold hover:text-yellow-300">
             The Psychology Behind Effective Logos
           </h2>
           <Image
@@ -46,7 +46,7 @@ const LogoPage = () => {
             height={800}
             className="rounded-xl w-full h-auto"
           />
-          <h2 className="text-3xl font-bold hover:text-yellow-400">
+          <h2 className="text-3xl font-bold hover:text-yellow-300">
             Why Simplicity, Shape, and Color Matter
           </h2>
           <p>
@@ -77,7 +77,7 @@ const LogoPage = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className="flex space-x-4 mt-4 border-b pb-4 cursor-pointer hover:text-yellow-400"
+              className="flex space-x-4 mt-4 border-b pb-4 cursor-pointer hover:text-yellow-300"
             >
               <Image
                 src={item.avatar}
@@ -89,7 +89,7 @@ const LogoPage = () => {
               <div>
                 <div className="flex items-center space-x-2">
                   <h4 className="font-medium">{item.username}</h4>
-                  <button className="flex items-center text-gray-400 text-lg hover:text-yellow-400 transition duration-300">
+                  <button className="flex items-center text-gray-400 text-lg hover:text-yellow-300 transition duration-300">
                     <Reply className="mr-1 w-4 h-4" /> Reply
                   </button>
                 </div>
@@ -112,12 +112,14 @@ const LogoPage = () => {
             height={100}
             className="rounded-full mx-auto"
           />
-          <h3 className="text-white text-2xl font-semibold mt-2">Jordy Mortan</h3>
+          <h3 className="text-white text-2xl font-semibold mt-2">
+            Jordy Mortan
+          </h3>
           <div className="flex justify-center space-x-4 mt-2 text-2xl text-gray-400">
-            <Twitter className="hover:text-yellow-400" />
-            <Facebook className="hover:text-yellow-400" />
-            <Linkedin className="hover:text-yellow-400" />
-            <Instagram className="hover:text-yellow-400" />
+            <Twitter className="hover:text-yellow-300" />
+            <Facebook className="hover:text-yellow-300" />
+            <Linkedin className="hover:text-yellow-300" />
+            <Instagram className="hover:text-yellow-300" />
           </div>
           <p className="text-white mt-2">
             Branding strategist & UI consultant helping companies translate
@@ -128,7 +130,7 @@ const LogoPage = () => {
         {/* Search */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-400">|</span> Search
+            <span className="text-yellow-300">|</span> Search
           </h3>
           <div className="flex items-center border rounded-full px-3 py-2 border-gray-700">
             <Search className="text-gray-400 text-xl mr-2" />
@@ -143,24 +145,28 @@ const LogoPage = () => {
         {/* Categories */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-400">|</span> Categories
+            <span className="text-yellow-300">|</span> Categories
           </h3>
-          {["Logo Design", "Brand Identity", "Typography", "UI Symbols", "Corporate Kits"].map(
-            (cat, i) => (
-              <p
-                key={i}
-                className="text-white hover:text-yellow-400 cursor-pointer"
-              >
-                {cat} <span className="text-sm text-gray-500">(12)</span>
-              </p>
-            )
-          )}
+          {[
+            "Logo Design",
+            "Brand Identity",
+            "Typography",
+            "UI Symbols",
+            "Corporate Kits"
+          ].map((cat, i) => (
+            <p
+              key={i}
+              className="text-white hover:text-yellow-300 cursor-pointer"
+            >
+              {cat} <span className="text-sm text-gray-500">(12)</span>
+            </p>
+          ))}
         </div>
 
         {/* Recent Posts */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-400">|</span> Recent Posts
+            <span className="text-yellow-300">|</span> Recent Posts
           </h3>
           {[
             "Best Logo Fonts in 2025",
@@ -168,7 +174,7 @@ const LogoPage = () => {
             "Corporate Logo Redesign Tips"
           ].map((title, i) => (
             <div key={i} className="mb-2">
-              <h4 className="text-white hover:text-yellow-400 cursor-pointer font-medium">
+              <h4 className="text-white hover:text-yellow-300 cursor-pointer font-medium">
                 {title}
               </h4>
               <p className="text-sm text-gray-500">Jul {10 + i}, 2024</p>
@@ -179,19 +185,24 @@ const LogoPage = () => {
         {/* Tags */}
         <div className="p-4 border rounded-xl border-gray-700">
           <h3 className="text-xl font-bold mb-3">
-            <span className="text-yellow-400">|</span> Tags
+            <span className="text-yellow-300">|</span> Tags
           </h3>
           <div className="flex flex-wrap gap-2">
-            {["Logo", "Branding", "Design", "Minimal", "Corporate", "Symbol"].map(
-              (tag) => (
-                <span
-                  key={tag}
-                  className="bg-gray-800 px-3 py-1 rounded-full text-sm hover:bg-yellow-400 hover:text-black cursor-pointer"
-                >
-                  {tag}
-                </span>
-              )
-            )}
+            {[
+              "Logo",
+              "Branding",
+              "Design",
+              "Minimal",
+              "Corporate",
+              "Symbol"
+            ].map((tag) => (
+              <span
+                key={tag}
+                className="bg-gray-800 px-3 py-1 rounded-full text-sm hover:bg-yellow-300 hover:text-black cursor-pointer"
+              >
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
       </aside>
