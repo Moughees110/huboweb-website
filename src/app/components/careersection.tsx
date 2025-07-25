@@ -70,7 +70,7 @@ export default function CareerSection() {
       </div>
 
       {/* Black Background Section */}
-      <div className="bg-transparent text-yellow-300 pt-32 pb-10 px-6 relative z-0">
+      <div className="bg-white text-yellow-300 pt-32 pb-10 px-6 relative z-0">
         <div className="max-w-6xl mx-auto">
           {/* Social Media Row */}
           <div className="mb-8">
@@ -99,11 +99,11 @@ export default function CareerSection() {
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
                 More Jobs Equal a <br /> Better World
               </h1>
-              <p className="text-gray-300 mb-4">
+              <p className="text-black mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <p className="text-gray-300 mb-6">
+              <p className="text-black mb-6">
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat.
               </p>

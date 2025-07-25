@@ -21,7 +21,7 @@ export default function Home() {
       <MarqueeCard/>
       <FaqTutorialSection/>
       <Card/>
-      <HuboHeading/>
+      <HuboHeading text="Welcome to HuboWeb Technologies, where creativity meets code, and digital experiences come to life with innovation and precision." />
       <OrbitSection/>
       <Testimonials/>
       {/* <ImageMasonry/> */}

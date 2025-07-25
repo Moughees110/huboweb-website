@@ -6,6 +6,7 @@ import Faqs from '../components/faqs'
 import WidgetMarqueeSection from '../components/widgetmarqueesection'
 import ServicesSection from '../components/servicessection'
 import AiServices from '../components/aiservices'
+import HuboHeading from '../components/huboheading'
 
 export default function Services() {
   return (
@@ -18,6 +19,7 @@ export default function Services() {
       <WidgetMarqueeSection/>
       <CardSection/>
       <ServicesSection/>
+      <HuboHeading text="At HuboWeb Technologies, we blend creativity and code to craft digital experiences that are innovative, precise, and unforgettable." />
       <Testimonials/>
       <AiServices/>
       <Faqs imageSrc="/img/faq-removebg-preview.png"/>
