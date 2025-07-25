@@ -209,7 +209,7 @@ export default function Seo() {
           Let's talk about how we can help you dominate search results and grow
           your business.
         </p>
-        <button className="mt-4 bg-yellow-300 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition">
+        <button className="mt-4 bg-white text-[#071c55] font-semibold px-6 py-3 rounded-full hover:bg-[#071c55] hover:text-white cursor-pointer transition">
           Get a Free SEO Audit
         </button>
       </div>

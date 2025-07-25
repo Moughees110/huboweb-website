@@ -169,7 +169,7 @@ export default function MobileAppServices() {
           user-centered design, and expert development. Contact us now to get
           started.
         </p>
-        <button className="bg-yellow-300  text-black font-semibold py-3 px-6 rounded-xl transition duration-300">
+        <button className="bg-white  text-[#071c55] hover:bg-[#071c55] hover:text-white cursor-pointer font-semibold py-3 px-6 rounded-full transition duration-300">
           Get a Free Consultation
         </button>
       </div>

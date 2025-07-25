@@ -198,7 +198,7 @@ export default function CrmAutomationService() {
           Let us help you build an efficient, scalable, and intelligent CRM
           system tailored to your business needs.
         </p>
-        <button className="bg-yellow-300 text-black font-semibold py-3 px-6 rounded-full hover:bg-cyan-300 transition">
+        <button className="bg-white text-[#071c55] font-semibold py-3 px-6 rounded-full hover:bg-[#071c55] hover:text-white cursor-pointer transition">
           Schedule a Demo
         </button>
       </div>
