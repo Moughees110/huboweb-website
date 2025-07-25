@@ -5,7 +5,7 @@ import { FileText, Star, ThumbsUp } from "lucide-react";
 
 export default function ContentWritingService() {
   return (
-    <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white px-6 md:px-16 py-20 space-y-24">
+    <section className="w-full bg-transparent text-white px-6 md:px-16 py-20 space-y-24">
       {/* Why Choose Us */}
       <div className="flex flex-col md:flex-row items-start gap-10">
         {/* Text Content */}

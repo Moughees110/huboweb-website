@@ -11,7 +11,7 @@ import {
 
 export default function LeadGenerationServices() {
   return (
-    <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white py-20 px-4 md:px-16 space-y-24">
+    <section className="w-full bg-transparent text-white py-20 px-4 md:px-16 space-y-24">
       {/* Section: Introduction */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-40">
         {/* Image Section */}

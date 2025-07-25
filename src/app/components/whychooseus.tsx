@@ -50,7 +50,7 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white py-20 px-4 md:px-10">
+    <section className="w-full bg-transparent text-white py-20 px-4 md:px-10">
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-yellow-300 mb-4">
           Why Choose Us?

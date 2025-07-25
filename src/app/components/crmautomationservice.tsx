@@ -12,7 +12,7 @@ import {
 
 export default function CrmAutomationService() {
   return (
-    <section className="w-full bg-[#0a0f24] text-white px-6 md:px-16 py-20 space-y-28">
+    <section className="w-full bg-transparent text-white px-6 md:px-16 py-20 space-y-28">
       {/* Why CRM Automation? */}
       <div className="bg-gradient-to-r from-[#0e162e] to-[#1f2a48] rounded-2xl p-10 shadow-xl">
         <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-300 mb-6">

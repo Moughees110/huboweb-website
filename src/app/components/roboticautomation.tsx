@@ -12,7 +12,7 @@ import {
 
 export default function RoboticAutomation() {
   return (
-    <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white py-20 px-4 md:px-10 space-y-20">
+    <section className="w-full bg-transparent text-white py-20 px-4 md:px-10 space-y-20">
       {/* Intro Section */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-20">
         {/* Text Section */}

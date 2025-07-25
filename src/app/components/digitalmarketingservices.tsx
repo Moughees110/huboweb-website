@@ -50,7 +50,7 @@ export default function DigitalMarketingServices() {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 py-20 px-4 md:px-12 text-white">
+    <section className="w-full bg-transparent py-20 px-4 md:px-12 text-white">
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="text-center">
           <h2 className="text-yellow-300 text-4xl md:text-5xl font-bold mb-4">

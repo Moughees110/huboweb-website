@@ -27,7 +27,7 @@ export default function Seo() {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-r from-[#070121] to-gray-900 text-white py-20 px-6 md:px-16 space-y-24">
+    <section className="w-full bg-transparent text-white py-20 px-6 md:px-16 space-y-24">
       {/* Heading */}
       <div className="text-center space-y-4">
         <h2 className="text-4xl md:text-5xl font-bold text-yellow-300">
