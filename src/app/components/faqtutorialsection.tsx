@@ -27,7 +27,7 @@ export default function FaqTutorialSection() {
               product.
             </TextAnimate>
           </p>
-          <button className="bg-yellow-300 cursor-pointer text-[#071c55] border border-amber-400 hover:bg-white  font-semibold py-2 px-6 rounded-full transition">
+          <button className="bg-[#071c55] cursor-pointer text-white border  hover:bg-white hover:text-[#071c55]  font-semibold py-2 px-6 rounded-full transition">
             View More
           </button>
         </div>

@@ -192,7 +192,7 @@ export default function RoboticAutomation() {
           Let’s build powerful bots that save time and improve efficiency.
           Contact us today to get started.
         </p>
-        <button className="bg-gradient-to-r from-blue-900 to-gray-900 hover:bg-gradient-to-r from-blue-900 to-gray-900 text-black font-semibold px-6 py-3 rounded-full transition-all">
+        <button className="bg-white hover:bg-[#071c55] text-[#071c55] hover:text-white font-semibold px-6 py-3 rounded-full transition-all">
           Get a Free RPA Consultation
         </button>
       </div>

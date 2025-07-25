@@ -202,7 +202,7 @@ export default function ContentWritingService() {
           Let our expert writers craft compelling content tailored to your
           goals. Contact us today and elevate your brand with powerful words.
         </p>
-        <button className="bg-gradient-to-r from-blue-900 to-gray-900 text-black font-semibold py-3 px-6 rounded-full hover:bg-gradient-to-r from-blue-900 to-gray-900 transition">
+        <button className="bg-white text-[#071c55] font-semibold py-3 px-6 rounded-full hover:bg-[#071c55] hover:text-white cursor-pointer transition">
           Request a Free Consultation
         </button>
       </div>

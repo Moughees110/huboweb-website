@@ -168,7 +168,7 @@ export default function LeadGenerationServices() {
           Start converting interest into revenue. Let our expert team design a
           lead generation funnel that works for your unique audience.
         </p>
-        <button className="mt-4 px-8 py-3 rounded-lg bg-gradient-to-r from-blue-900 to-gray-900 text-black font-semibold transition">
+        <button className="mt-4 px-8 py-3 rounded-full bg-white text-[#071c55] hover:bg-[#071c55] hover:text-white cursor-pointer font-semibold transition">
           Start Generating Leads
         </button>
       </div>
