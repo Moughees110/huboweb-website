@@ -190,7 +190,7 @@ function HoverButton({
       className={`relative group px-4 py-2 rounded-full border text-sm font-medium transition duration-300 ${
         isActive
           ? "bg-gradient-to-r from-blue-900 to-gray-900 text-white"
-          : "text-white hover:text-[#071c55] hover:bg-yellow-300"
+          : "text-white hover:text-[#071c55] hover:bg-gradient-to-r from-blue-900 to-gray-900"
       }`}
     >
       <span

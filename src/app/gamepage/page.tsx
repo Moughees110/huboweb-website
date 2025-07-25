@@ -154,10 +154,7 @@ const GamePage = () => {
             "Figma",
             "Mobile Gaming"
           ].map((cat, i) => (
-            <p
-              key={i}
-              className="text-white hover:text-white cursor-pointer"
-            >
+            <p key={i} className="text-white hover:text-white cursor-pointer">
               {cat} <span className="text-sm text-gray-500">(12)</span>
             </p>
           ))}
@@ -192,7 +189,7 @@ const GamePage = () => {
               (tag) => (
                 <span
                   key={tag}
-                  className="bg-gray-800 px-3 py-1 rounded-full text-sm hover:bg-yellow-300 hover:text-black cursor-pointer"
+                  className="bg-gray-800 px-3 py-1 rounded-full text-sm hover:bg-gradient-to-r from-blue-900 to-gray-900 hover:text-black cursor-pointer"
                 >
                   {tag}
                 </span>

@@ -68,9 +68,7 @@ export default function MobileAppServices() {
 
       {/* Our Mobile App Services */}
       <div className="mb-16">
-        <h3 className="text-3xl font-semibold text-white mb-4">
-          Our Services
-        </h3>
+        <h3 className="text-3xl font-semibold text-white mb-4">Our Services</h3>
         <ul className="grid gap-8 md:grid-cols-2">
           <li className="bg-[#16132d] p-6 rounded-xl shadow-md">
             <div className="flex items-center gap-4 mb-2">
@@ -169,7 +167,7 @@ export default function MobileAppServices() {
           user-centered design, and expert development. Contact us now to get
           started.
         </p>
-        <button className="bg-yellow-300  text-black font-semibold py-3 px-6 rounded-xl transition duration-300">
+        <button className="bg-gradient-to-r from-blue-900 to-gray-900  text-black font-semibold py-3 px-6 rounded-xl transition duration-300">
           Get a Free Consultation
         </button>
       </div>

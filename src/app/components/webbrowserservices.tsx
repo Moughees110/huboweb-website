@@ -173,7 +173,7 @@ export default function WebBrowserServices() {
           Contact us now for a free consultation and let’s transform your idea
           into a live extension.
         </p>
-        <Button className="bg-yellow-300 text-black hover:bg-yellow-300 transition-all">
+        <Button className="bg-gradient-to-r from-blue-900 to-gray-900 text-black hover:bg-gradient-to-r from-blue-900 to-gray-900 transition-all">
           Start Your Project
         </Button>
       </div>

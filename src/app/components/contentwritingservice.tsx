@@ -87,9 +87,7 @@ export default function ContentWritingService() {
               className="bg-white/5 border border-white/10 rounded-xl p-6 space-y-3 hover:border-yellow-400 transition"
             >
               <FileText className="text-white" />
-              <h3 className="text-xl font-semibold text-white">
-                {item.title}
-              </h3>
+              <h3 className="text-xl font-semibold text-white">{item.title}</h3>
               <p className="text-gray-300">{item.desc}</p>
             </div>
           ))}
@@ -113,7 +111,7 @@ export default function ContentWritingService() {
               "Final Approval & Delivery"
             ].map((step, index) => (
               <li key={index} className="relative">
-                <span className="absolute -left-4 top-1.5 w-3 h-3 bg-yellow-300 rounded-full" />
+                <span className="absolute -left-4 top-1.5 w-3 h-3 bg-gradient-to-r from-blue-900 to-gray-900 rounded-full" />
                 <h4 className="text-lg font-semibold text-white">{step}</h4>
               </li>
             ))}
@@ -204,7 +202,7 @@ export default function ContentWritingService() {
           Let our expert writers craft compelling content tailored to your
           goals. Contact us today and elevate your brand with powerful words.
         </p>
-        <button className="bg-yellow-300 text-black font-semibold py-3 px-6 rounded-full hover:bg-yellow-300 transition">
+        <button className="bg-gradient-to-r from-blue-900 to-gray-900 text-black font-semibold py-3 px-6 rounded-full hover:bg-gradient-to-r from-blue-900 to-gray-900 transition">
           Request a Free Consultation
         </button>
       </div>

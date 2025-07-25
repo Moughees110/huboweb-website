@@ -165,9 +165,7 @@ export default function Seo() {
 
       {/* FAQs */}
       <div className="space-y-10">
-        <h2 className="text-3xl font-bold text-white text-center">
-          SEO FAQs
-        </h2>
+        <h2 className="text-3xl font-bold text-white text-center">SEO FAQs</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
@@ -202,14 +200,12 @@ export default function Seo() {
 
       {/* Final CTA */}
       <div className="text-center space-y-6 mt-16">
-        <h2 className="text-4xl font-bold text-white">
-          Ready to Rank Higher?
-        </h2>
+        <h2 className="text-4xl font-bold text-white">Ready to Rank Higher?</h2>
         <p className="text-lg text-gray-300 max-w-xl mx-auto">
           Let's talk about how we can help you dominate search results and grow
           your business.
         </p>
-        <button className="mt-4 bg-yellow-300 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition">
+        <button className="mt-4 bg-gradient-to-r from-blue-900 to-gray-900 text-black font-semibold px-6 py-3 rounded-full hover:bg-gradient-to-r from-blue-900 to-gray-900 transition">
           Get a Free SEO Audit
         </button>
       </div>

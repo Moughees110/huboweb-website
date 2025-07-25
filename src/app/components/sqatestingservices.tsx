@@ -148,7 +148,7 @@ export default function SqaAndTestingServices() {
           and efficient performance. Let’s ensure your software exceeds
           expectations.
         </p>
-        <button className="bg-yellow-300 hover:bg-yellow-300 text-black font-bold py-3 px-6 rounded-full transition duration-300">
+        <button className="bg-gradient-to-r from-blue-900 to-gray-900 hover:bg-gradient-to-r from-blue-900 to-gray-900 text-black font-bold py-3 px-6 rounded-full transition duration-300">
           Request a QA Consultation
         </button>
       </div>
