@@ -113,7 +113,7 @@ export default function CrmAutomationService() {
             "Ongoing Optimization & Support"
           ].map((step, i) => (
             <div key={i} className="flex items-start gap-4">
-              <div className="w-8 h-8 flex items-center justify-center rounded-full bg-yellow-300 text-black font-bold">
+              <div className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-900 to-gray-900 text-black font-bold">
                 {i + 1}
               </div>
               <div>

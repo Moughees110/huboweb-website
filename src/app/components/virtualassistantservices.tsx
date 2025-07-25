@@ -57,9 +57,7 @@ export default function VirtualAssistantServices() {
               className="bg-white/5 p-6 rounded-xl shadow-md border border-white/10 space-y-3 hover:shadow-yellow-400/20 transition-all"
             >
               <div className="text-white">{item.icon}</div>
-              <h3 className="text-xl font-semibold text-white">
-                {item.title}
-              </h3>
+              <h3 className="text-xl font-semibold text-white">{item.title}</h3>
               <p className="text-white/90">{item.desc}</p>
             </div>
           ))}
@@ -100,10 +98,8 @@ export default function VirtualAssistantServices() {
             }
           ].map((step, i) => (
             <li key={i} className="relative">
-              <div className="absolute -left-3 top-1 w-6 h-6 bg-yellow-300 rounded-full border-4 border-[#070121]"></div>
-              <h4 className="text-xl font-semibold text-white">
-                {step.title}
-              </h4>
+              <div className="absolute -left-3 top-1 w-6 h-6 bg-gradient-to-r from-blue-900 to-gray-900 rounded-full border-4 border-[#070121]"></div>
+              <h4 className="text-xl font-semibold text-white">{step.title}</h4>
               <p className="text-white/90 mt-1">{step.content}</p>
             </li>
           ))}
@@ -209,9 +205,7 @@ export default function VirtualAssistantServices() {
               key={i}
               className="bg-white/5 p-5 rounded-lg border border-white/10"
             >
-              <h4 className="text-lg font-semibold text-white">
-                {item.q}
-              </h4>
+              <h4 className="text-lg font-semibold text-white">{item.q}</h4>
               <p className="text-white/90 mt-2">{item.a}</p>
             </div>
           ))}

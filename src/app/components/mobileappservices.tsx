@@ -58,7 +58,7 @@ export default function MobileAppServices() {
           Why Your Business Needs a Mobile App
         </h3>
         <p className="text-gray-300 text-lg">
-          In today's mobile-first world, a custom mobile app can increase
+          In todays mobile-first world, a custom mobile app can increase
           accessibility, streamline customer interaction, enhance brand
           recognition, and provide valuable business insights. Whether it’s for
           internal team use or customer engagement, mobile apps are a powerful
@@ -68,9 +68,7 @@ export default function MobileAppServices() {
 
       {/* Our Mobile App Services */}
       <div className="mb-16">
-        <h3 className="text-3xl font-semibold text-white mb-4">
-          Our Services
-        </h3>
+        <h3 className="text-3xl font-semibold text-white mb-4">Our Services</h3>
         <ul className="grid gap-8 md:grid-cols-2">
           <li className="bg-[#16132d] p-6 rounded-xl shadow-md">
             <div className="flex items-center gap-4 mb-2">

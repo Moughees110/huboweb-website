@@ -50,9 +50,15 @@ export default function CareerSection() {
             {/* Progress Bars */}
             <div className="space-y-4 pt-4">
               {[
-                { label: "Trusted", color: "bg-yellow-300" },
+                {
+                  label: "Trusted",
+                  color: "bg-gradient-to-r from-blue-900 to-gray-900"
+                },
                 { label: "Many Partners", color: "bg-orange-400" },
-                { label: "Professional", color: "bg-yellow-300" }
+                {
+                  label: "Professional",
+                  color: "bg-gradient-to-r from-blue-900 to-gray-900"
+                }
               ].map(({ label, color }, index) => (
                 <div key={index}>
                   <div className="flex justify-between text-sm font-bold text-white mb-1">
@@ -75,9 +81,7 @@ export default function CareerSection() {
           {/* Social Media Row */}
           <div className="mb-8">
             <div className="flex items-center justify-between border-b border-gray-600 pb-3">
-              <p className="font-semibold text-black text-lg">
-                Social Media :
-              </p>
+              <p className="font-semibold text-black text-lg">Social Media :</p>
               <div className="flex gap-2">
                 <a href="#" className="bg-black p-2 rounded-sm text-white">
                   <Facebook className="w-4 h-4" />
@@ -129,7 +133,7 @@ export default function CareerSection() {
                 <p className="text-sm text-gray-300">Expert Trainers</p>
               </div>
               <div
-                className="rounded-xl p-6 w-48 h-40 flex flex-col justify-center items-center text-center text-black bg-yellow-300 bg-cover bg-center"
+                className="rounded-xl p-6 w-48 h-40 flex flex-col justify-center items-center text-center text-black bg-gradient-to-r from-blue-900 to-gray-900 bg-cover bg-center"
                 style={{ backgroundImage: "url('/img/office-bg.jpg')" }}
               >
                 <Shirt className="w-8 h-8 mb-2" />

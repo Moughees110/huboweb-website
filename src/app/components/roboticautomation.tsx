@@ -88,16 +88,15 @@ export default function RoboticAutomation() {
         </p>
         <ul className="grid gap-4 md:grid-cols-2 text-gray-300">
           <li className="flex gap-4">
-            <CheckCircle className="text-white" /> Data entry and data
-            migration
+            <CheckCircle className="text-white" /> Data entry and data migration
           </li>
           <li className="flex gap-4">
             <CheckCircle className="text-white" /> Invoice processing and
             finance tasks
           </li>
           <li className="flex gap-4">
-            <CheckCircle className="text-white" /> HR onboarding and
-            document handling
+            <CheckCircle className="text-white" /> HR onboarding and document
+            handling
           </li>
           <li className="flex gap-4">
             <CheckCircle className="text-white" /> Customer service ticket
@@ -138,9 +137,7 @@ export default function RoboticAutomation() {
 
       {/* Testimonials Section */}
       <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-white">
-          What Our Clients Say
-        </h3>
+        <h3 className="text-3xl font-bold text-white">What Our Clients Say</h3>
         <div className="grid gap-6 md:grid-cols-2">
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             <p className="text-gray-300">
@@ -190,9 +187,7 @@ export default function RoboticAutomation() {
 
       {/* Call to Action */}
       <div className="text-center space-y-4">
-        <h3 className="text-3xl font-bold text-white">
-          Ready to Automate?
-        </h3>
+        <h3 className="text-3xl font-bold text-white">Ready to Automate?</h3>
         <p className="text-gray-300">
           Let’s build powerful bots that save time and improve efficiency.
           Contact us today to get started.
