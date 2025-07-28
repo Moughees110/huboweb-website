@@ -38,19 +38,35 @@ const iconItems = [
 
 export default function WidgetMarqueeSection() {
   return (
-    <section className="bg-transparent py-24 px-4 md:px-12 text-white overflow-hidden">
+    <section
+      className="bg-transparent py-24 px-4 md:px-12 text-white overflow-hidden"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-6xl font-bold text-white/10 mb-[-28px]">
+        <h2
+          className="text-6xl font-bold text-white/10 mb-[-28px]"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
           250+
         </h2>
-        <h3 className="text-3xl md:text-4xl font-bold mb-4">
+        <h3
+          className="text-3xl md:text-4xl font-bold mb-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           Powerful Widgets and Extensions for Elementor
         </h3>
-        <p className="text-gray-400 mb-16">
+        <p
+          className="text-gray-400 mb-16"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           Build and customize all the key parts of your website
         </p>
 
-        <div className="space-y-6">
+        <div className="space-y-6" data-aos="zoom-in-up" data-aos-delay="400">
           {[0, 1, 2, 3].map((rowIndex) => {
             const directionClass =
               rowIndex % 2 === 0
@@ -74,7 +90,7 @@ export default function WidgetMarqueeSection() {
                       </span>
                     </div>
                   ))}
-                  {/* Repeat icons to ensure smooth loop */}
+                  {/* Duplicate icons to ensure smooth loop */}
                   {iconItems.map((item, index) => (
                     <div
                       key={`duplicate-${rowIndex}-${index}`}

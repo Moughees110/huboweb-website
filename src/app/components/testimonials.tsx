@@ -50,10 +50,24 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="bg-transparent text-white py-16 px-4 sm:px-6 lg:px-8">
+    <div
+      className="bg-transparent text-white py-16 px-4 sm:px-6 lg:px-8"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4">Client testimonials</h2>
-        <p className="text-sm text-gray-300 mb-12">
+        <h2
+          className="text-3xl font-bold mb-4"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        >
+          Client testimonials
+        </h2>
+        <p
+          className="text-sm text-gray-300 mb-12"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
           This slide displays the glowing client testimonials that attest to the
           value of our products and services. It features client endorsements
           from business members.
@@ -63,7 +77,13 @@ export default function Testimonials() {
           <Carousel className="w-full">
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="flex justify-center px-2">
+                <CarouselItem
+                  key={index}
+                  className="flex justify-center px-2"
+                  data-aos="zoom-in-up"
+                  data-aos-delay={index * 100}
+                  data-aos-duration="800"
+                >
                   <div className="flex flex-col md:flex-row items-start gap-6 max-w-2xl text-left">
                     <div className="flex flex-col items-center">
                       <div className="rounded-full border-4 border-white w-24 h-24 overflow-hidden">
@@ -114,7 +134,6 @@ export default function Testimonials() {
               ))}
             </CarouselContent>
 
-            {/* Arrows: absolutely positioned on sides, responsive safe zone */}
             <CarouselPrevious className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 sm:-left-6" />
             <CarouselNext className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 sm:-right-6" />
           </Carousel>

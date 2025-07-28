@@ -1,7 +1,10 @@
 "use client";
 
-import { useRouter } from "next/navigation"; // ✅ IMPORT
+import { useRouter } from "next/navigation";
 import { Instagram, Linkedin, Facebook, Twitter, Send } from "lucide-react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const teamMembers = [
   {
@@ -29,7 +32,8 @@ const teamMembers = [
     email: "naumannaeem81@gmail.com"
   }
 ];
-const getMemberRoute = (name) => {
+
+const getMemberRoute = (name: string) => {
   switch (name) {
     case "Anosh Haider":
       return "/anosh";
@@ -45,13 +49,29 @@ const getMemberRoute = (name) => {
 };
 
 export default function Team() {
-  const router = useRouter(); // ✅ INIT ROUTER
+  const router = useRouter();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  }, []);
 
   return (
     <section className="py-36 px-6 bg-transparent text-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6 text-center">WHO WE ARE</h2>
-        <p className="text-sm text-white text-center mb-10">
+        <h2
+          className="text-3xl font-bold mb-6 text-center"
+          data-aos="fade-up"
+        >
+          WHO WE ARE
+        </h2>
+        <p
+          className="text-sm text-white text-center mb-10"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           Meet the core people driving the vision forward.
         </p>
 
@@ -60,6 +80,8 @@ export default function Team() {
             <div
               key={index}
               className="relative w-[300px] h-[420px] overflow-hidden rounded-xl group shadow-2xl"
+              data-aos="zoom-in-up"
+              data-aos-delay={200 + index * 100}
             >
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
@@ -88,8 +110,6 @@ export default function Team() {
                       <p className="text-sm text-gray-300">{member.position}</p>
                       <p className="text-sm text-gray-400">{member.email}</p>
                     </div>
-
-                    {/* ✅ OnClick navigation */}
                     <button
                       onClick={() => router.push(getMemberRoute(member.name))}
                       className="mt-2 bg-white text-black text-sm px-3 py-1 rounded-full flex items-center gap-1 hover:bg-[#070121] hover:text-white transition"

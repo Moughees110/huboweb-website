@@ -18,9 +18,10 @@ export default function Home() {
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
         imageSrc="/img/web-application-software.png"
       />
-      <MarqueeCard/>
+      
       <FaqTutorialSection/>
       <Card/>
+      <MarqueeCard/>
       <HuboHeading text="Welcome to HuboWeb Technologies, where creativity meets code, and digital experiences come to life with innovation and precision." />
       <OrbitSection/>
       <Testimonials/>

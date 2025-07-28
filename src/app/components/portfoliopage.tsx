@@ -124,53 +124,67 @@ export default function PortfolioPage() {
 
   return (
     <section className="w-full bg-transparent py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl text-white font-bold mb-4">
-          My Creative Work & Portfolio
-        </h2>
-        <p className="text-gray-400 mb-10">
-          Explore a variety of designs crafted with passion and precision.
-        </p>
+  <div className="max-w-6xl mx-auto text-center">
+    <h2
+      className="text-4xl text-white font-bold mb-4"
+      data-aos="fade-up"
+    >
+      My Creative Work & Portfolio
+    </h2>
+    <p
+      className="text-gray-400 mb-10"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      Explore a variety of designs crafted with passion and precision.
+    </p>
 
-        {/* Category Buttons */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          <HoverButton
-            label="All"
-            isActive={active === "All"}
-            onClick={() => setActive("All")}
+    {/* Category Buttons */}
+    <div
+      className="flex flex-wrap justify-center gap-3 mb-12"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
+      <HoverButton
+        label="All"
+        isActive={active === "All"}
+        onClick={() => setActive("All")}
+      />
+      {categories.map((cat) => (
+        <HoverButton
+          key={cat}
+          label={cat}
+          isActive={active === cat}
+          onClick={() => setActive(cat)}
+        />
+      ))}
+    </div>
+
+    {/* Cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {filteredCards.map((card, idx) => (
+        <div
+          key={idx}
+          className="relative group overflow-hidden rounded-2xl shadow-lg"
+          data-aos="fade-up"
+          data-aos-delay={idx * 100}
+        >
+          <img
+            src={card.img}
+            alt={card.title}
+            className="w-full h-72 object-cover"
           />
-          {categories.map((cat) => (
-            <HoverButton
-              key={cat}
-              label={cat}
-              isActive={active === cat}
-              onClick={() => setActive(cat)}
-            />
-          ))}
+          <div className="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 text-left">
+            <h3 className="text-xl font-semibold">{card.title}</h3>
+            <p className="text-gray-700 text-sm mb-3">{card.desc}</p>
+            <AnimatedHoverButton label="Detail" slug={card.slug} />
+          </div>
         </div>
+      ))}
+    </div>
+  </div>
+</section>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredCards.map((card, idx) => (
-            <div
-              key={idx}
-              className="relative group overflow-hidden rounded-2xl shadow-lg"
-            >
-              <img
-                src={card.img}
-                alt={card.title}
-                className="w-full h-72 object-cover"
-              />
-              <div className="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 text-left">
-                <h3 className="text-xl font-semibold">{card.title}</h3>
-                <p className="text-gray-700 text-sm mb-3">{card.desc}</p>
-                <AnimatedHoverButton label="Detail" slug={card.slug} />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
   );
 }
 
@@ -190,7 +204,7 @@ function HoverButton({
       className={`relative group px-4 py-2 rounded-full border text-sm font-medium transition duration-300 ${
         isActive
           ? "bg-gradient-to-r from-blue-900 to-gray-900 text-white"
-          : "text-white hover:text-[#071c55] hover:bg-gradient-to-r from-blue-900 to-gray-900"
+          : "text-white  hover:bg-gradient-to-r from-blue-900 to-gray-900"
       }`}
     >
       <span
@@ -227,7 +241,7 @@ function AnimatedHoverButton({ label, slug }: { label: string; slug: string }) {
           {label}
         </span>
         <span className="absolute top-0 left-0 w-full h-full flex items-center justify-center gap-1 transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
-          <Send size={16} className="stroke-yellow-500" />
+          <Send size={16} className="stroke-white" />
           {label}
         </span>
       </button>

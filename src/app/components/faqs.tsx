@@ -38,11 +38,16 @@ export default function Faqs({ imageSrc }: { imageSrc: string }) {
     <section className="bg-transparent text-white py-20 px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left: FAQs */}
-        <div>
+        {/* Left: FAQs */}
+        <div data-aos="fade-up">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-400 mb-10">
+          <p
+            className="text-gray-400 mb-10"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             Got questions? We’ve got answers.
           </p>
           <div className="space-y-4">
@@ -50,6 +55,8 @@ export default function Faqs({ imageSrc }: { imageSrc: string }) {
               <div
                 key={index}
                 className="border bg-[#1F1F4B] border-gray-700 rounded-lg"
+                data-aos="fade-up"
+                data-aos-delay={200 + index * 100}
               >
                 <button
                   className="w-full flex justify-between items-center px-5 py-4 text-left focus:outline-none"
@@ -69,7 +76,11 @@ export default function Faqs({ imageSrc }: { imageSrc: string }) {
         </div>
 
         {/* Right: Image */}
-        <div className="w-full h-full flex justify-center items-center">
+        <div
+          className="w-full h-full flex justify-center items-center"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
           <Image
             src={imageSrc}
             alt="FAQs"

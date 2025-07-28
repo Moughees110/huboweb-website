@@ -16,9 +16,12 @@ export default function CareerSection() {
     <section className="w-full">
       {/* White Content Section */}
       <div className="bg-transparent relative z-10 pb-10">
-        <div className="max-w-6xl mx-auto px-6 pt-12 md:flex items-start justify-between">
+        <div
+          className="max-w-6xl mx-auto px-6 pt-12 md:flex items-start justify-between"
+          data-aos="fade-up"
+        >
           {/* Images with Overlap Effect */}
-          <div className="flex gap-4 relative z-20 md:-mb-24">
+          <div className="flex gap-4 relative z-20 md:-mb-24" data-aos="fade-up">
             <Image
               src="/img/section2.jpg"
               alt="image1"
@@ -36,7 +39,7 @@ export default function CareerSection() {
           </div>
 
           {/* Right Side Text */}
-          <div className="mt-10 md:mt-0 md:w-1/2 space-y-4">
+          <div className="mt-10 md:mt-0 md:w-1/2 space-y-4" data-aos="fade-up">
             <h2 className="text-4xl md:text-5xl font-bold leading-tight text-white">
               Making Dreams And <br /> Aspirations Come True
             </h2>
@@ -60,7 +63,7 @@ export default function CareerSection() {
                   color: "bg-gradient-to-r from-blue-900 to-gray-900"
                 }
               ].map(({ label, color }, index) => (
-                <div key={index}>
+                <div key={index} data-aos="fade-up" data-aos-delay={index * 100}>
                   <div className="flex justify-between text-sm font-bold text-white mb-1">
                     <span>{label}</span>
                     <span>90%</span>
@@ -79,7 +82,7 @@ export default function CareerSection() {
       <div className="bg-white text-white pt-32 pb-10 px-6 relative z-0">
         <div className="max-w-6xl mx-auto">
           {/* Social Media Row */}
-          <div className="mb-8">
+          <div className="mb-8" data-aos="fade-up">
             <div className="flex items-center justify-between border-b border-gray-600 pb-3">
               <p className="font-semibold text-black text-lg">Social Media :</p>
               <div className="flex gap-2">
@@ -97,9 +100,12 @@ export default function CareerSection() {
           </div>
 
           {/* Content Below Social Media */}
-          <div className="flex flex-col md:flex-row justify-between items-start gap-10">
+          <div
+            className="flex flex-col md:flex-row justify-between items-start gap-10"
+            data-aos="fade-up"
+          >
             {/* Left Text */}
-            <div className="md:w-1/2">
+            <div className="md:w-1/2" data-aos="fade-up">
               <h1 className="text-4xl md:text-5xl text-black font-bold leading-tight mb-6">
                 More Jobs Equal a <br /> Better World
               </h1>
@@ -113,7 +119,7 @@ export default function CareerSection() {
               </p>
               <a
                 href="applyform"
-                className="text-black  font-semibold inline-flex items-center gap-2"
+                className="text-black font-semibold inline-flex items-center gap-2"
               >
                 <ArrowRight className="w-4 h-4" />
                 Apply Form
@@ -122,12 +128,19 @@ export default function CareerSection() {
 
             {/* Cards Row */}
             <div className="flex flex-wrap md:flex-nowrap gap-4 md:gap-6">
-              <div className="bg-gray-900 rounded-xl p-6 w-48 h-40 flex flex-col justify-center items-center text-center">
+              <div
+                className="bg-gray-900 rounded-xl p-6 w-48 h-40 flex flex-col justify-center items-center text-center"
+                data-aos="fade-up"
+              >
                 <BadgeCheck className="text-white w-8 h-8 mb-2" />
                 <h2 className="text-2xl font-bold">25</h2>
                 <p className="text-sm text-gray-300">Experience</p>
               </div>
-              <div className="bg-gray-800 rounded-xl p-6 w-48 h-40 flex flex-col justify-center items-center text-center">
+              <div
+                className="bg-gray-800 rounded-xl p-6 w-48 h-40 flex flex-col justify-center items-center text-center"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
                 <Users className="text-white w-8 h-8 mb-2" />
                 <h2 className="text-2xl font-bold">70+</h2>
                 <p className="text-sm text-gray-300">Expert Trainers</p>
@@ -135,6 +148,8 @@ export default function CareerSection() {
               <div
                 className="rounded-xl p-6 w-48 h-40 flex flex-col justify-center items-center text-center text-black bg-gradient-to-r from-blue-900 to-gray-900 bg-cover bg-center"
                 style={{ backgroundImage: "url('/img/office-bg.jpg')" }}
+                data-aos="fade-up"
+                data-aos-delay="300"
               >
                 <Shirt className="w-8 h-8 mb-2" />
                 <h2 className="text-2xl font-bold">100+</h2>
