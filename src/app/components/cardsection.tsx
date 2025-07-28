@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect  } from "react";
 import {
   Paintbrush,
   Code2,
@@ -17,6 +17,8 @@ import {
   Wrench,
   PenTool
 } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const cards = [
   {
@@ -145,6 +147,13 @@ export default function CardSection() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4;
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  }, []);
+
   const totalPages = Math.ceil(cards.length / itemsPerPage);
   const paginatedCards = cards.slice(
     (currentPage - 1) * itemsPerPage,
@@ -152,7 +161,10 @@ export default function CardSection() {
   );
 
   return (
-    <section className="min-h-screen font-[Poppins] py-16 flex flex-col items-center justify-center bg-transparent">
+    <section
+      className="min-h-screen font-[Poppins] py-16 flex flex-col items-center justify-center bg-transparent"
+      data-aos="fade-up"
+    >
       <div className="max-w-[1280px] w-full px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {paginatedCards.map((card, idx) => (
@@ -160,6 +172,8 @@ export default function CardSection() {
               key={idx}
               className="group relative w-full h-[400px] rounded-2xl border border-white/10 backdrop-blur-lg bg-white/5 shadow-lg overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-[0_0_0_3px_var(--clr)]"
               style={{ "--clr": card.color } as React.CSSProperties}
+              data-aos="zoom-in"
+              data-aos-delay={idx * 100} // stagger animations
             >
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[var(--clr)] opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none" />
               <div className="relative z-10 flex flex-col items-center justify-center h-full p-6 text-center space-y-6">
@@ -184,7 +198,7 @@ export default function CardSection() {
         </div>
 
         {/* Pagination Controls */}
-        <div className="flex justify-center items-center gap-2 mt-12">
+        <div className="flex justify-center items-center gap-2 mt-12" data-aos="fade-up">
           <button
             className="px-4 py-2 rounded bg-white/10 text-white hover:bg-white/20 transition"
             disabled={currentPage === 1}
@@ -208,6 +222,8 @@ export default function CardSection() {
                     } as React.CSSProperties)
                   : undefined
               }
+              data-aos="zoom-in"
+              data-aos-delay={i * 100}
             >
               {i + 1}
             </button>
