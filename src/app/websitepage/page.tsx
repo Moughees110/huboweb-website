@@ -1,6 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   Twitter,
   Facebook,
@@ -11,12 +14,16 @@ import {
 } from "lucide-react";
 
 const WebsitePage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: false });
+  }, []);
+
   return (
     <div className="container mt-20 mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
       {/* Left Side */}
       <div className="md:col-span-2 space-y-6">
         {/* Blog Main Content */}
-        <div>
+        <div data-aos="fade-up">
           <Image
             src="/img/developer.jpg"
             alt="Blog"
@@ -34,7 +41,7 @@ const WebsitePage = () => {
         </div>
 
         {/* Inside Post */}
-        <div className="space-y-6">
+        <div className="space-y-6" data-aos="fade-up">
           <h2 className="text-2xl font-semibold hover:text-white">
             Developer Workflow
           </h2>
@@ -57,7 +64,7 @@ const WebsitePage = () => {
         </div>
 
         {/* Comments */}
-        <div className="mt-6">
+        <div className="mt-6" data-aos="fade-up">
           {[
             {
               avatar: "/img/comment.jpg",
@@ -101,7 +108,7 @@ const WebsitePage = () => {
       </div>
 
       {/* Sidebar */}
-      <aside className="space-y-6">
+      <aside className="space-y-6" data-aos="fade-left">
         {/* Author */}
         <div className="p-2 border rounded-xl text-center border-gray-700">
           <Image
@@ -125,7 +132,7 @@ const WebsitePage = () => {
         </div>
 
         {/* Search */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Search
           </h3>
@@ -140,7 +147,7 @@ const WebsitePage = () => {
         </div>
 
         {/* Categories */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Categories
           </h3>
@@ -154,11 +161,11 @@ const WebsitePage = () => {
         </div>
 
         {/* Recent Posts */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Recent Posts
           </h3>
-          {[
+          {[ 
             "Top 5 Tailwind Plugins",
             "Why Next.js is the Future",
             "Handling API Errors Gracefully"
@@ -173,7 +180,7 @@ const WebsitePage = () => {
         </div>
 
         {/* Tags */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Tags
           </h3>

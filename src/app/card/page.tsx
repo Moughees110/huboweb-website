@@ -1,5 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Image from "next/image";
 import { Send } from "lucide-react";
 import { TextAnimate } from "@/components/magicui/text-animate";
@@ -11,60 +15,64 @@ const services = [
     description:
       "Boost the success of your company by using Google Ads to increase online visibility and promote growth.",
     image: "/img/card10.jpg",
-    logo: "/img/crmautomation.png"
+    logo: "/img/crmautomation.png",
   },
   {
     title: "Web Design & Development",
     description:
-      "Revolutionize your digital footprint with our bespoke web design solutions-where innovation meets pixel perfection.",
+      "Revolutionize your digital footprint with our bespoke web design solutions-where innovation",
     image: "/img/card4.jpeg",
-    logo: "/img/webdesigne.png"
+    logo: "/img/webdesigne.png",
   },
   {
     title: "UI/UX Design",
     description:
       "Elevate engagement, inspire loyalty-our UI/UX design redefines the digital frontier, one click at a time.",
     image: "/img/card9.jpg",
-    logo: "/img/uidesigne.png"
+    logo: "/img/uidesigne.png",
   },
   {
     title: "Mobile App Development",
     description:
       "From concept to code, we craft, redefine mobile solutions that inspire engagement and empowering your brand.",
     image: "/img/card8.jpg",
-    logo: "/img/mobiledeveloper.png"
+    logo: "/img/mobiledeveloper.png",
   },
   {
     title: "Graphics Design",
     description:
       "Transforming pixels into profit our cutting-edge graphics design sets your brand apart in the digital landscape.",
     image: "/img/card7.webp",
-    logo: "/img/graphicdesigne.png"
+    logo: "/img/graphicdesigne.png",
   },
   {
     title: "Robotic Process Automation",
     description:
       "Robotic Process Automation uses bots to automate repetitive tasks, boosting efficiency and accuracy.",
     image: "/img/card6.png",
-    logo: "/img/roboticautomation.png"
+    logo: "/img/roboticautomation.png",
   },
   {
     title: "Digital Marketing",
     description:
       "Captivate, Convert, Conquer-the digital realm is yours to conquer with our dynamic digital marketing strategies.",
     image: "/img/card3.jpg",
-    logo: "/img/digitalmarketing.png"
+    logo: "/img/digitalmarketing.png",
   },
   {
     title: "SEO Optimization",
     description:
       "Dominate rankings and seize digital supremacy with strategic optimization where visibility meets profitability.",
     image: "/img/seo.webp",
-    logo: "/img/seooptimization.png"
-  }
+    logo: "/img/seooptimization.png",
+  },
 ];
 
 export default function Card() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: false });
+  }, []);
+
   return (
     <section className="py-16 px-4 sm:px-6 bg-transparent text-white">
       <div className="max-w-7xl mx-auto text-center mb-12">
@@ -85,6 +93,8 @@ export default function Card() {
         {services.map((service, index) => (
           <div
             key={index}
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
             className="group relative overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 h-[360px] w-full max-w-[300px] flex-grow"
           >
             {/* Background Image */}
@@ -96,13 +106,15 @@ export default function Card() {
             {/* Foreground Content */}
             <div className="relative z-10 flex flex-col items-center text-center h-full p-6 space-y-4">
               {/* Logo */}
-              <div className="w-16 h-16 relative">
-                <Image
-                  src={service.logo}
-                  alt={service.title}
-                  fill
-                  className="object-contain rounded-full"
-                />
+              <div className="relative w-16 h-16  rounded-full flex items-center justify-center overflow-hidden">
+                <div className="relative w-10 h-10">
+                  <Image
+                    src={service.logo}
+                    alt={service.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
 
               {/* Title */}
@@ -111,11 +123,11 @@ export default function Card() {
               </h3>
 
               {/* Description */}
-              <p className="text-lg text-gray-300 transition-colors duration-300 ">
+              <p className="text-lg text-gray-300 transition-colors duration-300">
                 {service.description}
               </p>
 
-              {/* Read More Button (hover only) */}
+              {/* Read More */}
               <div className="mt-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <Link
                   href="/service"

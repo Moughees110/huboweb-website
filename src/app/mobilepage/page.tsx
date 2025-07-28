@@ -1,6 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   Twitter,
   Facebook,
@@ -11,12 +14,19 @@ import {
 } from "lucide-react";
 
 const MobilePage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false
+    });
+  }, []);
+
   return (
     <div className="container mx-auto mt-20 p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
       {/* Left Side */}
       <div className="md:col-span-2 space-y-6">
         {/* Blog Main Content */}
-        <div>
+        <div data-aos="fade-up">
           <Image
             src="/img/mobile.jpg"
             alt="Mobile UI Design"
@@ -35,7 +45,7 @@ const MobilePage = () => {
         </div>
 
         {/* Inside Post */}
-        <div className="space-y-6">
+        <div className="space-y-6" data-aos="fade-up">
           <h2 className="text-2xl font-semibold hover:text-white">
             UX Design Fundamentals for Mobile
           </h2>
@@ -58,7 +68,7 @@ const MobilePage = () => {
         </div>
 
         {/* Comments */}
-        <div className="mt-6">
+        <div className="mt-6" data-aos="fade-up">
           {[
             {
               avatar: "/img/comment13.jpg",
@@ -102,7 +112,7 @@ const MobilePage = () => {
       </div>
 
       {/* Sidebar */}
-      <aside className="space-y-6">
+      <aside className="space-y-6" data-aos="fade-left">
         {/* Author */}
         <div className="p-2 border mt-20 rounded-xl text-center border-gray-700">
           <Image
@@ -128,7 +138,7 @@ const MobilePage = () => {
         </div>
 
         {/* Search */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Search
           </h3>
@@ -143,7 +153,7 @@ const MobilePage = () => {
         </div>
 
         {/* Categories */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Categories
           </h3>
@@ -161,7 +171,7 @@ const MobilePage = () => {
         </div>
 
         {/* Recent Posts */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Recent Posts
           </h3>
@@ -180,7 +190,7 @@ const MobilePage = () => {
         </div>
 
         {/* Tags */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Tags
           </h3>

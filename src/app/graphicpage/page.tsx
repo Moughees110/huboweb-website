@@ -1,6 +1,10 @@
 "use client";
 
+import { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import {
   Twitter,
   Facebook,
@@ -11,23 +15,31 @@ import {
 } from "lucide-react";
 
 const GraphicPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false
+    });
+  }, []);
+
   return (
     <div className="container mx-auto p-6 grid mt-20 grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
       {/* Left Side */}
-      <div className="md:col-span-2 space-y-6">
+      <div className="md:col-span-2 space-y-6" data-aos="fade-up">
         {/* Blog Main Content */}
-        <div>
+        <div data-aos="fade-up">
           <Image
             src="/img/graphic1.jpg"
             alt="Graphic Design Banner"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
+            data-aos="zoom-in"
           />
-          <h1 className="text-3xl font-bold mt-4 hover:text-white">
+          <h1 className="text-3xl font-bold mt-4 hover:text-white" data-aos="fade-up" data-aos-delay="100">
             Crafting Impactful UI/UX in Graphic Design
           </h1>
-          <p className="text-white mt-2">
+          <p className="text-white mt-2" data-aos="fade-up" data-aos-delay="200">
             Explore how modern UI/UX principles combined with creative graphic
             design result in engaging digital experiences that connect brands
             with users.
@@ -36,7 +48,7 @@ const GraphicPage = () => {
 
         {/* Inside Post */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold hover:text-white">
+          <h2 className="text-2xl font-semibold hover:text-white" data-aos="fade-up">
             Visual Consistency & User Experience
           </h2>
           <Image
@@ -45,21 +57,22 @@ const GraphicPage = () => {
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
+            data-aos="zoom-in"
           />
-          <h2 className="text-3xl font-bold hover:text-white">
+          <h2 className="text-3xl font-bold hover:text-white" data-aos="fade-up">
             Elevate Brand Identity Through Design
           </h2>
-          <p>
+          <p data-aos="fade-up" data-aos-delay="100">
             A well-crafted UI/UX not only enhances usability but also
             strengthens brand trust. Designers use tools like Figma, Adobe XD,
             and Illustrator to produce pixel-perfect layouts that communicate
             clearly and beautifully.
           </p>
-          <hr className="border-gray-700" />
+          <hr className="border-gray-700" data-aos="fade-up" />
         </div>
 
         {/* Comments */}
-        <div className="mt-6">
+        <div className="mt-6" data-aos="fade-up">
           {[
             {
               avatar: "/img/comment11.jpg",
@@ -79,6 +92,8 @@ const GraphicPage = () => {
             <div
               key={i}
               className="flex space-x-4 mt-4 border-b pb-4 cursor-pointer hover:text-white"
+              data-aos="fade-up"
+              data-aos-delay={i * 100}
             >
               <Image
                 src={item.avatar}
@@ -103,9 +118,9 @@ const GraphicPage = () => {
       </div>
 
       {/* Sidebar */}
-      <aside className="space-y-6">
+      <aside className="space-y-6" data-aos="fade-left">
         {/* Author */}
-        <div className="p-2 border rounded-xl text-center border-gray-700">
+        <div className="p-2 border rounded-xl text-center border-gray-700" data-aos="fade-left">
           <Image
             src="/img/comment13.jpg"
             alt="Author"
@@ -113,7 +128,9 @@ const GraphicPage = () => {
             height={100}
             className="rounded-full mx-auto"
           />
-          <h3 className="text-white text-2xl font-semibold mt-2">Sarah Khan</h3>
+          <h3 className="text-white text-2xl font-semibold mt-2">
+            Sarah Khan
+          </h3>
           <div className="flex justify-center space-x-4 mt-2 text-2xl text-gray-400">
             <Twitter className="hover:text-white" />
             <Facebook className="hover:text-white" />
@@ -127,7 +144,7 @@ const GraphicPage = () => {
         </div>
 
         {/* Search */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="100">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Search
           </h3>
@@ -142,7 +159,7 @@ const GraphicPage = () => {
         </div>
 
         {/* Categories */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="200">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Categories
           </h3>
@@ -156,7 +173,7 @@ const GraphicPage = () => {
         </div>
 
         {/* Recent Posts */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="300">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Recent Posts
           </h3>
@@ -175,7 +192,7 @@ const GraphicPage = () => {
         </div>
 
         {/* Tags */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="400">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Tags
           </h3>

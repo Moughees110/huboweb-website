@@ -1,6 +1,10 @@
 "use client";
 
+import { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import {
   Twitter,
   Facebook,
@@ -11,23 +15,28 @@ import {
 } from "lucide-react";
 
 const GamePage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: false });
+  }, []);
+
   return (
     <div className="container mx-auto mt-20 p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
       {/* Left Side */}
-      <div className="md:col-span-2 space-y-6">
+      <div className="md:col-span-2 space-y-6" data-aos="fade-up">
         {/* Blog Main Content */}
-        <div>
+        <div data-aos="fade-up">
           <Image
             src="/img/game3.jpg"
             alt="Game UI"
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
+            data-aos="zoom-in"
           />
-          <h1 className="text-3xl font-bold mt-4 hover:text-white">
+          <h1 className="text-3xl font-bold mt-4 hover:text-white" data-aos="fade-up" data-aos-delay="100">
             Crafting Immersive Game Interfaces in 2025
           </h1>
-          <p className="text-white mt-2">
+          <p className="text-white mt-2" data-aos="fade-up" data-aos-delay="200">
             Discover how UI/UX designers are building interactive and intuitive
             game interfaces using tools like Figma, Unity UI Toolkit, and Unreal
             UMG.
@@ -36,7 +45,7 @@ const GamePage = () => {
 
         {/* Inside Post */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold hover:text-white">
+          <h2 className="text-2xl font-semibold hover:text-white" data-aos="fade-up">
             Game Design Workflow
           </h2>
           <Image
@@ -45,20 +54,21 @@ const GamePage = () => {
             width={1200}
             height={800}
             className="rounded-xl w-full h-auto"
+            data-aos="zoom-in"
           />
-          <h2 className="text-3xl font-bold hover:text-white">
+          <h2 className="text-3xl font-bold hover:text-white" data-aos="fade-up">
             Improving Player Experience Through UI Prototypes
           </h2>
-          <p>
+          <p data-aos="fade-up" data-aos-delay="100">
             Modern game designers leverage prototyping tools like Adobe XD,
             Figma, and UXPin to simulate menus, HUDs, and inventory systems for
             optimal player usability and aesthetic coherence.
           </p>
-          <hr className="border-gray-700" />
+          <hr className="border-gray-700" data-aos="fade-up" />
         </div>
 
         {/* Comments */}
-        <div className="mt-6">
+        <div className="mt-6" data-aos="fade-up">
           {[
             {
               avatar: "/img/comment14.jpg",
@@ -78,6 +88,8 @@ const GamePage = () => {
             <div
               key={i}
               className="flex space-x-4 mt-4 border-b pb-4 cursor-pointer hover:text-white"
+              data-aos="fade-up"
+              data-aos-delay={i * 100}
             >
               <Image
                 src={item.avatar}
@@ -102,9 +114,9 @@ const GamePage = () => {
       </div>
 
       {/* Sidebar */}
-      <aside className="space-y-6">
+      <aside className="space-y-6" data-aos="fade-left">
         {/* Author */}
-        <div className="p-2 border rounded-xl text-center border-gray-700">
+        <div className="p-2 border rounded-xl text-center border-gray-700" data-aos="fade-left">
           <Image
             src="/img/smith5.jpg"
             alt="Author"
@@ -128,7 +140,7 @@ const GamePage = () => {
         </div>
 
         {/* Search */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="100">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Search
           </h3>
@@ -143,7 +155,7 @@ const GamePage = () => {
         </div>
 
         {/* Categories */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="200">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Categories
           </h3>
@@ -161,7 +173,7 @@ const GamePage = () => {
         </div>
 
         {/* Recent Posts */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="300">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Recent Posts
           </h3>
@@ -180,7 +192,7 @@ const GamePage = () => {
         </div>
 
         {/* Tags */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="400">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Tags
           </h3>
