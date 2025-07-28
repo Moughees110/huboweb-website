@@ -1,18 +1,35 @@
 "use client";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function PrivacyPolicy() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
+
   return (
     <section className="bg-transparent text-white py-20 px-6 md:px-12 backdrop-blur-md">
-      <div className="max-w-5xl mx-auto bg-white/5 p-10 rounded-xl border border-white/10 shadow-2xl">
-        <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
+      <div
+        className="max-w-5xl mx-auto bg-white/5 p-10 rounded-xl border border-white/10 shadow-2xl"
+        data-aos="fade-up"
+      >
+        <h1
+          className="text-4xl md:text-5xl font-bold text-white text-center mb-12"
+          data-aos="zoom-in"
+        >
           Privacy Policy
         </h1>
 
         <div className="space-y-10 text-gray-300">
           {/* Section 1 */}
-          <div>
+          <div data-aos="fade-up">
             <h2 className="text-xl font-semibold text-white mb-2">
-              1.Our Commitment to Privacy
+              1. Our Commitment to Privacy
             </h2>
             <p>
               <span className="font-semibold text-blue-500">HuboWeb</span> is
@@ -25,7 +42,7 @@ export default function PrivacyPolicy() {
           </div>
 
           {/* Section 2 */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="100">
             <h2 className="text-xl font-semibold text-white mb-2">
               2. What information do we collect?
             </h2>
@@ -57,9 +74,9 @@ export default function PrivacyPolicy() {
           </div>
 
           {/* Section 3 */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="200">
             <h2 className="text-xl font-semibold text-white mb-2">
-              3.Data Security
+              3. Data Security
             </h2>
             <p>
               We take reasonable measures to protect your personal information
@@ -71,14 +88,14 @@ export default function PrivacyPolicy() {
           </div>
 
           {/* Section 4 */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="300">
             <h2 className="text-xl font-semibold text-white mb-2">
               Childrens Online Privacy Protection Act Compliance
             </h2>
             <p>
               We are in compliance with the requirements of COPPA{" "}
               <span className="text-blue-500">
-                (Childrens Online Privacy Protection Act);{" "}
+                (Childrens Online Privacy Protection Act);
               </span>{" "}
               we do not collect any information from anyone under 13 years of
               age. Our website, products, and services are all directed to
@@ -87,9 +104,9 @@ export default function PrivacyPolicy() {
           </div>
 
           {/* Section 5 */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="400">
             <h2 className="text-xl font-semibold text-white mb-2">
-              5.Opt-In Information and Third-Party Sharing
+              5. Opt-In Information and Third-Party Sharing
             </h2>
             <p>
               We respect your privacy choices, especially concerning the sharing
@@ -98,8 +115,9 @@ export default function PrivacyPolicy() {
               or promotional purposes.
             </p>
           </div>
+
           {/* Section 6 */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="500">
             <h2 className="text-xl font-semibold text-white mb-2">
               6. Opt-In for Marketing Text Messages
             </h2>
@@ -117,8 +135,9 @@ export default function PrivacyPolicy() {
               marketing text messages.
             </p>
           </div>
+
           {/* Section 7 */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="600">
             <h2 className="text-xl font-semibold text-white mb-2">
               7. Your Rights
             </h2>
@@ -129,12 +148,13 @@ export default function PrivacyPolicy() {
               <span className="text-yellow-500">
                 Sheena.murry@sevenpinesinvest.com
               </span>{" "}
-              or call us on <span className="text-blue-500">+404-579-8662</span>
-              .
+              or call us on{" "}
+              <span className="text-blue-500">+404-579-8662</span>.
             </p>
           </div>
-          {/* Section 8*/}
-          <div>
+
+          {/* Section 8 */}
+          <div data-aos="fade-up" data-aos-delay="700">
             <h2 className="text-xl font-semibold text-white mb-2">
               8. Changes to this Privacy Policy
             </h2>
@@ -145,8 +165,9 @@ export default function PrivacyPolicy() {
               website, and the effective date will be revised accordingly.
             </p>
           </div>
+
           {/* Section 9 */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="800">
             <h2 className="text-xl font-semibold text-white mb-2">
               9. Contacting Us
             </h2>

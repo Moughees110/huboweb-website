@@ -1,6 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   Twitter,
   Facebook,
@@ -11,12 +14,19 @@ import {
 } from "lucide-react";
 
 const DashboardPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
+
   return (
     <div className="container mx-auto mt-20 p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent text-white">
       {/* Left Side */}
       <div className="md:col-span-2 space-y-6">
         {/* Blog Main Content */}
-        <div>
+        <div data-aos="fade-up">
           <Image
             src="/img/dashboard3.jpg"
             alt="Dashboard Design"
@@ -35,7 +45,7 @@ const DashboardPage = () => {
         </div>
 
         {/* Inside Post */}
-        <div className="space-y-6">
+        <div className="space-y-6" data-aos="fade-up" data-aos-delay="200">
           <h2 className="text-2xl font-semibold hover:text-white">
             Key Principles of Dashboard UX
           </h2>
@@ -58,7 +68,7 @@ const DashboardPage = () => {
         </div>
 
         {/* Comments */}
-        <div className="mt-6">
+        <div className="mt-6" data-aos="fade-up" data-aos-delay="400">
           {[
             {
               avatar: "/img/comment3.jpg",
@@ -78,6 +88,8 @@ const DashboardPage = () => {
             <div
               key={i}
               className="flex space-x-4 mt-4 border-b pb-4 cursor-pointer hover:text-white"
+              data-aos="fade-up"
+              data-aos-delay={500 + i * 100}
             >
               <Image
                 src={item.avatar}
@@ -104,7 +116,7 @@ const DashboardPage = () => {
       {/* Sidebar */}
       <aside className="space-y-6">
         {/* Author */}
-        <div className="p-2 border rounded-xl text-center border-gray-700">
+        <div className="p-2 border rounded-xl text-center border-gray-700" data-aos="fade-left">
           <Image
             src="/img/smith2.jpg"
             alt="Author"
@@ -126,7 +138,7 @@ const DashboardPage = () => {
         </div>
 
         {/* Search */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="100">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Search
           </h3>
@@ -141,7 +153,7 @@ const DashboardPage = () => {
         </div>
 
         {/* Categories */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="200">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Categories
           </h3>
@@ -159,7 +171,7 @@ const DashboardPage = () => {
         </div>
 
         {/* Recent Posts */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="300">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Recent Posts
           </h3>
@@ -178,7 +190,7 @@ const DashboardPage = () => {
         </div>
 
         {/* Tags */}
-        <div className="p-4 border rounded-xl border-gray-700">
+        <div className="p-4 border rounded-xl border-gray-700" data-aos="fade-left" data-aos-delay="400">
           <h3 className="text-xl font-bold mb-3">
             <span className="text-white">|</span> Tags
           </h3>
