@@ -82,10 +82,10 @@ export default function WidgetMarqueeSection() {
                   {iconItems.map((item, index) => (
                     <div
                       key={`${rowIndex}-${index}`}
-                      className="flex items-center gap-2 px-4 py-2 bg-[#1A1B2F] shadow-md rounded-xl border border-white/10 min-w-[180px]"
+                      className="flex items-center gap-2 px-4 py-2 bg-white text-black shadow-md rounded-xl border border-white/10 min-w-[180px]"
                     >
-                      <div className="text-white">{item.icon}</div>
-                      <span className="text-white font-medium text-sm">
+                      <div className="text-black">{item.icon}</div>
+                      <span className="text-black font-medium text-sm">
                         {item.label}
                       </span>
                     </div>
@@ -96,8 +96,8 @@ export default function WidgetMarqueeSection() {
                       key={`duplicate-${rowIndex}-${index}`}
                       className="flex items-center gap-2 px-4 py-2 bg-[#1A1B2F] shadow-md rounded-xl border border-white/10 min-w-[180px]"
                     >
-                      <div className="text-white">{item.icon}</div>
-                      <span className="text-white font-medium text-sm">
+                      <div className="text-black">{item.icon}</div>
+                      <span className="text-black font-medium text-sm">
                         {item.label}
                       </span>
                     </div>
