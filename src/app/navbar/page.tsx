@@ -33,13 +33,13 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 px-4 sm:px-6 py-4 bg-transparent backdrop-blur-md shadow-md flex items-center justify-between">
+    <nav className="fixed top-0 left-0 w-full z-50 px-4 sm:px-6 py-4 bg-gradient-to-r from-[#070121] to-[#170080] backdrop-blur-md shadow-md flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center">
         <Image
           src="/img/huboweb.png"
           alt="Logo"
-          className="h-10 w-auto"
+          className="h-14 w-auto"
           width={100}
           height={40}
         />

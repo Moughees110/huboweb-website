@@ -38,9 +38,9 @@ const Footer = () => {
         {/* Left Side */}
         <div className="flex-1">
           <Image
-            src="/img/huboweb2.png"
+            src="/img/huboweb.png"
             alt="Logo"
-            className="h-10 w-auto"
+            className="h-14 w-auto"
             width={100}
             height={40}
           />
