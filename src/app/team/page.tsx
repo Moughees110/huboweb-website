@@ -54,7 +54,7 @@ export default function Team() {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: true
+      once: false
     });
   }, []);
 

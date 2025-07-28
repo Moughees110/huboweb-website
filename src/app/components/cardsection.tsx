@@ -150,7 +150,7 @@ export default function CardSection() {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: true
+      once: false
     });
   }, []);
 
