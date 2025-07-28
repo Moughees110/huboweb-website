@@ -18,9 +18,13 @@ const Hero = ({
   return (
     <section className="w-full h-[90vh] py-16 px-6 md:px-12 bg-transparent">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-14">
+        
         {/* Left Side - Text */}
-
-        <div className="flex-1 text-center md:text-left">
+        <div
+          className="flex-1 text-center md:text-left"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
             {title}
           </h1>
@@ -30,7 +34,7 @@ const Hero = ({
         </div>
 
         {/* Right Side - Image */}
-        <div className="flex-1">
+        <div className="flex-1" data-aos="zoom-in" data-aos-delay="200">
           <Image
             src={imageSrc}
             alt={imageAlt}

@@ -113,7 +113,7 @@ export default function CareerSection() {
               </p>
               <a
                 href="applyform"
-                className="text-white font-semibold inline-flex items-center gap-2"
+                className="text-black  font-semibold inline-flex items-center gap-2"
               >
                 <ArrowRight className="w-4 h-4" />
                 Apply Form
