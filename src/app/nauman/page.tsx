@@ -30,18 +30,9 @@ export default function Nauman() {
 
             {/* 🔗 Social Media Icons */}
             <div className="flex gap-4 mb-8">
+             
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twitter
-                  size={22}
-                  className="text-blue-400 hover:text-blue-500"
-                />
-              </a>
-              <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/msolonelybrokenangel?mibextid=LQQJ4d"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -51,7 +42,7 @@ export default function Nauman() {
                 />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/m.naumanrana/?igsh=NXBpOWM4bmUwamt5#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -60,54 +51,38 @@ export default function Nauman() {
                   className="text-pink-500 hover:text-pink-600"
                 />
               </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin
-                  size={22}
-                  className="text-blue-500 hover:text-blue-600"
-                />
-              </a>
+              
             </div>
 
             {/* Small image + Info */}
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               {/* Small image */}
-              <div className="w-[180px] h-[220px] relative rounded-xl overflow-hidden shadow-lg">
-                <Image
-                  src="/img/nauman.jpeg"
-                  alt="Numan Portrait"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
+              
 
               {/* Info List with Icons */}
               <div className="grid grid-cols-1 gap-3 text-sm text-gray-200">
                 <div className="flex items-center gap-2">
-                  <Cake size={18} className="text-white" /> Birthday: May
-                  15, 1987
+                  <Cake size={18} className="text-white" /> Birthday: July 24, 1997
+                  
                 </div>
                 <div className="flex items-center gap-2">
-                  <Calendar size={18} className="text-white" /> Age: 37
+                  <Calendar size={18} className="text-white" /> Age: 28
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone size={18} className="text-white" /> +92 333
-                  1234567
+                  <Phone size={18} className="text-white" /> +92 307 6548786
+                  
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail size={18} className="text-white" />{" "}
-                  numan.khan@example.com
+                  nauman.naeem@huboweb.com
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin size={18} className="text-white" /> Lahore,
                   Pakistan
                 </div>
                 <div className="flex items-center gap-2">
-                  <GraduationCap size={18} className="text-white" /> CFA,
-                  LUMS Lahore
+                  <GraduationCap size={18} className="text-white" /> Chief Financial Officer (CFO)
+                  
                 </div>
               </div>
             </div>
@@ -115,12 +90,12 @@ export default function Nauman() {
         </div>
 
         {/* RIGHT: Full-Height Image */}
-        <div className="w-full md:w-1/2 mt-20 mx-15 relative min-h-[90vh]">
+        <div className="w-full md:w-1/2 mt-20 mx-15 relative min-h-[95vh]">
           <Image
-            src="/img/service4.png"
+            src="/img/nauman1.jpg"
             alt="Finance Officer Image"
             fill
-            className="object-cover"
+            className="object-cover rounded rounded-2xl mt-10"
           />
         </div>
       </section>

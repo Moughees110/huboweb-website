@@ -28,18 +28,9 @@ export default function Anosh() {
               Anosh Haider
             </h1>
             <div className="flex gap-4 mb-8">
+              
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twitter
-                  size={22}
-                  className="text-blue-400 hover:text-blue-500"
-                />
-              </a>
-              <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/ReMeMbErr?mibextid=LQQJ4d"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -49,7 +40,7 @@ export default function Anosh() {
                 />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/ranahaider__/?igsh=eGIxa2QyMW1kbnIx#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -58,54 +49,37 @@ export default function Anosh() {
                   className="text-pink-500 hover:text-pink-600"
                 />
               </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin
-                  size={22}
-                  className="text-blue-500 hover:text-blue-600"
-                />
-              </a>
+             
             </div>
 
             {/* Small image + Info */}
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-              {/* Small image */}
-              <div className="w-[180px] h-[220px] relative rounded-xl overflow-hidden shadow-lg">
-                <Image
-                  src="/img/anosh.png"
-                  alt="Anosh Portrait"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
+             
 
               {/* Info List with Icons */}
               <div className="grid grid-cols-1 gap-3 text-sm text-gray-200">
                 <div className="flex items-center gap-2">
-                  <Cake size={18} className="text-white" /> Birthday: Jan
-                  1, 1995
+                  <Cake size={18} className="text-white" /> Birthday: March 17, 1993
+                  
                 </div>
                 <div className="flex items-center gap-2">
-                  <Calendar size={18} className="text-white" /> Age: 29
+                  <Calendar size={18} className="text-white" /> Age: 32
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone size={18} className="text-white" /> +92 300
-                  1234567
+                  <Phone size={18} className="text-white" /> +92 322 4824998
+                  
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail size={18} className="text-white" />{" "}
-                  anosh@example.com
+                  rana.haider@huboweb.com
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin size={18} className="text-white" /> Lahore,
                   Pakistan
                 </div>
                 <div className="flex items-center gap-2">
-                  <GraduationCap size={18} className="text-white" /> BSCS,
-                  PU Lahore
+                  <GraduationCap size={18} className="text-white" />Chief Executive Officer
+                  (CEO)
                 </div>
               </div>
             </div>
@@ -113,12 +87,12 @@ export default function Anosh() {
         </div>
 
         {/* RIGHT: Full-Height Image from URL */}
-        <div className="w-full md:w-1/2 mt-20 mx-14 relative min-h-[90vh]">
+        <div className="w-full md:w-1/2 mt-20 mx-14 relative min-h-[95vh]">
           <Image
-            src="/img/service4.png"
+            src="/img/anosh.png"
             alt="Right Side Image"
             fill
-            className="object-cover"
+            className="object-cover rounded rounded-2xl mt-10"
           />
         </div>
       </section>

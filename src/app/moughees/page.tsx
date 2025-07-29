@@ -30,18 +30,9 @@ export default function Moughees() {
 
             {/* 🔗 Social Media Icons */}
             <div className="flex gap-4 mb-8">
+              
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twitter
-                  size={22}
-                  className="text-blue-400 hover:text-blue-500"
-                />
-              </a>
-              <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/moughees.hassan?mibextid=LQQJ4d"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -51,7 +42,7 @@ export default function Moughees() {
                 />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/itzmoughees/profilecard/?igsh=MXV0bGlkaHFrdmk1Yg%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -61,7 +52,7 @@ export default function Moughees() {
                 />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/moughees-hasan-raza-67978917a"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -99,7 +90,7 @@ export default function Moughees() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail size={18} className="text-white" />{" "}
-                  mougheeshasan@gmail.com
+                  moughees.hasan@huboweb.com
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin size={18} className="text-white" /> Lahore,
@@ -115,12 +106,12 @@ export default function Moughees() {
         </div>
 
         {/* RIGHT: Full-Height Image */}
-        <div className="w-full md:w-1/2 mt-30 mx-15 relative min-h-[90vh] shadow-[0_0_30px_12px_rgba(0,153,255,0.75)]">
+        <div className="w-full md:w-1/2 mt-30 mx-15 relative min-h-[90vh]">
           <Image
             src="/img/moughees2.jpg"
             alt="Right Side Image"
             fill
-            className="object-cover"
+            className="object-cover rounded rounded-2xl"
           />
         </div>
       </section>

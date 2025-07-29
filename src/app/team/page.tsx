@@ -14,21 +14,21 @@ const teamMembers = [
     email: "ranahaider998@gmail.com"
   },
   {
-    name: "Akhter Abbas",
+    name: "Akhtar Abbas",
     position: "Chief Technical Officer",
-    image: "/img/akhter.jpg",
+    image: "/img/dummy-profile-pic.jpg",
     email: "akhtarabbas909@gmail.com"
   },
   {
     name: "Moughees Hassan",
     position: "Chief Technical Officer",
-    image: "/img/moughees.jpeg",
+    image: "/img/moughees2.jpg",
     email: "mougheeshassan@gmail.com"
   },
   {
     name: "Nauman Naeem",
     position: "Chief Finance Officer",
-    image: "/img/nauman.jpeg",
+    image: "/img/nauman1.jpg",
     email: "naumannaeem81@gmail.com"
   }
 ];
@@ -37,8 +37,8 @@ const getMemberRoute = (name: string) => {
   switch (name) {
     case "Anosh Haider":
       return "/anosh";
-    case "Akhter Abbas":
-      return "/akhter";
+    case "Akhtar Abbas":
+      return "/akhtar";
     case "Moughees Hassan":
       return "/moughees";
     case "Nauman Naeem":
@@ -90,25 +90,12 @@ export default function Team() {
 
               <div className="absolute inset-0 bg-black/40 z-10 flex flex-col justify-end">
                 <div className="px-5 py-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="flex justify-center gap-4 mb-3">
-                    <a href="#">
-                      <Instagram size={20} />
-                    </a>
-                    <a href="#">
-                      <Linkedin size={20} />
-                    </a>
-                    <a href="#">
-                      <Facebook size={20} />
-                    </a>
-                    <a href="#">
-                      <Twitter size={20} />
-                    </a>
-                  </div>
+                  
                   <div className="flex justify-between items-center">
                     <div>
                       <h3 className="text-lg font-semibold">{member.name}</h3>
                       <p className="text-sm text-gray-300">{member.position}</p>
-                      <p className="text-sm text-gray-400">{member.email}</p>
+                     
                     </div>
                     <button
                       onClick={() => router.push(getMemberRoute(member.name))}
