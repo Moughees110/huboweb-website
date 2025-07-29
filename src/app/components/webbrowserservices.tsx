@@ -173,9 +173,7 @@ export default function WebBrowserServices() {
           Contact us now for a free consultation and let’s transform your idea
           into a live extension.
         </p>
-        <Button className="bg-white text-[#071c55] hover:bg-[#071c55] hover:text-white cursor-pointer rounded-full transition-all">
-          Start Your Project
-        </Button>
+       
       </div>
     </section>
   );
