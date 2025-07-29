@@ -118,7 +118,7 @@ export default function Testimonials() {
                         style={{ backgroundColor: testimonial.color }}
                       ></div>
                       <p className="text-sm leading-relaxed pl-2 mb-6">
-                        "{testimonial.text}"
+                        {testimonial.text}
                       </p>
                       <div className="absolute bottom-2 right-3 flex gap-1">
                         {[...Array(5)].map((_, i) => (

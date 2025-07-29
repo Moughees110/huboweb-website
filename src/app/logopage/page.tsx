@@ -35,7 +35,7 @@ const LogoPage = () => {
             Designing Memorable Company Logos That Speak Brand
           </h1>
           <p className="text-white mt-2">
-            A strong logo is more than just a symbol — it's the visual heartbeat
+            A strong logo is more than just a symbol — its the visual heartbeat
             of your brand. Learn how modern businesses craft recognizable and
             timeless logos that build instant trust.
           </p>

@@ -25,7 +25,7 @@ export default function Akhter() {
         <div className="w-full md:w-1/2 flex items-center justify-start px-8 py-10 bg-transparent">
           <div className="max-w-2xl w-full">
             <h1 className="text-5xl font-bold text-white mb-4">
-              Akhter Hussain
+              Akhter Abbas
             </h1>
 
             {/* 🔗 Social Media Icons */}

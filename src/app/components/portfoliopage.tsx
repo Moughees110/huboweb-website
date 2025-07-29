@@ -235,13 +235,13 @@ import { Send } from "lucide-react";
 function AnimatedHoverButton({ label, slug }: { label: string; slug: string }) {
   return (
     <Link href={`/${slug}`}>
-      <button className="relative group flex items-center gap-2 px-2 py-1 bg-gradient-to-r from-blue-900 to-gray-900   text-white  hover:bg-white rounded-full border hover:border-yellow-400 transition-all duration-300 overflow-hidden ">
+      <button className="relative group flex items-center gap-2 px-4 py-1 bg-gradient-to-r from-blue-900 to-gray-900   text-white  hover:bg-white rounded-full border hover:border-blue-950 hover:text-blue-950 transition-all duration-300 overflow-hidden ">
         <span className="transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0 flex items-center gap-1">
-          <Send size={16} className="stroke-current" />
+          <Send size={16}  />
           {label}
         </span>
-        <span className="absolute top-0 left-0 w-full h-full flex items-center justify-center gap-1 transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
-          <Send size={16} className="stroke-white" />
+        <span className="absolute top-0 left-0 w-full h-full flex items-center justify-center gap-1 hover:bg-white transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+          <Send size={16}   />
           {label}
         </span>
       </button>

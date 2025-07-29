@@ -25,7 +25,7 @@ export default function Moughees() {
         <div className="w-full md:w-1/2 flex items-center justify-start px-8 py-10 bg-transparent">
           <div className="max-w-2xl w-full">
             <h1 className="text-5xl font-bold text-white mb-4">
-              Moughees Raza
+              Moughees Hasan Raza
             </h1>
 
             {/* 🔗 Social Media Icons */}
@@ -75,39 +75,39 @@ export default function Moughees() {
             {/* Small image + Info */}
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               {/* Small image */}
-              <div className="w-[180px] h-[220px] relative rounded-xl overflow-hidden shadow-lg">
+              {/* <div className="w-[180px] h-[220px] relative rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src="/img/moughees.jpeg"
                   alt="Moughees Portrait"
                   layout="fill"
                   objectFit="cover"
                 />
-              </div>
+              </div> */}
 
               {/* Info List with Icons */}
               <div className="grid grid-cols-1 gap-3 text-sm text-gray-200">
                 <div className="flex items-center gap-2">
-                  <Cake size={18} className="text-white" /> Birthday: July
-                  5, 1990
+                  <Cake size={18} className="text-white" /> Birthday: November
+                  28, 1997
                 </div>
                 <div className="flex items-center gap-2">
-                  <Calendar size={18} className="text-white" /> Age: 34
+                  <Calendar size={18} className="text-white" /> Age: 28
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone size={18} className="text-white" /> +92 301
-                  1122334
+                  <Phone size={18} className="text-white" /> +92 305
+                  4327313
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail size={18} className="text-white" />{" "}
-                  moughees@example.com
+                  mougheeshasan@gmail.com
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin size={18} className="text-white" /> Karachi,
+                  <MapPin size={18} className="text-white" /> Lahore,
                   Pakistan
                 </div>
                 <div className="flex items-center gap-2">
-                  <GraduationCap size={18} className="text-white" /> MS
-                  Software Engg., NUST
+                  <GraduationCap size={18} className="text-white" />
+                  Chief Technical Officer (CTO)
                 </div>
               </div>
             </div>
@@ -115,9 +115,9 @@ export default function Moughees() {
         </div>
 
         {/* RIGHT: Full-Height Image */}
-        <div className="w-full md:w-1/2 mt-20 mx-15 relative min-h-[90vh]">
+        <div className="w-full md:w-1/2 mt-30 mx-15 relative min-h-[90vh] shadow-[0_0_30px_12px_rgba(0,153,255,0.75)]">
           <Image
-            src="/img/service4.png"
+            src="/img/moughees2.jpg"
             alt="Right Side Image"
             fill
             className="object-cover"

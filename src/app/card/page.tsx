@@ -107,7 +107,7 @@ export default function Card() {
             <div className="relative z-10 flex flex-col items-center text-center h-full p-6 space-y-4">
               {/* Logo */}
               <div className="relative w-16 h-16  rounded-full flex items-center justify-center overflow-hidden">
-                <div className="relative w-10 h-10">
+                <div className="relative w-11 h-11">
                   <Image
                     src={service.logo}
                     alt={service.title}
