@@ -137,7 +137,7 @@ export default function ApplyForm() {
 
           <button
             type="submit"
-            className="px-4 py-1 flex items-center gap-2 rounded-full text-white hover:text-black text-lg border border-yellow-400 bg-yellow-600 hover:bg-white transition"
+            className="px-4 py-1 flex items-center gap-2 rounded-full text-white hover:text-black text-lg border border-gray-300 bg-[#071c55] hover:bg-white transition"
           >
             <Send className="w-5 h-5" />
             Submit

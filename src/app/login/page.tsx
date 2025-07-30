@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { User, Lock } from "lucide-react";
+import { User, Lock, Webhook  } from "lucide-react";
 import AOS from "aos";
 
 const Login = () => {
@@ -29,18 +29,20 @@ const Login = () => {
         className="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg"
         data-aos="fade-up"
       >
-        <img
+        {/* <img
           src="/img/huboweb2.png"
           alt="Huboweb Logo"
           className="mx-auto mb-4 w-70 h-18"
           data-aos="fade-down"
-        />
+        /> */}
         <h2
-          className="text-2xl font-bold text-center text-[#071C55]"
-          data-aos="fade-down"
-        >
-          Login
-        </h2>
+  className="text-2xl font-bold text-center text-[#071C55] flex items-center justify-center gap-2"
+  data-aos="fade-down"
+>
+  <Webhook  className="w-6 h-6 text-[#071C55]" />
+  Login
+</h2>
+
         <form onSubmit={handleSubmit} className="mt-6">
           {/* Email */}
           <div className="mb-4 relative" data-aos="fade-right">
