@@ -1,5 +1,6 @@
 const { get } = require("mongoose");
 const User = require("../model/user");
+
 const loginUser = async function( email,password){
     try{
         const user = await User.findOne({ email: email, password: password });
@@ -14,6 +15,7 @@ const loginUser = async function( email,password){
         throw new Error("Login failed");
     }
 }
+
 const registerUser = async function( email, password, isActive){
     try{
         const newUser = new User({ email, password, isActive });
@@ -24,6 +26,7 @@ const registerUser = async function( email, password, isActive){
         throw new Error("Registration failed");
     }
 }
+
 const getAllUsers = async function() {
     try{
         const users = await User.find({});
@@ -32,6 +35,7 @@ const getAllUsers = async function() {
         console.error("Error fetching users:", error);
     }
 }
+
 const getUserByEmail = async function(email) {
     try{
         const user = await User.find({email: email});
@@ -41,6 +45,7 @@ const getUserByEmail = async function(email) {
         throw new Error("User not found");
     }
 }
+
 const updateUser = async function(userId, updateData) {
     try{
         const updatedUser = await User.findByIdAndUpdate(userId, updateData, { new: true });
@@ -50,6 +55,7 @@ const updateUser = async function(userId, updateData) {
         throw new Error("User update failed");
     }
 }
+
 const deleteUser = async function(userId) {
     try{
         const deletedUser = await User.findByIdAndDelete(userId);
@@ -59,4 +65,12 @@ const deleteUser = async function(userId) {
         throw new Error("User deletion failed");
     }
 }
-module.exports = {loginUser, registerUser, getAllUsers, getUserByEmail, updateUser, deleteUser};
+
+module.exports = {
+    loginUser,
+    registerUser,
+    getAllUsers,
+    getUserByEmail,
+    updateUser,
+    deleteUser
+};
