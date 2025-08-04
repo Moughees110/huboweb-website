@@ -16,7 +16,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         setIsAuthenticated(true);
       } else {
         setIsAuthenticated(false);
-        router.push("/login");
+        router.push("/auth/login");
       }
     }
   }, [pathname]);
@@ -43,7 +43,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <button
           onClick={() => {
             localStorage.removeItem("isAuthenticated");
-            router.push("/login");
+            router.push("/auth/login");
           }}
           className="bg-red-600 hover:bg-red-700 text-white mt-4 py-2 px-4 rounded"
         >

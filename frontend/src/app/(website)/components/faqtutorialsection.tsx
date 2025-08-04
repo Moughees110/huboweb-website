@@ -27,13 +27,7 @@ export default function FaqTutorialSection() {
               product.
             </TextAnimate>
           </p>
-          <button
-            className="bg-[#071c55] cursor-pointer text-white border hover:bg-white hover:text-[#071c55] font-semibold py-2 px-6 rounded-full transition"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            View More
-          </button>
+          
         </div>
 
         {/* Right Images */}

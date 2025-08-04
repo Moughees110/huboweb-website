@@ -29,9 +29,7 @@ export default function SectionWithOrbit() {
             innovative startups to established enterprises, we help brands build
             exceptional digital experiences.
           </p>
-          <button className="px-6 py-2 bg-[#071c55] cursor-pointer text-white border hover:text-[#071c55] hover:bg-white rounded-full transition font-medium">
-            Get in Touch
-          </button>
+         
         </div>
 
         {/* Right Side with extra left margin */}
