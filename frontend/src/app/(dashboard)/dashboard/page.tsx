@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Home from "@/app/(website)/page";
 
 
 const Dashboard = () => {
@@ -15,8 +16,8 @@ const Dashboard = () => {
   }, []);
 
   return (
-   <div className="text-black text-4xl">
-    Welcome to Dashboard
+   <div>
+    <Home/>
    </div>
   );
 };
