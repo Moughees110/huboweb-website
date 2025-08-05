@@ -42,7 +42,7 @@ const Login = () => {
       // Login successful
       console.log("Login success:", data);
       localStorage.setItem("isAuthenticated", "true");
-      router.push("/dashboard");
+      router.push("/dashboard/home ");
 
     } catch (err) {
       console.error("Login error:", err);
