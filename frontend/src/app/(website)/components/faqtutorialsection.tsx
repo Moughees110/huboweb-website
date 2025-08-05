@@ -27,7 +27,6 @@ export default function FaqTutorialSection() {
               product.
             </TextAnimate>
           </p>
-          
         </div>
 
         {/* Right Images */}
