@@ -7,6 +7,7 @@ import WidgetMarqueeSection from '../components/widgetmarqueesection'
 import ServicesSection from '../components/servicessection'
 import AiServices from '../components/aiservices'
 import HuboHeading from '../components/huboheading'
+import AnimatedCard from '../components/animatedcard'
 
 export default function Services() {
   return (
@@ -16,6 +17,7 @@ export default function Services() {
         description="We build high-performance websites and applications that engage your customers and grow your brand. From design to deployment — we've got you covered."
         imageSrc="/img/custom-dev.png"
       />
+      <AnimatedCard/>
       <WidgetMarqueeSection/>
       <CardSection/>
       <ServicesSection/>
