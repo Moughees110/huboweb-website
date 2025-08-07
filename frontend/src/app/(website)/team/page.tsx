@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 const teamMembers = [
   {
     name: "Anosh Haider",
-    position: "Chief Technical Officer",
+    position: "Chief Executive Officer",
     image: "/img/anosh.png",
     email: "ranahaider998@gmail.com"
   },
