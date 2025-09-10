@@ -1,9 +1,9 @@
 import React from "react";
 import Hero from "../../components/hero";
-import WebDevServices from "@/app/components/webdevservices";
-import TechnologyStack from "@/app/components/technologystack";
-import WhyChooseUs from "@/app/components/whychooseus";
-import ProjectShowcase from "@/app/components/projectsshowcase";
+import WebDevServices from "@/app/(website)/components/webdevservices";
+import TechnologyStack from "@/app/(website)/components/technologystack";
+import WhyChooseUs from "@/app/(website)/components/whychooseus";
+import ProjectShowcase from "@/app/(website)/components/projectsshowcase";
 
 export default function WebDesign() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
-import Seo from "@/app/components/seo";
+import Seo from "../seooptimization/page";
 
 export default function SeoOptimization() {
   return (

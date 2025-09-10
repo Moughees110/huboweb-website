@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
-import GraphicPage from "@/app/components/graphicpage";
+import GraphicPage from "../graphicdesign/page";
 
 export default function graphicsdesign() {
   return (

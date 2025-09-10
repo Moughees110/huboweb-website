@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
-import WebBrowserServices from "@/app/components/webbrowserservices";
+import WebBrowserServices from "../webbrowser/page";
 
 
 export default function WebBrowser() {

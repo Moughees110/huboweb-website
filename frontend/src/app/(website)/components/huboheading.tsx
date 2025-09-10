@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-function huboheading() {
+// 👇 Type define karo props ke liye
+type HuboHeadingProps = {
+  text: string;
+};
+
+function HuboHeading({ text }: HuboHeadingProps) {
   return (
     <div>
-      
+      <h1>{text}</h1>
     </div>
-  )
+  );
 }
 
-export default huboheading
+export default HuboHeading;

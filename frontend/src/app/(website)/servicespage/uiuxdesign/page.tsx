@@ -1,8 +1,8 @@
 import React from "react";
 import Hero from "../../components/hero";
-import Ui from "@/app/components/ui";
-import ToolsTechnology from "@/app/components/toolstechnology";
-import CaseStudies from "@/app/components/casestudies";
+import Ui from "@/app/(website)/components/ui";
+import ToolsTechnology from "@/app/(website)/components/toolstechnology";
+import CaseStudies from "@/app/(website)/components/casestudies";
 
 
 export default function UiUxDesign() {
